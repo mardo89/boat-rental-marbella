@@ -1,0 +1,61 @@
+:root{--c-bg:#fff;--c-ink:#0a1f33;--c-muted:#5a6b7a;--c-line:#e6ecf2;--c-sea:#0a6db5;--c-sea-d:#075590;--c-sun:#f5a623;--c-sand:#fef7e7;--c-wa:#25d366;--r:14px;--shadow:0 4px 24px rgba(10,31,51,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--c-ink);background:var(--c-bg)}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+a{color:var(--c-sea);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.25;color:var(--c-ink);margin-top:1.8em;margin-bottom:.6em}
+h1{font-size:2.1rem;margin-top:.6em}
+h2{font-size:1.55rem;border-bottom:1px solid var(--c-line);padding-bottom:.3em}
+h3{font-size:1.18rem}
+p,ul,ol{margin:0 0 1em}
+img{max-width:100%;height:auto}
+.hero{margin:0;position:relative;max-height:520px;overflow:hidden;background:#0a1f33}
+.hero img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;opacity:.92}
+.hero-cap{position:absolute;right:10px;bottom:8px;background:rgba(0,0,0,.55);color:#fff;padding:4px 10px;border-radius:6px;font-size:.78rem}
+.inline-img{margin:1.6em 0;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.inline-img img{display:block;width:100%;height:auto}
+.inline-img figcaption{background:#f6f9fc;color:var(--c-muted);font-size:.85rem;padding:8px 14px;text-align:center}
+.site-header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--c-line);z-index:50}
+.header-row{display:flex;gap:18px;align-items:center;padding:12px 20px}
+.brand{font-weight:800;font-size:1.05rem;color:var(--c-ink);display:flex;gap:6px;align-items:center}
+.brand-mark{color:var(--c-sea)}
+.nav{display:flex;gap:14px;margin-left:18px;flex:1;flex-wrap:wrap}
+.nav a{color:var(--c-ink);font-size:.95rem}
+.cta-stack{display:flex;gap:8px}
+.cta-wa{background:var(--c-wa);color:#fff;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.92rem}
+.cta-tel{background:var(--c-sea);color:#fff;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.92rem}
+.cta-wa:hover,.cta-tel:hover{text-decoration:none;filter:brightness(1.05)}
+.page{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:40px;padding:30px 20px 60px}
+.content{min-width:0}
+.breadcrumbs{font-size:.9rem;color:var(--c-muted);margin-bottom:10px}
+.breadcrumbs a{color:var(--c-muted)}
+.book-card{background:var(--c-sand);border:1px solid #f1e5c1;border-radius:var(--r);padding:22px;position:sticky;top:80px;height:max-content;box-shadow:var(--shadow)}
+.book-card h3{margin-top:0}
+.btn{display:block;text-align:center;padding:13px 18px;border-radius:10px;font-weight:600;margin:8px 0;font-size:.98rem}
+.btn-primary{background:var(--c-wa);color:#fff}
+.btn-secondary{background:var(--c-sea);color:#fff}
+.btn-ghost{background:#fff;border:1px solid var(--c-line);color:var(--c-ink)}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.96rem}
+th,td{padding:10px 12px;border:1px solid var(--c-line);text-align:left}
+th{background:#f6f9fc}
+blockquote{border-left:4px solid var(--c-sun);background:var(--c-sand);margin:1.4em 0;padding:14px 18px;border-radius:0 var(--r) var(--r) 0}
+details{border:1px solid var(--c-line);border-radius:10px;padding:12px 16px;margin:8px 0;background:#fafcfe}
+details summary{font-weight:600;cursor:pointer}
+details[open]{background:#fff}
+.callout{background:#eaf4fb;border:1px solid #cfe5f4;border-radius:var(--r);padding:14px 18px;margin:1.2em 0}
+.site-footer{background:#0a1f33;color:#cfd8e0;padding:40px 0 16px;margin-top:60px}
+.site-footer h4{color:#fff;margin:0 0 10px;font-size:1rem}
+.site-footer a{color:#cfd8e0}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:30px}
+.footer-grid ul{list-style:none;padding:0;margin:0}
+.footer-grid li{margin:4px 0;font-size:.93rem}
+.footer-legal{border-top:1px solid #1c3148;margin-top:30px;padding-top:14px;font-size:.85rem;color:#8aa0b3}
+@media (max-width:880px){
+  .page{grid-template-columns:1fr;padding:20px 16px 40px}
+  .book-card{position:static;order:-1}
+  .nav{display:none}
+  h1{font-size:1.7rem}
+}

@@ -1,0 +1,55 @@
+{
+  "graph": {
+    "/": [
+      {"to":"/yacht-charter-marbella/","anchor":"motor yacht","why":"hub references yacht charter as primary spoke"},
+      {"to":"/catamaran-rental-marbella/","anchor":"sailing or power catamaran","why":"catamaran is one of three top boat types"},
+      {"to":"/boat-rental-no-license-marbella/","anchor":"5 m licence-free runabout","why":"hub names the no-license category"},
+      {"to":"/blog/best-month-to-rent-a-boat-in-marbella/","anchor":"sweet spot","why":"hub mentions seasonality"},
+      {"to":"/fishing-boat-rental-marbella/","anchor":"deep-sea fishing boat","why":"fishing is a major boat type"},
+      {"to":"/boat-rental-puerto-banus/","anchor":"Puerto Banús","why":"primary port mentioned repeatedly"}
+    ],
+    "/yacht-charter-marbella/": [
+      {"to":"/","anchor":"boat rental Marbella","why":"every page links back to hub"},
+      {"to":"/catamaran-rental-marbella/","anchor":"sailing yacht","why":"natural cross-link to catamarans"},
+      {"to":"/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/","anchor":"cheapest yacht charter Marbella","why":"reinforces price guide"},
+      {"to":"/luxury-yacht-rental-marbella/","anchor":"superyacht","why":"yacht charter ladder up to luxury"},
+      {"to":"/sunset-cruise-marbella/","anchor":"sunset light","why":"itinerary section references sunset"},
+      {"to":"/blog/puerto-banus-vs-marbella-marina/","anchor":"Marbella Marina","why":"reader may want port comparison"},
+      {"to":"/blog/boat-license-rules-spain/","anchor":"PNB or PER Spanish licence","why":"license context"}
+    ],
+    "/catamaran-rental-marbella/": [
+      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
+      {"to":"/yacht-charter-marbella/","anchor":"motor yacht","why":"compare to monohulls"},
+      {"to":"/blog/kids-on-a-boat-marbella/","anchor":"kids on board","why":"catamaran is best for families"},
+      {"to":"/sunset-cruise-marbella/","anchor":"sunset cruise","why":"catamaran sunset is popular"},
+      {"to":"/blog/best-month-to-rent-a-boat-in-marbella/","anchor":"May, June, September and October","why":"seasonality context"},
+      {"to":"/boat-party-marbella/","anchor":"boat party","why":"large groups cross-link"}
+    ],
+    "/boat-rental-no-license-marbella/": [
+      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
+      {"to":"/blog/boat-license-rules-spain/","anchor":"Spain boat licence rules","why":"deep dive on rules"},
+      {"to":"/yacht-charter-marbella/","anchor":"crewed yacht","why":"upsell to crewed"},
+      {"to":"/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/","anchor":"how much it costs","why":"price comparison"},
+      {"to":"/sunset-cruise-marbella/","anchor":"weekday 2-hour sunset","why":"sunset alternative"},
+      {"to":"/catamaran-rental-marbella/","anchor":"catamaran","why":"comparison"}
+    ],
+    "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/": [
+      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
+      {"to":"/yacht-charter-marbella/","anchor":"yacht charter","why":"price category"},
+      {"to":"/catamaran-rental-marbella/","anchor":"sail catamaran","why":"compare price band"},
+      {"to":"/fishing-boat-rental-marbella/","anchor":"fishing boat","why":"price band"},
+      {"to":"/boat-rental-no-license-marbella/","anchor":"licence-free 5 m","why":"cheapest option"},
+      {"to":"/luxury-yacht-rental-marbella/","anchor":"luxury yacht","why":"top end"},
+      {"to":"/sunset-cruise-marbella/","anchor":"sunset cruise Marbella","why":"sunset price quoted"},
+      {"to":"/boat-party-marbella/","anchor":"stag/hen weekend","why":"party pricing"},
+      {"to":"/blog/best-month-to-rent-a-boat-in-marbella/","anchor":"shoulder season","why":"timing affects price"}
+    ],
+    "/blog/boat-license-rules-spain/": [
+      {"to":"/","anchor":"boat rental Marbella","why":"hub link"},
+      {"to":"/boat-rental-no-license-marbella/","anchor":"no-license boat rental Marbella","why":"primary action page for license-free"},
+      {"to":"/yacht-charter-marbella/","anchor":"crewed charter","why":"path for licence-less guests"},
+      {"to":"/catamaran-rental-marbella/","anchor":"catamaran","why":"another crewed option"},
+      {"to":"/fishing-boat-rental-marbella/","anchor":"fishing boat","why":"another crewed option"}
+    ]
+  }
+}

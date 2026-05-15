@@ -1,0 +1,88 @@
+{
+  "/": {
+    "proposed": 6,
+    "applied": 3,
+    "applied_links": [
+      {
+        "anchor": "motor yacht",
+        "to": "/yacht-charter-marbella/"
+      },
+      {
+        "anchor": "sweet spot",
+        "to": "/blog/best-month-to-rent-a-boat-in-marbella/"
+      },
+      {
+        "anchor": "Puerto Banús",
+        "to": "/boat-rental-puerto-banus/"
+      }
+    ]
+  },
+  "/yacht-charter-marbella/": {
+    "proposed": 7,
+    "applied": 4,
+    "applied_links": [
+      {
+        "anchor": "cheapest yacht charter Marbella",
+        "to": "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/"
+      },
+      {
+        "anchor": "superyacht",
+        "to": "/luxury-yacht-rental-marbella/"
+      },
+      {
+        "anchor": "Marbella Marina",
+        "to": "/blog/puerto-banus-vs-marbella-marina/"
+      },
+      {
+        "anchor": "PNB or PER Spanish licence",
+        "to": "/blog/boat-license-rules-spain/"
+      }
+    ]
+  },
+  "/catamaran-rental-marbella/": {
+    "proposed": 6,
+    "applied": 3,
+    "applied_links": [
+      {
+        "anchor": "motor yacht",
+        "to": "/yacht-charter-marbella/"
+      },
+      {
+        "anchor": "May, June, September and October",
+        "to": "/blog/best-month-to-rent-a-boat-in-marbella/"
+      },
+      {
+        "anchor": "boat party",
+        "to": "/boat-party-marbella/"
+      }
+    ]
+  },
+  "/boat-rental-no-license-marbella/": {
+    "proposed": 6,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/": {
+    "proposed": 9,
+    "applied": 0,
+    "applied_links": []
+  },
+  "/blog/boat-license-rules-spain/": {
+    "proposed": 5,
+    "applied": 3,
+    "applied_links": [
+      {
+        "anchor": "crewed charter",
+        "to": "/yacht-charter-marbella/"
+      },
+      {
+        "anchor": "catamaran",
+        "to": "/catamaran-rental-marbella/"
+      },
+      {
+        "anchor": "fishing boat",
+        "to": "/fishing-boat-rental-marbella/"
+      }
+    ]
+  }
+}

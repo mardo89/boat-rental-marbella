@@ -1,0 +1,53 @@
+{
+  "site": {
+    "name": "Boat Rental Marbella",
+    "domain": "boatrentalmarbella.com",
+    "base_url": "https://boatrentalmarbella.com",
+    "tagline": "Compare boat rentals, yachts & catamarans in Marbella and Puerto Banús",
+    "brand_short": "BoatRentalMarbella",
+    "language": "en",
+    "locale": "en_GB",
+    "phone_e164": "+34600000000",
+    "phone_display": "+34 600 000 000",
+    "whatsapp_e164": "+34600000000",
+    "email": "hello@boatrentalmarbella.com",
+    "affiliate_partner": "Click&Boat",
+    "affiliate_link": "https://www.clickandboat.com/?utm_source=boatrentalmarbella&utm_medium=affiliate",
+    "departure_ports": ["Puerto Banús", "Marbella Marina (Puerto Deportivo)", "Cabopino", "Estepona", "Sotogrande"],
+    "price_anchor_low_2h": 250,
+    "price_anchor_high_2h": 275,
+    "price_anchor_fullday_8h": 750,
+    "operates_year_round": true
+  },
+  "hub": {
+    "slug": "",
+    "primary_keyword": "boat rental Marbella",
+    "title": "Boat Rental Marbella 2026: Yachts, Catamarans & License-Free Boats",
+    "meta_description": "Boat rental in Marbella from €250 for 2h. Compare yachts, catamarans, fishing boats & license-free options from Puerto Banús, Marbella Marina & Cabopino. Skipper, fuel & drinks included. Instant WhatsApp booking.",
+    "h1": "Boat Rental Marbella — Compare 60+ Yachts, Catamarans & Charters",
+    "intent": "transactional",
+    "target_words": 2200
+  },
+  "spokes": [
+    {"slug": "yacht-charter-marbella", "primary_keyword": "yacht charter Marbella", "title": "Yacht Charter Marbella 2026: Luxury Motor Yachts from €450", "intent": "transactional", "target_words": 1600},
+    {"slug": "catamaran-rental-marbella", "primary_keyword": "catamaran rental Marbella", "title": "Catamaran Rental Marbella: Sail & Power Catamarans from €350", "intent": "transactional", "target_words": 1500},
+    {"slug": "fishing-boat-rental-marbella", "primary_keyword": "fishing boat rental Marbella", "title": "Fishing Boat Rental Marbella: Deep-Sea & Inshore Charters", "intent": "transactional", "target_words": 1400},
+    {"slug": "boat-rental-puerto-banus", "primary_keyword": "boat rental Puerto Banús", "title": "Boat Rental Puerto Banús: Charters from Marbella's #1 Marina", "intent": "transactional", "target_words": 1600},
+    {"slug": "sunset-cruise-marbella", "primary_keyword": "sunset cruise Marbella", "title": "Sunset Cruise Marbella: 2-Hour Charters from €250 (2026)", "intent": "transactional", "target_words": 1300},
+    {"slug": "boat-party-marbella", "primary_keyword": "boat party Marbella", "title": "Boat Party Marbella: Stag, Hen & Group Charters (10–40 guests)", "intent": "transactional", "target_words": 1400},
+    {"slug": "boat-rental-no-license-marbella", "primary_keyword": "boat rental no license Marbella", "title": "Boat Rental Marbella No License: Self-Drive Boats up to 5m / 15hp", "intent": "transactional", "target_words": 1500},
+    {"slug": "luxury-yacht-rental-marbella", "primary_keyword": "luxury yacht rental Marbella", "title": "Luxury Yacht Rental Marbella: Superyachts & Crewed Charters", "intent": "transactional", "target_words": 1500}
+  ],
+  "blog": [
+    {"slug": "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella", "primary_keyword": "how much to rent a boat in Marbella", "title": "How Much Does It Cost to Rent a Boat in Marbella? (2026 Prices)", "intent": "informational", "target_words": 1500},
+    {"slug": "blog/best-month-to-rent-a-boat-in-marbella", "primary_keyword": "best month boat rental Marbella", "title": "Best Month to Rent a Boat in Marbella: Weather, Crowds & Prices", "intent": "informational", "target_words": 1300},
+    {"slug": "blog/boat-license-rules-spain", "primary_keyword": "boat license rules Spain", "title": "Spain Boat License Rules 2026: What You Can Drive Without a Licence", "intent": "informational", "target_words": 1400},
+    {"slug": "blog/puerto-banus-vs-marbella-marina", "primary_keyword": "Puerto Banús vs Marbella marina", "title": "Puerto Banús vs Marbella Marina: Which to Depart From?", "intent": "informational", "target_words": 1200},
+    {"slug": "blog/kids-on-a-boat-marbella", "primary_keyword": "boat rental with kids Marbella", "title": "Boat Rental With Kids in Marbella: Safety, Snacks & Itineraries", "intent": "informational", "target_words": 1100},
+    {"slug": "blog/dolphin-watching-marbella", "primary_keyword": "dolphin watching Marbella", "title": "Dolphin Watching by Boat in Marbella: Where, When & How", "intent": "informational", "target_words": 1100},
+    {"slug": "blog/gibraltar-day-trip-by-boat", "primary_keyword": "Gibraltar day trip by boat", "title": "Gibraltar Day Trip by Boat from Marbella: Route, Cost, Timing", "intent": "informational", "target_words": 1300},
+    {"slug": "blog/what-to-bring-on-a-boat-charter", "primary_keyword": "what to bring boat charter Marbella", "title": "What to Bring on a Marbella Boat Charter: Packing Checklist", "intent": "informational", "target_words": 900},
+    {"slug": "blog/seasickness-prevention-charter", "primary_keyword": "avoid seasickness boat Marbella", "title": "How to Avoid Seasickness on a Marbella Charter (Captain's Guide)", "intent": "informational", "target_words": 900},
+    {"slug": "blog/private-vs-shared-boat-charter", "primary_keyword": "private vs shared boat charter Marbella", "title": "Private vs Shared Boat Charter in Marbella: Cost & Experience", "intent": "informational", "target_words": 1100}
+  ]
+}

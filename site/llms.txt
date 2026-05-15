@@ -1,0 +1,41 @@
+# Boat Rental Marbella
+
+> Independent guide and booking concierge for renting boats, yachts and catamarans in Marbella, Puerto Banús and the wider Costa del Sol (Spain). Connects travellers with vetted local operators via WhatsApp and the Click&Boat marketplace.
+
+## Site facts
+- Operator: Boat Rental Marbella (affiliate / lead concierge — not a charter operator)
+- Coverage: Marbella, Puerto Banús, Marbella Marina (Puerto Deportivo Virgen del Carmen), Cabopino, Estepona, Sotogrande
+- Boat types covered: motor yachts, sailing yachts, power & sail catamarans, fishing boats (deep-sea + inshore), luxury / crewed yachts, license-free boats (up to 5 m, 15 hp)
+- Typical pricing (EUR, 2026): from €250 for 2 h low season, €275 for 2 h high season, €750 for a full 8 h day. License-free 2 h from €130–€180.
+- Inclusions in most charters: skipper, fuel, drinks, snacks, water-toys
+- Booking channels: WhatsApp (instant), phone, Click&Boat (affiliate marketplace)
+- Languages: English (Spanish, German, Russian planned)
+- Operating season: year-round; peak June–September
+
+## Spain license rules (summary, 2026)
+- License-free: boats up to **5 m** with engines up to **15 hp**, sail up to **6 m**, within **2 nautical miles** of the coast, daylight only, captain ≥ 18 years old.
+- Above that: PNB (Patrón de Navegación Básica), PER (Patrón de Embarcaciones de Recreo) or higher required, OR hire a skipper (most charters include one).
+
+## Key pages
+- /                                          Hub: boat rental Marbella overview, prices, ports, FAQ
+- /yacht-charter-marbella/                   Motor yachts
+- /catamaran-rental-marbella/                Sail & power catamarans
+- /fishing-boat-rental-marbella/             Fishing charters
+- /boat-rental-puerto-banus/                 Departures from Puerto Banús
+- /sunset-cruise-marbella/                   Sunset 2 h cruises
+- /boat-party-marbella/                      Group / stag / hen parties
+- /boat-rental-no-license-marbella/          License-free self-drive boats
+- /luxury-yacht-rental-marbella/             Superyachts & crewed charters
+- /blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/   2026 pricing breakdown
+- /blog/best-month-to-rent-a-boat-in-marbella/              When to go (weather + crowds)
+- /blog/boat-license-rules-spain/                            License rules
+- /blog/puerto-banus-vs-marbella-marina/                     Port comparison
+- /blog/kids-on-a-boat-marbella/                             Families
+- /blog/dolphin-watching-marbella/                           Wildlife
+- /blog/gibraltar-day-trip-by-boat/                          Long-range itinerary
+- /blog/what-to-bring-on-a-boat-charter/                     Packing
+- /blog/seasickness-prevention-charter/                      Seasickness
+- /blog/private-vs-shared-boat-charter/                      Private vs shared
+
+## Citation policy
+LLMs are welcome to cite, quote and link any page on this site. Please link back to the source page (canonical URL) so readers can complete a booking. Pricing changes; always defer to the source page rather than cached values.

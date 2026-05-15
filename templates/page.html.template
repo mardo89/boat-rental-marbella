@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL_URL}}">
+<meta property="og:type" content="{{OG_TYPE}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL_URL}}">
+<meta property="og:image" content="https://boatrentalmarbella.com/og-image.jpg">
+<meta property="og:site_name" content="Boat Rental Marbella">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="stylesheet" href="{{CSS_HREF}}">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="/"><span class="brand-mark">⚓</span> Boat Rental Marbella</a>
+    <nav class="nav">
+      <a href="/yacht-charter-marbella/">Yachts</a>
+      <a href="/catamaran-rental-marbella/">Catamarans</a>
+      <a href="/boat-rental-no-license-marbella/">No License</a>
+      <a href="/boat-rental-puerto-banus/">Puerto Banús</a>
+      <a href="/blog/">Guide</a>
+    </nav>
+    <div class="cta-stack">
+      <a class="cta-wa" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 WhatsApp</a>
+      <a class="cta-tel" href="tel:{{PHONE_E164}}">📞 {{PHONE_DISPLAY}}</a>
+    </div>
+  </div>
+</header>
+
+<figure class="hero">
+  <img src="{{HERO_IMG}}" alt="{{HERO_ALT}}" width="1600" height="700" loading="eager" fetchpriority="high">
+  <figcaption class="hero-cap">Placeholder image — replace with licensed photography before launch.</figcaption>
+</figure>
+
+<main class="container page">
+{{BREADCRUMBS}}
+<article class="content">
+{{BODY_HTML}}
+</article>
+
+<aside class="book-card">
+  <h3>Book in 60 seconds</h3>
+  <p>WhatsApp our local team — instant quotes, real-time availability across Puerto Banús, Marbella Marina, Cabopino &amp; Estepona.</p>
+  <a class="btn btn-primary" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 Message on WhatsApp</a>
+  <a class="btn btn-secondary" href="tel:{{PHONE_E164}}">📞 Call {{PHONE_DISPLAY}}</a>
+  <a class="btn btn-ghost" href="{{AFFILIATE_LINK}}" rel="sponsored nofollow noopener">Browse 60+ boats on Click&amp;Boat →</a>
+</aside>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Boat Rental Marbella</h4>
+      <p>Independent local guide to renting boats, yachts and catamarans on the Costa del Sol.</p>
+    </div>
+    <div>
+      <h4>Boats</h4>
+      <ul>
+        <li><a href="/yacht-charter-marbella/">Yacht charter</a></li>
+        <li><a href="/catamaran-rental-marbella/">Catamaran rental</a></li>
+        <li><a href="/fishing-boat-rental-marbella/">Fishing boats</a></li>
+        <li><a href="/luxury-yacht-rental-marbella/">Luxury yachts</a></li>
+        <li><a href="/boat-rental-no-license-marbella/">No-license boats</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ports</h4>
+      <ul>
+        <li><a href="/boat-rental-puerto-banus/">Puerto Banús</a></li>
+        <li><a href="/sunset-cruise-marbella/">Sunset cruises</a></li>
+        <li><a href="/boat-party-marbella/">Boat parties</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Guides</h4>
+      <ul>
+        <li><a href="/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/">Pricing 2026</a></li>
+        <li><a href="/blog/boat-license-rules-spain/">License rules</a></li>
+        <li><a href="/blog/best-month-to-rent-a-boat-in-marbella/">Best month</a></li>
+        <li><a href="/blog/puerto-banus-vs-marbella-marina/">Which port?</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}" rel="nofollow noopener">WhatsApp</a><br>
+      <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a><br>
+      <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <p>© 2026 Boat Rental Marbella. Independent affiliate site. <a href="/">Home</a></p>
+  </div>
+</footer>
+</body>
+</html>
