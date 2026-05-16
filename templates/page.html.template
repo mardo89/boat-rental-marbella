@@ -40,8 +40,16 @@
 
 <figure class="hero">
   <img src="{{HERO_IMG}}" alt="{{HERO_ALT}}" width="1600" height="700" loading="eager" fetchpriority="high">
-  <figcaption class="hero-cap">Placeholder image — replace with licensed photography before launch.</figcaption>
 </figure>
+
+<div class="trust-strip">
+  <div class="container trust-row">
+    <span>✓ Skipper &amp; fuel included</span>
+    <span>✓ 60+ boats across 5 marinas</span>
+    <span>✓ WhatsApp reply in &lt;5 min</span>
+    <span>✓ Year-round on the Costa del Sol</span>
+  </div>
+</div>
 
 <main class="container page">
 {{BREADCRUMBS}}
