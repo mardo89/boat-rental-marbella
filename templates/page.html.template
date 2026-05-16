@@ -112,7 +112,8 @@
       <p><a href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}" rel="nofollow noopener">WhatsApp</a><br>
       <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a><br>
       <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
-      <a href="{{INSTAGRAM_URL}}" rel="noopener">Instagram {{INSTAGRAM_HANDLE}}</a></p>
+      <a href="{{INSTAGRAM_URL}}" rel="noopener">Instagram {{INSTAGRAM_HANDLE}}</a><br>
+      <a href="{{FACEBOOK_URL}}" rel="noopener">{{FACEBOOK_LABEL}}</a></p>
     </div>
   </div>
   <div class="container footer-legal">

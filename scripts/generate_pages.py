@@ -129,7 +129,7 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
         "telephone": SITE['phone_e164'],
         "email": SITE['email'],
         "areaServed": SITE['departure_ports'],
-        "sameAs": [SITE.get('instagram_url')] if SITE.get('instagram_url') else [],
+        "sameAs": [u for u in [SITE.get('instagram_url'), SITE.get('facebook_url')] if u],
         "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
         "address": {"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
     }
@@ -257,6 +257,8 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{AFFILIATE_LINK}}": SITE['affiliate_link'],
         "{{INSTAGRAM_URL}}": SITE.get('instagram_url',''),
         "{{INSTAGRAM_HANDLE}}": SITE.get('instagram_handle',''),
+        "{{FACEBOOK_URL}}": SITE.get('facebook_url',''),
+        "{{FACEBOOK_LABEL}}": SITE.get('facebook_label','Facebook'),
     }
     out = TEMPLATE
     for k, v in repl.items():
