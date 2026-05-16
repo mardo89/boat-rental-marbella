@@ -19,7 +19,11 @@
     "price_anchor_low_2h": 250,
     "price_anchor_high_2h": 275,
     "price_anchor_fullday_8h": 750,
-    "operates_year_round": true
+    "operates_year_round": true,
+    "geo_lat": 36.5108,
+    "geo_lng": -4.8850,
+    "founded_year": 2025,
+    "editorial_team": "Boat Rental Marbella Editorial Team"
   },
   "hub": {
     "slug": "",
@@ -32,12 +36,12 @@
   },
   "spokes": [
     {"slug": "yacht-charter-marbella", "primary_keyword": "yacht charter Marbella", "title": "Yacht Charter Marbella 2026: Luxury Motor Yachts from €450", "intent": "transactional", "target_words": 1600},
-    {"slug": "catamaran-rental-marbella", "primary_keyword": "catamaran rental Marbella", "title": "Catamaran Rental Marbella: Sail & Power Catamarans from €350", "intent": "transactional", "target_words": 1500},
+    {"slug": "catamaran-rental-marbella", "primary_keyword": "catamaran rental Marbella", "title": "Catamaran Rental Marbella 2026: Sail & Power Catamarans from €350", "intent": "transactional", "target_words": 1500},
     {"slug": "fishing-boat-rental-marbella", "primary_keyword": "fishing boat rental Marbella", "title": "Fishing Boat Rental Marbella: Deep-Sea & Inshore Charters", "intent": "transactional", "target_words": 1400},
     {"slug": "boat-rental-puerto-banus", "primary_keyword": "boat rental Puerto Banús", "title": "Boat Rental Puerto Banús: Charters from Marbella's #1 Marina", "intent": "transactional", "target_words": 1600},
     {"slug": "sunset-cruise-marbella", "primary_keyword": "sunset cruise Marbella", "title": "Sunset Cruise Marbella: 2-Hour Charters from €250 (2026)", "intent": "transactional", "target_words": 1300},
     {"slug": "boat-party-marbella", "primary_keyword": "boat party Marbella", "title": "Boat Party Marbella: Stag, Hen & Group Charters (10–40 guests)", "intent": "transactional", "target_words": 1400},
-    {"slug": "boat-rental-no-license-marbella", "primary_keyword": "boat rental no license Marbella", "title": "Boat Rental Marbella No License: Self-Drive Boats up to 5m / 15hp", "intent": "transactional", "target_words": 1500},
+    {"slug": "boat-rental-no-license-marbella", "primary_keyword": "boat rental no license Marbella", "title": "Boat Rental Marbella No License 2026: Self-Drive 5m / 15hp Boats", "intent": "transactional", "target_words": 1500},
     {"slug": "luxury-yacht-rental-marbella", "primary_keyword": "luxury yacht rental Marbella", "title": "Luxury Yacht Rental Marbella: Superyachts & Crewed Charters", "intent": "transactional", "target_words": 1500}
   ],
   "blog": [

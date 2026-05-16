@@ -10,7 +10,9 @@
 <meta property="og:title" content="{{TITLE}}">
 <meta property="og:description" content="{{META_DESCRIPTION}}">
 <meta property="og:url" content="{{CANONICAL_URL}}">
-<meta property="og:image" content="https://boatrentalmarbella.com/og-image.jpg">
+<meta property="og:image" content="{{HERO_IMG}}">
+<meta property="og:image:alt" content="{{HERO_ALT}}">
+<meta name="twitter:image" content="{{HERO_IMG}}">
 <meta property="og:site_name" content="Boat Rental Marbella">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{TITLE}}">

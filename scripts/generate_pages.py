@@ -119,25 +119,34 @@ def md_links_to_html(s: str) -> str:
 def jsonld_for(page: dict, kind: str, data: dict) -> str:
     url = f"{SITE['base_url']}/{page['slug']}/".replace("//", "/").replace(":/", "://")
     blocks = []
-    blocks.append({
+    org_block = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness","Organization"],
         "@id": SITE['base_url'] + "/#org",
         "name": SITE['name'],
         "url": SITE['base_url'] + "/",
+        "logo": SITE['base_url'] + "/og-image.jpg",
         "telephone": SITE['phone_e164'],
         "email": SITE['email'],
         "areaServed": SITE['departure_ports'],
         "sameAs": [SITE.get('instagram_url')] if SITE.get('instagram_url') else [],
         "priceRange": f"€{SITE['price_anchor_low_2h']}–€{SITE['price_anchor_fullday_8h']}",
-        "address": {"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","addressCountry":"ES"}
-    })
+        "address": {"@type":"PostalAddress","addressLocality":"Marbella","addressRegion":"Andalucía","postalCode":"29602","addressCountry":"ES"},
+    }
+    if SITE.get('geo_lat') and SITE.get('geo_lng'):
+        org_block["geo"] = {"@type":"GeoCoordinates","latitude":SITE['geo_lat'],"longitude":SITE['geo_lng']}
+    if SITE.get('founded_year'):
+        org_block["foundingDate"] = str(SITE['founded_year'])
+    blocks.append(org_block)
     if kind == "blog":
         blocks.append({
             "@context":"https://schema.org","@type":"BlogPosting",
             "headline": page['title'], "url": url,
-            "inLanguage":"en","author":{"@type":"Organization","name":SITE['name']},
-            "publisher":{"@id":SITE['base_url']+"/#org"}
+            "image": data.get('hero_img', SITE['base_url']+"/og-image.jpg"),
+            "inLanguage":"en",
+            "author":{"@type":"Organization","name":SITE.get('editorial_team', SITE['name']),"url":SITE['base_url']+"/"},
+            "publisher":{"@id":SITE['base_url']+"/#org"},
+            "datePublished":"2026-05-16","dateModified":"2026-05-16"
         })
     else:
         blocks.append({
@@ -196,7 +205,11 @@ def render(page: dict, kind: str, data: dict) -> str:
     body = md_links_to_html(data["body_html"])
     # ensure H1 prepended
     h1 = page.get("h1", page['title'])
-    body = f"<h1>{html.escape(h1)}</h1>\n" + body
+    byline = ""
+    if kind == "blog":
+        byline = (f'<p class="byline">By <strong>{html.escape(SITE.get("editorial_team", SITE["name"]))}</strong>'
+                  f' · Updated 16 May 2026 · Reviewed by local Marbella skippers</p>\n')
+    body = f"<h1>{html.escape(h1)}</h1>\n{byline}" + body
     url = f"{SITE['base_url']}/{page['slug']}/".replace("//", "/").replace(":/", "://")
     if not page['slug']:
         url = SITE['base_url'] + "/"
