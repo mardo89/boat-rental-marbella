@@ -35,6 +35,7 @@ img{max-width:100%;height:auto}
 .content{min-width:0}
 .breadcrumbs{font-size:.9rem;color:var(--c-muted);margin-bottom:10px}
 .breadcrumbs a{color:var(--c-muted)}
+.byline{color:var(--c-muted);font-size:.92rem;border-left:3px solid var(--c-sun);padding:6px 0 6px 12px;margin:0 0 1.4em}
 .book-card{background:var(--c-sand);border:1px solid #f1e5c1;border-radius:var(--r);padding:22px;position:sticky;top:80px;height:max-content;box-shadow:var(--shadow)}
 .book-card h3{margin-top:0}
 .btn{display:block;text-align:center;padding:13px 18px;border-radius:10px;font-weight:600;margin:8px 0;font-size:.98rem}
