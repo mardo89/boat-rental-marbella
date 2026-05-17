@@ -11,6 +11,7 @@ python3 scripts/generate_pages.py --render-only > /dev/null
 python3 scripts/build_link_graph.py > /dev/null 2>&1 || true
 python3 scripts/build_boats.py
 python3 scripts/build_blog_index.py
+python3 scripts/build_es.py
 python3 scripts/build_sitemap.py
 
 echo "→ commit main"

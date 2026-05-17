@@ -151,6 +151,7 @@ def main():
     hero_srcset = ", ".join(f"{hero_base}-{w}.jpg {w}w" for w in (600, 900, 1200, 1600))
 
     repl = {
+        "{{HREFLANG}}": "",
         "{{HERO_IMG}}": INDEX_HERO_IMG,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(INDEX_HERO_ALT),

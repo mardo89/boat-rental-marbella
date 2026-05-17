@@ -6,8 +6,15 @@
       "crop_bottom_pct": 14,
       "title": "Yachts anchored off the Marbella coast",
       "description": "Aerial drone view of two motor yachts anchored off the Marbella coastline with the Sierra Blanca mountains behind.",
-      "tags": ["aerial", "yachts", "anchored", "Marbella coast"],
-      "placement": ["/"]
+      "tags": [
+        "aerial",
+        "yachts",
+        "anchored",
+        "Marbella coast"
+      ],
+      "placement": [
+        "/"
+      ]
     },
     {
       "slug": "puerto-banus-bow-shot",
@@ -15,8 +22,15 @@
       "crop_bottom_pct": 0,
       "title": "Departing Puerto Banús by yacht",
       "description": "Bow-shot of a charter yacht slipping out of Puerto Banús marina past the working fleet, with Hotel Benabola in the background.",
-      "tags": ["Puerto Banús", "marina", "departure"],
-      "placement": ["/boats/azimut-39/", "/boat-rental-puerto-banus/"]
+      "tags": [
+        "Puerto Banús",
+        "marina",
+        "departure"
+      ],
+      "placement": [
+        "/boats/azimut-39/",
+        "/boat-rental-puerto-banus/"
+      ]
     },
     {
       "slug": "marbella-boat-party",
@@ -24,8 +38,33 @@
       "crop_bottom_pct": 0,
       "title": "Boat party in Marbella",
       "description": "Group of guests on the flybridge of a luxury yacht enjoying a sunny day in Puerto Banús.",
-      "tags": ["boat party", "Puerto Banús", "luxury yacht"],
-      "placement": ["/boat-party-marbella/"]
+      "tags": [
+        "boat party",
+        "Puerto Banús",
+        "luxury yacht"
+      ],
+      "placement": [
+        "/boat-party-marbella/"
+      ]
+    },
+    {
+      "slug": "drinks-on-board",
+      "drive_id": "1uqP58QXV98yZ6OsSSn367X2dadJukWzh",
+      "crop_bottom_pct": 0,
+      "title": "All drinks included — fridge on board",
+      "description": "Our on-board fridge stocked with cava, white wine, beer, soft drinks and water — included with every Marbella charter.",
+      "tags": [
+        "drinks included",
+        "cava",
+        "white wine",
+        "beer",
+        "Marbella charter"
+      ],
+      "placement": [
+        "/",
+        "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
+        "/blog/what-to-bring-on-a-boat-charter/"
+      ]
     }
   ]
 }

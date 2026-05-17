@@ -602,7 +602,23 @@ def render(page: dict, kind: str, data: dict) -> str:
 </section>'''
         BOAT_GRID = FLEET_SECTION + category_section
 
+    # hreflang for EN ↔ ES mapping (only for pages that have an ES counterpart)
+    EN_TO_ES = {
+        "": "/es/",
+        "yacht-charter-marbella": "/es/alquiler-de-yates-marbella/",
+        "boat-rental-puerto-banus": "/es/alquiler-barcos-puerto-banus/",
+        "boat-rental-no-license-marbella": "/es/alquiler-barcos-sin-licencia-marbella/",
+    }
+    es_alt = EN_TO_ES.get(page['slug'])
+    hreflang_block = ""
+    if es_alt:
+        hreflang_block = (
+            f'<link rel="alternate" hreflang="en" href="{url}">\n'
+            f'<link rel="alternate" hreflang="es" href="{SITE["base_url"]}{es_alt}">\n'
+            f'<link rel="alternate" hreflang="x-default" href="{url}">'
+        )
     repl = {
+        "{{HREFLANG}}": hreflang_block,
         "{{HERO_EYEBROW}}": eyebrow_html,
         "{{HERO_H1}}": html.escape(h1),
         "{{HERO_SUB}}": html.escape(sub),

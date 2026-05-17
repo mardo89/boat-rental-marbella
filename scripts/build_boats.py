@@ -472,6 +472,7 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
     url = f"{SITE['base_url']}/{slug}/"
     wa = wa_link(wa_text or "Hi, I'd like to book a boat in Marbella")
     repl = {
+        "{{HREFLANG}}": "",
         "{{HERO_IMG}}": hero_img,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
         "{{HERO_ALT}}": html.escape(hero_alt),
