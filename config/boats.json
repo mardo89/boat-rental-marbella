@@ -1,5 +1,5 @@
 {
-  "shared_inclusions": ["Skipper", "Fuel", "Drinks", "Insurance", "VAT"],
+  "shared_inclusions": ["Licensed skipper", "Fuel", "Drinks (water, soft drinks, beer, white wine, cava)", "Light snacks", "Insurance", "Safety equipment", "VAT (21%)"],
   "hourly_price_tiers": {
     "tier_a": {
       "label": "12.5m motor yacht",

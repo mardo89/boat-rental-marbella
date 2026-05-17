@@ -361,14 +361,16 @@ def render_boat(boat):
 <h2>What's included on every charter</h2>
 <ul>
   <li><strong>Licensed skipper</strong> for the full duration</li>
+  <li><strong>Drinks on board:</strong> water, soft drinks, beer, white wine and cava</li>
+  <li><strong>Light snacks</strong> (fruit, crisps, almonds, biscuits)</li>
   <li><strong>Fuel</strong> for the standard Marbella–Estepona–Cabopino cruising loop</li>
-  <li><strong>Drinks:</strong> water, soft drinks, ice</li>
-  <li><strong>Insurance</strong> and Spanish IVA (VAT)</li>
+  <li><strong>Insurance</strong> and full safety equipment (life jackets, flares, first aid)</li>
+  <li><strong>Spanish IVA (VAT, 21%)</strong> — no surprise at checkout</li>
   <li><strong>Water toys:</strong> snorkel masks, inflatable donut, paddleboard</li>
   <li><strong>Towels</strong> for every guest</li>
   {chr(10).join(f'<li><strong>{html.escape(x)}</strong> — included on the {name}</li>' for x in tier_extras)}
 </ul>
-<p>Catered lunch, premium drinks, DJ and beach-club tender service can be added when you book.</p>
+<p>Catered lunch, premium spirits, DJ and beach-club tender service can be added when you book.</p>
 
 <h2>Where it departs from</h2>
 <p>The {name} berths at <a href="/boat-rental-puerto-banus/">Puerto Banús</a> — the deepest charter marina on the Marbella coast and the most central pickup for guests staying on the Golden Mile. You will get the exact pier and slip number 24 hours before departure. Underground parking is 5 minutes from the pontoon.</p>
