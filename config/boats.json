@@ -2,7 +2,7 @@
   "shared_inclusions": ["Skipper", "Fuel", "Drinks", "Insurance", "VAT"],
   "hourly_price_tiers": {
     "tier_a": {
-      "label": "12.5m motor yacht (9 pax)",
+      "label": "12.5m motor yacht",
       "prices": {"2h": 749, "3h": 1049, "4h": 1299, "5h": 1549, "6h": 1799, "7h": 2099, "8h": 2299},
       "currency": "EUR"
     }
@@ -11,7 +11,7 @@
     {
       "slug": "astondoa-40",
       "name": "Astondoa 40",
-      "tagline": "Spanish-built 12.5 m motor yacht with classic Mediterranean styling",
+      "tagline": "Spanish-built 12.5 m motor yacht — \"Fufi\" — at home in Puerto Banús",
       "model_year": null,
       "builder": "Astondoa",
       "type": "Motor yacht",
@@ -20,26 +20,51 @@
       "departure_port": "Puerto Banús",
       "tier": "tier_a",
       "highlights": [
-        "Spacious aft deck with shaded bimini",
-        "Air-conditioned interior saloon with dining for 6",
+        "Flybridge with shaded bimini and second helm",
+        "Cream-leather saloon with table-for-six and AC",
         "Two private cabins for overnight charter",
-        "Twin diesel engines, 18-knot cruise",
+        "Spanish-built (Astondoa, Cádiz) — local provenance",
         "Snorkel gear, inflatable donut & paddleboard on board"
       ],
       "hero_pexels_id": "144024",
       "gallery_pexels": ["144024", "31371841", "33852930"],
-      "summary": "Astondoa 40 is the Spanish equivalent of the classic Mediterranean motor yacht — built in Cádiz, fitted out in teak and cream, and at home anchoring off the Golden Mile for a long lunch. 12.5 metres, 9 guests, skipper and fuel included.",
+      "hero_local": "/img/boats/astondoa-40/hero-1600.jpg",
+      "hero_local_srcset": [
+        ["/img/boats/astondoa-40/hero-600.jpg", 600],
+        ["/img/boats/astondoa-40/hero-900.jpg", 900],
+        ["/img/boats/astondoa-40/hero-1200.jpg", 1200],
+        ["/img/boats/astondoa-40/hero-1600.jpg", 1600]
+      ],
+      "hero_local_alt": "Astondoa 40 motor yacht \"Fufi\" cruising off Marbella with La Concha mountain behind",
+      "gallery_local": [
+        {
+          "src": "/img/boats/astondoa-40/sunset-1200.jpg",
+          "srcset": [["/img/boats/astondoa-40/sunset-600.jpg", 600],["/img/boats/astondoa-40/sunset-900.jpg", 900],["/img/boats/astondoa-40/sunset-1200.jpg", 1200],["/img/boats/astondoa-40/sunset-1600.jpg", 1600]],
+          "alt": "Astondoa 40 arriving at Puerto Banús marina at sunset"
+        },
+        {
+          "src": "/img/boats/astondoa-40/interior-1200.jpg",
+          "srcset": [["/img/boats/astondoa-40/interior-600.jpg", 600],["/img/boats/astondoa-40/interior-900.jpg", 900],["/img/boats/astondoa-40/interior-1200.jpg", 1200]],
+          "alt": "Astondoa 40 interior saloon with cream leather seating and teak finish"
+        },
+        {
+          "src": "/img/boats/astondoa-40/lifestyle-1200.jpg",
+          "srcset": [["/img/boats/astondoa-40/lifestyle-600.jpg", 600],["/img/boats/astondoa-40/lifestyle-900.jpg", 900],["/img/boats/astondoa-40/lifestyle-1200.jpg", 1200]],
+          "alt": "Guests relaxing on the bow of the Astondoa 40 at Puerto Banús marina"
+        }
+      ],
+      "summary": "Astondoa 40 — known as \"Fufi\" — is the Spanish equivalent of the classic Mediterranean motor yacht. Built in Cádiz by Astondoa, fitted out in teak and cream leather, and at home anchoring off the Golden Mile for a long lunch. 12.5 metres, 9 guests, skipper and fuel included.",
       "intent_keywords": ["motor yacht charter Marbella", "Astondoa 40 Marbella", "12 metre yacht hire Puerto Banús"]
     },
     {
       "slug": "azimut-39",
       "name": "Azimut 39",
-      "tagline": "Italian-built 12.5 m flybridge motor yacht with twin-cabin layout",
+      "tagline": "Italian-built 12.5 m flybridge motor yacht — up to 11 guests",
       "model_year": null,
       "builder": "Azimut",
       "type": "Motor yacht",
       "length_m": 12.5,
-      "capacity_pax": 9,
+      "capacity_pax": 11,
       "departure_port": "Puerto Banús",
       "tier": "tier_a",
       "highlights": [
