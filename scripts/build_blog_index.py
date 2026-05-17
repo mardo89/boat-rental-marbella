@@ -164,6 +164,8 @@ def main():
         "{{CSS_HREF}}": "/styles.css",
         "{{JSONLD}}": json.dumps(jsonld, ensure_ascii=False),
         "{{PRICE_LOW}}": str(SITE['price_anchor_low_2h']),
+        "{{PRICE_LABEL}}": "2h skippered charter",
+        "{{BOOK_PITCH}}": "Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande.",
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": '<nav class="breadcrumbs"><a href="/">Home</a> › <span>Guide</span></nav>',
         "{{BODY_HTML}}": body,

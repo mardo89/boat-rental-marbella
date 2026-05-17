@@ -102,9 +102,9 @@
 <aside class="book-card">
   <div class="book-card-price">
     From <strong>€{{PRICE_LOW}}</strong>
-    <span class="book-card-sub">2h skippered charter</span>
+    <span class="book-card-sub">{{PRICE_LABEL}}</span>
   </div>
-  <p class="book-card-pitch">Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande.</p>
+  <p class="book-card-pitch">{{BOOK_PITCH}}</p>
   <a class="btn btn-primary" href="https://wa.me/{{WHATSAPP_E164_NOPLUS}}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20boat%20in%20Marbella" rel="nofollow noopener">💬 Message on WhatsApp</a>
   <p class="book-card-micro">Avg reply &lt; 5 min · No deposit until you confirm</p>
   <a class="btn btn-secondary" href="tel:{{PHONE_E164}}">📞 Call {{PHONE_DISPLAY}}</a>

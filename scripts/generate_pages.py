@@ -130,6 +130,24 @@ PAGE_HERO_MAP = {
     "blog/private-vs-shared-boat-charter": "mangusta-hero",
 }
 
+# Per-page book-card override (price / duration label / pitch text)
+PAGE_BOOK_CARD = {
+    "jet-ski-rental-marbella": {
+        "price": 200,
+        "label": "1h Sea-Doo rental",
+        "pitch": "Sea-Doo personal watercraft from Puerto Banús. Solo or two-up — same price. Briefing, life jacket and fuel included.",
+    },
+}
+
+def book_card_for(slug):
+    """Return (price, label, pitch) for the book-card on the given page slug."""
+    ov = PAGE_BOOK_CARD.get(slug)
+    if ov:
+        return ov["price"], ov["label"], ov["pitch"]
+    return (SITE['price_anchor_low_2h'],
+            "2h skippered charter",
+            "Instant quotes from local operators across Puerto Banús, Marbella Marina, Cabopino, Estepona &amp; Sotogrande.")
+
 # Optional secondary inline image per page (for body figure)
 PAGE_INLINE_MAP = {
     "": "astondoa-sunset",
@@ -588,7 +606,9 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{HERO_EYEBROW}}": eyebrow_html,
         "{{HERO_H1}}": html.escape(h1),
         "{{HERO_SUB}}": html.escape(sub),
-        "{{PRICE_LOW}}": str(SITE['price_anchor_low_2h']),
+        "{{PRICE_LOW}}": str(book_card_for(page['slug'])[0]),
+        "{{PRICE_LABEL}}": book_card_for(page['slug'])[1],
+        "{{BOOK_PITCH}}": book_card_for(page['slug'])[2],
         "{{BOAT_GRID}}": BOAT_GRID,
         "{{HERO_IMG}}": hero_img,
         "{{HERO_SRCSET}}": html.escape(hero_srcset),
