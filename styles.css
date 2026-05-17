@@ -210,7 +210,7 @@ strong{color:var(--c-ink);font-weight:700}
   max-width:1180px;margin:0 auto;
 }
 .content{min-width:0;max-width:720px}
-.breadcrumbs{font-size:.88rem;color:var(--c-muted);margin-bottom:16px}
+.breadcrumbs{font-size:.88rem;color:var(--c-muted);margin-bottom:16px;grid-column:1 / -1}
 .breadcrumbs a{color:var(--c-muted);text-decoration:underline;text-decoration-color:transparent;transition:text-decoration-color .15s}
 .breadcrumbs a:hover{text-decoration-color:var(--c-muted)}
 .byline{
