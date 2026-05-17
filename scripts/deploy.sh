@@ -24,3 +24,8 @@ echo "→ publish gh-pages"
 git subtree push --prefix=site origin gh-pages
 
 echo "→ live at https://boatrentalinmarbella.com"
+
+echo "→ IndexNow ping (Bing, Yandex, Naver, Seznam)"
+# Wait briefly for CDN to serve new HTML before submitting
+sleep 8
+python3 scripts/indexnow.py --changed || true
