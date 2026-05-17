@@ -15,6 +15,7 @@ lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          url("", "1.0", "weekly")]
 for s in CONFIG["spokes"]:
     lines.append(url(s["slug"], "0.9", "weekly"))
+lines.append(url("blog", "0.8", "weekly"))  # blog index
 for b in CONFIG["blog"]:
     lines.append(url(b["slug"], "0.7", "monthly"))
 lines.append('</urlset>')
