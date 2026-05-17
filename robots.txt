@@ -41,4 +41,4 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://boatrentalmarbella.com/sitemap.xml
+Sitemap: https://boatrentalinmarbella.com/sitemap.xml
