@@ -96,6 +96,7 @@
 {{BREADCRUMBS}}
 <article class="content">
 {{BODY_HTML}}
+{{VIDEO_SECTION}}
 </article>
 
 <aside class="book-card">

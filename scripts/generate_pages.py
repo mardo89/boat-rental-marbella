@@ -42,6 +42,59 @@ def load_env():
 load_env()
 client = Anthropic()
 
+# ---------- video catalogue ----------
+VIDEOS_CFG_PATH = ROOT / "config" / "videos.json"
+VIDEOS_CFG = json.loads(VIDEOS_CFG_PATH.read_text()) if VIDEOS_CFG_PATH.exists() else {"videos": []}
+
+def videos_for_slug(page_slug: str):
+    """Return list of videos whose `placement` list contains the given page URL."""
+    target = "/" + (page_slug + "/" if page_slug else "")
+    target = target.replace("//", "/")
+    out = []
+    for v in VIDEOS_CFG.get("videos", []):
+        if target in v.get("placement", []):
+            out.append(v)
+    return out
+
+def video_section_html(videos):
+    if not videos:
+        return ""
+    single = "single" if len(videos) == 1 else ""
+    cards = []
+    for v in videos:
+        cards.append(f'''<figure class="video-card">
+  <video controls preload="metadata" playsinline muted loop poster="/video/{v["slug"]}.jpg" width="720" height="1280">
+    <source src="/video/{v["slug"]}.mp4" type="video/mp4">
+    Your browser doesn't support HTML5 video.
+  </video>
+  <figcaption><strong>{html.escape(v["title"])}</strong>{html.escape(v["description"])}</figcaption>
+</figure>''')
+    return f'''<section class="video-section">
+  <h2>On the water with us</h2>
+  <div class="video-grid {single}">
+{chr(10).join(cards)}
+  </div>
+</section>'''
+
+def video_jsonld_blocks(videos, page_url):
+    blocks = []
+    for v in videos:
+        blocks.append({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": v["title"],
+            "description": v["description"],
+            "thumbnailUrl": SITE['base_url'] + f"/video/{v['slug']}.jpg",
+            "contentUrl": SITE['base_url'] + f"/video/{v['slug']}.mp4",
+            "uploadDate": "2026-05-17",
+            "publisher": {"@id": SITE['base_url'] + "/#org"},
+            "isPartOf": page_url,
+            "keywords": ", ".join(v.get("tags", [])),
+            "inLanguage": "en",
+        })
+    return blocks
+
+
 # ---------- prompt ----------
 SYSTEM = f"""You are an SEO copywriter producing pages for {SITE['name']}, an independent affiliate guide to boat rentals in Marbella, Spain.
 
@@ -169,6 +222,8 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
     elif page['slug']:
         crumbs.append({"@type":"ListItem","position":2,"name":page['title'],"item":url})
     blocks.append({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":crumbs})
+    # Page-attached videos → VideoObject
+    blocks += video_jsonld_blocks(videos_for_slug(page['slug']), url)
     return json.dumps(blocks, ensure_ascii=False)
 
 def breadcrumb_html(page: dict) -> str:
@@ -366,6 +421,7 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{JSONLD}}": jsonld_for(page, kind, data),
         "{{BREADCRUMBS}}": breadcrumb_html(page),
         "{{BODY_HTML}}": body,
+        "{{VIDEO_SECTION}}": video_section_html(videos_for_slug(page['slug'])),
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),
         "{{PHONE_E164}}": SITE['phone_e164'],
         "{{PHONE_DISPLAY}}": SITE['phone_display'],

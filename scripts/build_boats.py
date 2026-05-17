@@ -15,6 +15,55 @@ BOATS_CFG = json.loads((ROOT / "config" / "boats.json").read_text())
 SITE = CONFIG["site"]
 SITE_DIR = ROOT / "site"
 
+_VID_PATH = ROOT / "config" / "videos.json"
+VIDEOS_CFG = json.loads(_VID_PATH.read_text()) if _VID_PATH.exists() else {"videos": []}
+
+def videos_for_url(url):
+    # Accept either path ("/boats/azimut-39/") or absolute URL — normalize to path.
+    path = url
+    if path.startswith("http"):
+        from urllib.parse import urlparse
+        path = urlparse(path).path
+    if not path.endswith("/"):
+        path += "/"
+    return [v for v in VIDEOS_CFG.get("videos", []) if path in v.get("placement", [])]
+
+def video_section_html(videos):
+    if not videos:
+        return ""
+    single = "single" if len(videos) == 1 else ""
+    cards = []
+    for v in videos:
+        cards.append(f'''<figure class="video-card">
+  <video controls preload="metadata" playsinline muted loop poster="/video/{v["slug"]}.jpg" width="720" height="1280">
+    <source src="/video/{v["slug"]}.mp4" type="video/mp4">
+  </video>
+  <figcaption><strong>{html.escape(v["title"])}</strong>{html.escape(v["description"])}</figcaption>
+</figure>''')
+    return f'''<section class="video-section">
+  <h2>On the water</h2>
+  <div class="video-grid {single}">
+{chr(10).join(cards)}
+  </div>
+</section>'''
+
+def video_jsonld_blocks(videos, page_url):
+    return [
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": v["title"],
+            "description": v["description"],
+            "thumbnailUrl": SITE['base_url'] + f"/video/{v['slug']}.jpg",
+            "contentUrl": SITE['base_url'] + f"/video/{v['slug']}.mp4",
+            "uploadDate": "2026-05-17",
+            "publisher": {"@id": SITE['base_url'] + "/#org"},
+            "isPartOf": page_url,
+            "keywords": ", ".join(v.get("tags", [])),
+            "inLanguage": "en",
+        } for v in videos
+    ]
+
 # ---------- helpers ----------
 def pexels(id_, w=1600):
     return f"https://images.pexels.com/photos/{id_}/pexels-photo-{id_}.jpeg?auto=compress&cs=tinysrgb&w={w}"
@@ -140,6 +189,7 @@ def render_index():
     ]
 
     hero_src, hero_srcset, _ = boat_hero(boats[0])
+    jsonld += video_jsonld_blocks(videos_for_url("/boats/"), SITE['base_url']+"/boats/")
     write_page(
         slug="boats",
         title="Our Marbella Boat Charter Fleet — Yachts &amp; Catamarans",
@@ -326,6 +376,10 @@ def render_boat(boat):
         },
     ]
 
+    # Attach VideoObject schema for any videos placed on this boat URL
+    boat_url = SITE['base_url']+f"/boats/{boat['slug']}/"
+    jsonld += video_jsonld_blocks(videos_for_url(f"/boats/{boat['slug']}/"), boat_url)
+
     write_page(
         slug=f"boats/{boat['slug']}",
         title=f"{name} — {boat['builder']} {boat['length_m']}m Charter from Puerto Banús",
@@ -363,6 +417,7 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": breadcrumbs,
         "{{BODY_HTML}}": body_html,
+        "{{VIDEO_SECTION}}": video_section_html(videos_for_url(url)),
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),
         "{{PHONE_E164}}": SITE['phone_e164'],
         "{{PHONE_DISPLAY}}": SITE['phone_display'],

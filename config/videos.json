@@ -1,0 +1,31 @@
+{
+  "videos": [
+    {
+      "slug": "aerial-yachts-marbella",
+      "drive_id": "1JnxJKnzg3doOUqYguQExD3tJXep88Uts",
+      "crop_bottom_pct": 14,
+      "title": "Yachts anchored off the Marbella coast",
+      "description": "Aerial drone view of two motor yachts anchored off the Marbella coastline with the Sierra Blanca mountains behind.",
+      "tags": ["aerial", "yachts", "anchored", "Marbella coast"],
+      "placement": ["/"]
+    },
+    {
+      "slug": "puerto-banus-bow-shot",
+      "drive_id": "1JJy_QGJAFbwLP995erB7aOcKVx-KmzGt",
+      "crop_bottom_pct": 0,
+      "title": "Departing Puerto Banús by yacht",
+      "description": "Bow-shot of a charter yacht slipping out of Puerto Banús marina past the working fleet, with Hotel Benabola in the background.",
+      "tags": ["Puerto Banús", "marina", "departure"],
+      "placement": ["/boats/azimut-39/", "/boat-rental-puerto-banus/"]
+    },
+    {
+      "slug": "marbella-boat-party",
+      "drive_id": "1HYbBSiYPZd9xNcCeHvovbXpR7OgUUJHg",
+      "crop_bottom_pct": 0,
+      "title": "Boat party in Marbella",
+      "description": "Group of guests on the flybridge of a luxury yacht enjoying a sunny day in Puerto Banús.",
+      "tags": ["boat party", "Puerto Banús", "luxury yacht"],
+      "placement": ["/boat-party-marbella/"]
+    }
+  ]
+}
