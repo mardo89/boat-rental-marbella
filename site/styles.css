@@ -65,6 +65,7 @@ strong{color:var(--c-ink);font-weight:700}
 .brand:hover{text-decoration:none;color:var(--c-ink)}
 .brand-mark{color:var(--c-sea);font-size:1.3rem}
 .brand-text{letter-spacing:-.01em}
+.brand-text em{font-style:italic;color:var(--c-sea);font-weight:600;margin:0 1px}
 .nav{display:flex;gap:22px;margin-left:14px;flex:1;flex-wrap:wrap;align-items:center}
 .nav a{color:var(--c-ink);font-size:.95rem;font-weight:500;padding:6px 0;position:relative}
 .nav a:hover{color:var(--c-sea);text-decoration:none}
