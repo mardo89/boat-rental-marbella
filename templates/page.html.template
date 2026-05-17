@@ -96,6 +96,7 @@
 {{BREADCRUMBS}}
 <article class="content">
 {{BODY_HTML}}
+{{GUESTS_SECTION}}
 {{VIDEO_SECTION}}
 </article>
 

@@ -1,0 +1,48 @@
+{
+  "section_title": "Guests on board",
+  "section_sub": "Real charters with real groups across Marbella, Puerto Banús and the Costa del Sol.",
+  "photos": [
+    {
+      "slug": "h03",
+      "alt": "Mixed group of eight guests on the bow of our motor yacht — Marbella charter",
+      "caption": "Day charter · group of eight",
+      "placement": ["/", "/yacht-charter-marbella/"]
+    },
+    {
+      "slug": "h08",
+      "alt": "Group of guests on the bow with the Sierra Blanca mountains behind — Marbella",
+      "caption": "Friends weekend · Marbella coastline",
+      "placement": ["/", "/boat-party-marbella/"]
+    },
+    {
+      "slug": "h02",
+      "alt": "Group of women posing on the swim platform during a Marbella hen-party charter",
+      "caption": "Hen party · bachelorette charter",
+      "placement": ["/boat-party-marbella/"]
+    },
+    {
+      "slug": "h06",
+      "alt": "Guests under the bimini shade with drinks on a Marbella motor yacht charter",
+      "caption": "Afternoon under the bimini",
+      "placement": ["/"]
+    },
+    {
+      "slug": "h04",
+      "alt": "Guest at the helm of our motor yacht during a Marbella sunset cruise",
+      "caption": "Sunset cruise · at the helm",
+      "placement": ["/sunset-cruise-marbella/"]
+    },
+    {
+      "slug": "h07",
+      "alt": "Guest enjoying the helm position on a Marbella yacht charter",
+      "caption": "Half-day charter · helm",
+      "placement": ["/yacht-charter-marbella/", "/sunset-cruise-marbella/"]
+    },
+    {
+      "slug": "h11",
+      "alt": "Guest on the bow of a charter yacht in Puerto Banús, Marbella",
+      "caption": "Puerto Banús · bow shot",
+      "placement": ["/boat-rental-puerto-banus/", "/yacht-charter-marbella/"]
+    }
+  ]
+}

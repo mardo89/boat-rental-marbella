@@ -76,6 +76,53 @@ def video_section_html(videos):
   </div>
 </section>'''
 
+CUSTOMERS_CFG_PATH = ROOT / "config" / "customers.json"
+CUSTOMERS_CFG = json.loads(CUSTOMERS_CFG_PATH.read_text()) if CUSTOMERS_CFG_PATH.exists() else {"photos": []}
+
+def guests_for_slug(page_slug: str):
+    target = "/" + (page_slug + "/" if page_slug else "")
+    target = target.replace("//", "/")
+    return [p for p in CUSTOMERS_CFG.get("photos", []) if target in p.get("placement", [])]
+
+def guests_section_html(photos):
+    if not photos:
+        return ""
+    items = []
+    for p in photos:
+        sl = p["slug"]
+        srcset = ", ".join(f"/img/customers/{sl}-{w}.jpg {w}w" for w in (400,600,900))
+        items.append(
+            f'<figure><img src="/img/customers/{sl}-600.jpg" srcset="{srcset}" '
+            f'sizes="(max-width: 600px) 50vw, 240px" alt="{html.escape(p["alt"])}" '
+            f'loading="lazy" width="600" height="800">'
+            f'<figcaption>{html.escape(p["caption"])}</figcaption></figure>'
+        )
+    return (
+        '<section class="guests-section">'
+        f'<h2>{html.escape(CUSTOMERS_CFG.get("section_title","Guests on board"))}</h2>'
+        f'<p class="guests-sub">{html.escape(CUSTOMERS_CFG.get("section_sub",""))}</p>'
+        f'<div class="guests-grid">{"".join(items)}</div></section>'
+    )
+
+def guests_jsonld_blocks(photos, page_url):
+    if not photos:
+        return []
+    return [{
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": f"Guests on board — {page_url}",
+        "isPartOf": page_url,
+        "image": [
+            {
+                "@type": "ImageObject",
+                "contentUrl": SITE['base_url'] + f"/img/customers/{p['slug']}-900.jpg",
+                "thumbnailUrl": SITE['base_url'] + f"/img/customers/{p['slug']}-400.jpg",
+                "caption": p["caption"],
+                "description": p["alt"],
+            } for p in photos
+        ],
+    }]
+
 def video_jsonld_blocks(videos, page_url):
     blocks = []
     for v in videos:
@@ -224,6 +271,7 @@ def jsonld_for(page: dict, kind: str, data: dict) -> str:
     blocks.append({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":crumbs})
     # Page-attached videos → VideoObject
     blocks += video_jsonld_blocks(videos_for_slug(page['slug']), url)
+    blocks += guests_jsonld_blocks(guests_for_slug(page['slug']), url)
     return json.dumps(blocks, ensure_ascii=False)
 
 def breadcrumb_html(page: dict) -> str:
@@ -423,6 +471,7 @@ def render(page: dict, kind: str, data: dict) -> str:
         "{{BREADCRUMBS}}": breadcrumb_html(page),
         "{{BODY_HTML}}": body,
         "{{VIDEO_SECTION}}": video_section_html(videos_for_slug(page['slug'])),
+        "{{GUESTS_SECTION}}": guests_section_html(guests_for_slug(page['slug'])),
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),
         "{{PHONE_E164}}": SITE['phone_e164'],
         "{{PHONE_DISPLAY}}": SITE['phone_display'],

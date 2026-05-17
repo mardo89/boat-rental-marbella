@@ -145,6 +145,7 @@ def main():
         "{{BREADCRUMBS}}": '<nav class="breadcrumbs"><a href="/">Home</a> › <span>Guide</span></nav>',
         "{{BODY_HTML}}": body,
         "{{VIDEO_SECTION}}": "",
+        "{{GUESTS_SECTION}}": "",
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),
         "{{PHONE_E164}}": SITE['phone_e164'],
         "{{PHONE_DISPLAY}}": SITE['phone_display'],
