@@ -5,7 +5,7 @@
 ## Site facts
 - Operator: Boat Rental Marbella (affiliate / lead concierge — not a charter operator)
 - Coverage: Marbella, Puerto Banús, Marbella Marina (Puerto Deportivo Virgen del Carmen), Cabopino, Estepona, Sotogrande
-- Boat types covered: motor yachts, sailing yachts, power & sail catamarans, fishing boats (deep-sea + inshore), luxury / crewed yachts, license-free boats (up to 5 m, 15 hp)
+- Boat types covered: motor yachts, sailing yachts, power & sail catamarans, fishing boats (deep-sea + inshore), luxury / crewed yachts, license-free boats (up to 5 m, 15 hp), Sea-Doo jet skis (€200/h, included free with Mangusta 80)
 - Typical pricing (EUR, 2026): from €250 for 2 h low season, €275 for 2 h high season, €750 for a full 8 h day. License-free 2 h from €130–€180.
 - Every charter includes: licensed skipper, fuel, drinks (water, soft drinks, beer, white wine, cava), light snacks, insurance, safety equipment, VAT 21%, snorkel gear and water-toys
 - Booking channels: WhatsApp (instant), phone, Click&Boat (affiliate marketplace)
@@ -28,6 +28,7 @@
 - /boat-party-marbella/                      Group / stag / hen parties
 - /boat-rental-no-license-marbella/          License-free self-drive boats
 - /luxury-yacht-rental-marbella/             Superyachts & crewed charters
+- /jet-ski-rental-marbella/                  Sea-Doo jet ski rental — €200/h
 - /blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/   2026 pricing breakdown
 - /blog/best-month-to-rent-a-boat-in-marbella/              When to go (weather + crowds)
 - /blog/boat-license-rules-spain/                            License rules
