@@ -9,7 +9,7 @@
   --c-line:#ecdfe2;
   --c-line-soft:#f6efef;
   --c-sea:#14cdc5;            /* brand turquoise — links, accents, buttons */
-  --c-sea-d:#0a9f99;
+  --c-sea-d:#007a73;          /* darker — used wherever text needs WCAG-AA contrast */
   --c-sea-l:#dbf6f4;
   --c-sun:#f5a623;            /* warm accent — H2 bar, eyebrows */
   --c-sun-d:#d68910;
@@ -65,7 +65,7 @@ strong{color:var(--c-ink);font-weight:700}
 .brand:hover{text-decoration:none;color:var(--c-ink)}
 .brand-mark{color:var(--c-sea);font-size:1.3rem}
 .brand-text{letter-spacing:-.01em}
-.brand-text em{font-style:italic;color:var(--c-sea);font-weight:600;margin:0 1px}
+.brand-text em{font-style:italic;color:var(--c-sea-d);font-weight:600;margin:0 1px}
 .nav{display:flex;gap:22px;margin-left:14px;flex:1;flex-wrap:wrap;align-items:center}
 .nav a{color:var(--c-ink);font-size:.95rem;font-weight:500;padding:6px 0;position:relative}
 .nav a:hover{color:var(--c-sea);text-decoration:none}
@@ -153,7 +153,7 @@ strong{color:var(--c-ink);font-weight:700}
 /* ─── Boat-type grid (hub) ────────────── */
 .boat-grid-section{padding:64px 0 24px;background:linear-gradient(180deg, #fff 0%, var(--c-sea-l) 100%)}
 .boat-grid-section .section-head{text-align:center;max-width:680px;margin:0 auto 32px;padding:0 24px}
-.boat-grid-section .section-head .eyebrow{color:var(--c-sea);background:var(--c-sea-l);border-color:rgba(10,109,181,.28);margin-bottom:14px}
+.boat-grid-section .section-head .eyebrow{color:var(--c-sea-d);background:var(--c-sea-l);border-color:rgba(0,122,115,.4);margin-bottom:14px}
 .boat-grid-section .section-head h2{
   border:0;padding:0;margin:0 0 12px;
   font-size:clamp(1.7rem, 3vw, 2.2rem);font-weight:800;color:var(--c-ink);letter-spacing:-.02em;
@@ -182,8 +182,8 @@ strong{color:var(--c-ink);font-weight:700}
 .boat-card:hover .boat-card-img img{transform:scale(1.05)}
 .boat-card-tag{
   position:absolute;top:12px;left:12px;
-  background:var(--c-sun);color:#fff;
-  font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--c-sun);color:var(--c-ink);
+  font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
   padding:5px 10px;border-radius:6px;
   box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
@@ -311,7 +311,7 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
 
 /* ─── Footer ──────────────────────────── */
 .site-footer{background:var(--c-ink);color:#e0c8cf;padding:56px 0 18px;margin-top:60px}
-.site-footer h4{color:#fff;margin:0 0 12px;font-size:.95rem;font-weight:700;letter-spacing:.02em}
+.site-footer h4,.footer-heading{color:#fff;margin:0 0 12px;font-size:.95rem;font-weight:700;letter-spacing:.02em}
 .site-footer a{color:#e0c8cf;text-decoration:none}
 .site-footer a:hover{color:var(--c-sea);text-decoration:none}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px}
