@@ -177,6 +177,27 @@
       "title": "Private vs Shared Boat Charter in Marbella: Cost & Experience",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/astondoa-40-vs-smaller-yachts-marbella",
+      "primary_keyword": "Astondoa 40 vs smaller yacht charter Marbella",
+      "title": "Astondoa 40 vs Smaller Charter Boats in Marbella: Why 12.5 m Wins",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/azimut-39-vs-smaller-yachts-marbella",
+      "primary_keyword": "Azimut 39 vs smaller yachts Marbella charter",
+      "title": "Azimut 39 vs Smaller Motor Yachts in Marbella: 11 Guests, Real Flybridge",
+      "intent": "informational",
+      "target_words": 1200
+    },
+    {
+      "slug": "blog/mangusta-80-vs-smaller-yachts-marbella",
+      "primary_keyword": "Mangusta 80 vs smaller charter yachts Marbella",
+      "title": "Mangusta 80 vs Smaller Charter Yachts in Marbella: Why 24 m Changes the Day",
+      "intent": "informational",
+      "target_words": 1300
     }
   ]
 }

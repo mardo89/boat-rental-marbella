@@ -24,16 +24,20 @@ INDEX_HERO_ALT = "Mangusta 80 cruising past La Concha mountain — Marbella char
 
 # Per-blog-post fleet image (mirrors the map in generate_pages.py PAGE_HERO_MAP)
 BLOG_POST_IMAGE = {
-    "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": ("/img/boats/mangusta-80/aerial-wake",  "Mangusta 80 aerial — Marbella charter pricing"),
+    "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": ("/img/boats/mangusta-80/sun-pad",      "Mangusta 80 sun-pad — Marbella charter pricing"),
     "blog/best-month-to-rent-a-boat-in-marbella":            ("/img/boats/azimut-39/hero",           "Azimut 39 cruising past La Concha — best month to charter"),
-    "blog/boat-license-rules-spain":                         ("/img/boats/azimut-39/hero",           "Azimut 39 motor yacht in Marbella — Spain license rules"),
+    "blog/boat-license-rules-spain":                         ("/img/boats/mangusta-80/galley",       "Galley on the Mangusta 80 — Spain boat license rules"),
     "blog/puerto-banus-vs-marbella-marina":                  ("/img/boats/astondoa-40/sunset",       "Astondoa 40 at Puerto Banús sunset — marina comparison"),
     "blog/kids-on-a-boat-marbella":                          ("/img/boats/astondoa-40/hero",         "Astondoa 40 cruising calmly — boat rental with kids in Marbella"),
     "blog/dolphin-watching-marbella":                        ("/img/boats/mangusta-80/aerial-wake",  "Mangusta 80 offshore — dolphin-watching grounds Marbella"),
     "blog/gibraltar-day-trip-by-boat":                       ("/img/boats/mangusta-80/profile",      "Mangusta 80 profile — Gibraltar day trip from Marbella"),
     "blog/what-to-bring-on-a-boat-charter":                  ("/img/boats/astondoa-40/lifestyle",    "Charter yacht at Puerto Banús marina — packing checklist"),
-    "blog/seasickness-prevention-charter":                   ("/img/boats/azimut-39/hero",           "Azimut 39 motor yacht on a calm Marbella morning"),
+    "blog/seasickness-prevention-charter":                   ("/img/boats/azimut-39/aerial",         "Azimut 39 from above on a calm Marbella morning — seasickness guide"),
     "blog/private-vs-shared-boat-charter":                   ("/img/boats/mangusta-80/hero",         "Mangusta 80 cruising — private vs shared charter"),
+    # Comparison posts (3 new — added below)
+    "blog/astondoa-40-vs-smaller-yachts-marbella":           ("/img/boats/astondoa-40/interior",     "Astondoa 40 saloon — comparison vs smaller boats in Marbella"),
+    "blog/azimut-39-vs-smaller-yachts-marbella":             ("/img/boats/azimut-39/aerial",         "Azimut 39 from above — comparison vs smaller motor yachts in Marbella"),
+    "blog/mangusta-80-vs-smaller-yachts-marbella":           ("/img/boats/mangusta-80/saloon",       "Mangusta 80 saloon — comparison vs smaller charter yachts in Marbella"),
 }
 INDEX_TITLE = "Marbella Boat Charter Guide: Prices, Routes, Rules & Tips"
 INDEX_META = "The complete 2026 guide to chartering a boat in Marbella — prices, license rules, best months, kids on board, Gibraltar by sea, seasickness prevention and more."

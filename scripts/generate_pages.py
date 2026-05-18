@@ -128,6 +128,9 @@ PAGE_HERO_MAP = {
     "blog/what-to-bring-on-a-boat-charter": "astondoa-lifestyle",
     "blog/seasickness-prevention-charter": "azimut-hero",
     "blog/private-vs-shared-boat-charter": "mangusta-hero",
+    "blog/astondoa-40-vs-smaller-yachts-marbella": "astondoa-interior",
+    "blog/azimut-39-vs-smaller-yachts-marbella": "azimut-aerial",
+    "blog/mangusta-80-vs-smaller-yachts-marbella": "mangusta-saloon",
 }
 
 # Per-page book-card override (price / duration label / pitch text)
@@ -170,6 +173,9 @@ PAGE_INLINE_MAP = {
     "blog/what-to-bring-on-a-boat-charter": "astondoa-interior",
     "blog/seasickness-prevention-charter": "mangusta-aerial",
     "blog/private-vs-shared-boat-charter": "mangusta-aerial",
+    "blog/astondoa-40-vs-smaller-yachts-marbella": "astondoa-hero",
+    "blog/azimut-39-vs-smaller-yachts-marbella": "azimut-hero",
+    "blog/mangusta-80-vs-smaller-yachts-marbella": "mangusta-hero",
 }
 
 def fleet_hero_for(slug):
