@@ -34,6 +34,145 @@ def jsonld_org():
         "foundingDate":str(SITE.get('founded_year',2025)),
     }
 
+# ----- ES guest gallery + video metadata (mirrors EN content with translated captions) -----
+GUESTS_CAPTIONS_ES = {
+    "h03": "Día de charter · grupo de ocho",
+    "h08": "Amigos · costa de Marbella",
+    "h14": "Cumpleaños · celebración en proa",
+    "h02": "Despedida de soltera · charter",
+    "h10": "Bebidas a bordo · despedida",
+    "h15": "Astondoa 40 'Fufi' · despedida",
+    "h06": "Tarde bajo el bimini",
+    "h04": "Crucero al atardecer · al timón",
+    "h07": "Medio día · al timón",
+    "h11": "Puerto Banús · vista de proa",
+}
+GUESTS_ALTS_ES = {
+    "h03": "Grupo de ocho invitados en la proa de nuestro yate a motor — charter en Marbella",
+    "h08": "Grupo de invitados en la proa con las montañas de Sierra Blanca al fondo, Marbella",
+    "h14": "Grupo de amigos celebrando en la proa de nuestro yate de charter en Marbella",
+    "h02": "Grupo de mujeres posando en la plataforma de baño durante una despedida de soltera en Marbella",
+    "h10": "Despedida de soltera con bebidas a bordo de un yate de charter en Marbella",
+    "h15": "Grupo de mujeres en la popa de nuestro yate Astondoa 40 en Puerto Banús",
+    "h06": "Invitados bajo el bimini con bebidas a bordo de nuestro yate a motor en Marbella",
+    "h04": "Invitada al timón de nuestro yate durante un crucero al atardecer en Marbella",
+    "h07": "Invitada en el puesto de mando de un yate de charter en Marbella",
+    "h11": "Invitada en la proa de un yate de charter en Puerto Banús, Marbella",
+}
+ES_GUEST_PLACEMENT = {
+    "hub":          ["h03", "h08", "h14", "h06"],
+    "yates":        ["h03", "h06", "h11", "h14"],
+    "banus":        ["h11", "h03", "h08", "h14"],
+    "sin_licencia": ["h08", "h11", "h06"],
+}
+
+VIDEOS_META_ES = {
+    "aerial-yachts-marbella": ("Yates fondeados frente a la costa de Marbella",
+                               "Vista aérea de dos yates a motor fondeados frente a Marbella con las montañas de Sierra Blanca al fondo."),
+    "puerto-banus-bow-shot":  ("Saliendo de Puerto Banús en yate",
+                               "Desde la proa de un yate al salir de Puerto Banús pasando junto al Hotel Benabola y la flota local."),
+    "marbella-boat-party":    ("Fiesta en barco en Marbella",
+                               "Grupo de invitados en el flybridge de un yate de lujo disfrutando de un día soleado en Puerto Banús."),
+    "drinks-on-board":        ("Bebidas incluidas — nevera a bordo",
+                               "Nuestra nevera a bordo con cava, vino blanco, cerveza, refrescos y agua — incluido en cada alquiler."),
+}
+ES_VIDEO_PLACEMENT = {
+    "hub":          ["aerial-yachts-marbella", "drinks-on-board"],
+    "yates":        ["puerto-banus-bow-shot"],
+    "banus":        ["puerto-banus-bow-shot"],
+    "sin_licencia": ["drinks-on-board"],
+}
+
+def guests_html_es(key):
+    photos = ES_GUEST_PLACEMENT.get(key, [])
+    if not photos:
+        return ""
+    items = []
+    for p in photos:
+        srcset = ", ".join(f"/img/customers/{p}-{w}.jpg {w}w" for w in (400,600,900))
+        items.append(
+            f'<figure><img src="/img/customers/{p}-600.jpg" srcset="{srcset}" '
+            f'sizes="(max-width: 600px) 50vw, 240px" alt="{html.escape(GUESTS_ALTS_ES[p])}" '
+            f'loading="lazy" width="600" height="800">'
+            f'<figcaption>{html.escape(GUESTS_CAPTIONS_ES[p])}</figcaption></figure>'
+        )
+    return (
+        '<section class="guests-section">'
+        '<h2>Con nuestros clientes a bordo</h2>'
+        '<p class="guests-sub">Charters reales con grupos reales en Marbella, Puerto Banús y la Costa del Sol.</p>'
+        f'<div class="guests-grid">{"".join(items)}</div></section>'
+    )
+
+def videos_html_es(key):
+    slugs = ES_VIDEO_PLACEMENT.get(key, [])
+    if not slugs:
+        return ""
+    single = "single" if len(slugs) == 1 else ""
+    cards = []
+    for sl in slugs:
+        title, desc = VIDEOS_META_ES.get(sl, (sl, ""))
+        cards.append(
+            f'<figure class="video-card">'
+            f'<video controls preload="metadata" playsinline muted loop poster="/video/{sl}.jpg" width="720" height="1280">'
+            f'<source src="/video/{sl}.mp4" type="video/mp4"></video>'
+            f'<figcaption><strong>{html.escape(title)}</strong>{html.escape(desc)}</figcaption></figure>'
+        )
+    return f'<section class="video-section"><h2>Mira desde a bordo</h2><div class="video-grid {single}">{"".join(cards)}</div></section>'
+
+# Mini fleet-cards section for the hub (shows 3 boats with Spanish copy)
+def fleet_cards_es():
+    cards = []
+    BOATS = [
+        ("astondoa-40", "Astondoa 40 'Fufi'", "Yate español de 12,5 m, hasta 9 invitados. Interior clásico en teca y crema.", "/img/boats/astondoa-40/hero", 749, "Local"),
+        ("azimut-39", "Azimut 39", "Yate italiano flybridge de 12,5 m, hasta 11 invitados. Líneas modernas, cubierta superior.", "/img/boats/azimut-39/hero", 749, "Más invitados"),
+        ("mangusta-80", "Mangusta 80 'Nina'", "El yate más grande disponible en Marbella — 24 m con moto de agua incluida.", "/img/boats/mangusta-80/hero", 4719, "Insignia"),
+    ]
+    for slug, name, desc, base, low, tag in BOATS:
+        srcset = ", ".join(f"{base}-{w}.jpg {w}w" for w in (400, 600, 900))
+        cards.append(
+            f'<a href="/boats/{slug}/" class="boat-card">'
+            f'<div class="boat-card-img">'
+            f'<img src="{base}-600.jpg" srcset="{srcset}" sizes="(max-width: 600px) 100vw, 360px" '
+            f'alt="{html.escape(name)} — alquiler en Marbella" loading="lazy" width="600" height="375">'
+            f'<span class="boat-card-tag">{html.escape(tag)}</span></div>'
+            f'<div class="boat-card-body">'
+            f'<h3 class="boat-card-title">{html.escape(name)}</h3>'
+            f'<p class="boat-card-desc">{html.escape(desc)}</p>'
+            f'<div class="boat-card-meta">'
+            f'<span class="boat-card-price">Desde <strong>€{low}</strong><small>{"4h con patrón" if low > 1000 else "2h con patrón"}</small></span>'
+            f'<span class="boat-card-cta">Ver yate →</span></div></div></a>'
+        )
+    return (
+        '<section class="boat-grid-section" style="background:linear-gradient(180deg, var(--c-sand) 0%, #fff 100%);margin:2em -8px;border-radius:14px">'
+        '<div class="section-head">'
+        '<span class="eyebrow">Nuestra flota</span>'
+        '<h2>Yates para reservar hoy</h2>'
+        '<p>Los tres yates de nuestra flota en Puerto Banús — elige uno, escríbenos por WhatsApp y reservamos en 60 segundos.</p>'
+        '</div>'
+        f'<div class="boat-grid">{"".join(cards)}</div>'
+        '<div style="text-align:center;margin-top:20px">'
+        '<a href="/boats/" class="btn-hero-ghost" style="background:var(--c-sea-l);color:var(--c-sea-d);border-color:#cfe5f4">Ver toda la flota →</a>'
+        '</div></section>'
+    )
+
+# Inline body figure for each ES page
+INLINE_BODY_ES = {
+    "hub":          ("/img/boats/astondoa-40/sunset", [600,900,1200,1600], "Astondoa 40 entrando a Puerto Banús al atardecer"),
+    "yates":        ("/img/boats/mangusta-80/aerial-wake", [600,900,1200], "Mangusta 80 desde el aire — la nave insignia de la flota"),
+    "banus":        ("/img/boats/astondoa-40/sunset", [600,900,1200,1600], "Yate atracando en Puerto Banús al atardecer"),
+    "sin_licencia": ("/img/boats/azimut-39/hero", [600,900,1200,1600], "Yate Azimut 39 con patrón profesional — sin necesidad de licencia"),
+}
+
+def inline_body_html(key):
+    if key not in INLINE_BODY_ES:
+        return ""
+    base, widths, alt = INLINE_BODY_ES[key]
+    srcset = ", ".join(f"{base}-{w}.jpg {w}w" for w in widths if w <= 1200)
+    src = f"{base}-1200.jpg"
+    return (f'<figure class="inline-img"><img src="{src}" srcset="{srcset}" '
+            f'sizes="(max-width: 880px) 100vw, 720px" alt="{html.escape(alt)}" '
+            f'loading="lazy" width="1200" height="800"></figure>')
+
 def hero_local(slug_key):
     """Return (src, srcset, alt) by reusing the EN fleet image map."""
     HEROES = {
@@ -91,7 +230,9 @@ PAGES = [
 
 # ---------- Body HTML for each (ES content) ----------
 def body_hub():
-    return '''<p>Operamos dos yates a motor de 12,5 metros en Marbella — el <strong>Astondoa 40</strong> y el <strong>Azimut 39</strong>, ambos con salida desde <strong>Puerto Banús</strong> y con patrón profesional, combustible, bebidas, snacks, seguro e IVA incluidos. Los precios arrancan en <strong>€749 por 2 horas</strong> y llegan hasta <strong>€2.299 por un día completo de 8 horas</strong>.</p>
+    return '''<p>Operamos tres yates en Marbella — el <strong>Astondoa 40</strong>, el <strong>Azimut 39</strong> y el <strong>Mangusta 80</strong>, todos con salida desde <strong>Puerto Banús</strong> y con patrón profesional, combustible, bebidas, snacks, seguro e IVA incluidos. Los precios arrancan en <strong>€749 por 2 horas</strong> y llegan hasta <strong>€4.719 por 4 horas en el Mangusta 80 de lujo</strong> (incluye moto de agua).</p>
+
+''' + inline_body_html("hub") + '''
 
 <h2>Precios de alquiler de barcos en Marbella 2026</h2>
 <p>Misma flota, misma tripulación, precio transparente por hora. Sin recargo de temporada alta, sin recargo de levante, sin tasas portuarias añadidas en el muelle.</p>
@@ -113,8 +254,24 @@ def body_hub():
 <li><strong><a href="/boats/azimut-39/">Azimut 39</a></strong> — flybridge italiano, líneas modernas, hasta <strong>11 invitados</strong>. La opción para grupos más grandes (9+) o quien quiera disfrutar de la cubierta superior con tumbonas al sol.</li>
 </ul>
 
+''' + fleet_cards_es() + '''
+
 <h2>Salidas desde Puerto Banús</h2>
 <p>Toda nuestra flota atraca en <strong>Puerto Banús</strong> — el puerto más profundo y emblemático de la Costa del Sol. Te enviamos el número de pantalán y amarre 24 horas antes. Aparcamiento subterráneo a 5 minutos del muelle. Para más detalle, consulta nuestra <a href="/boats/">guía de la flota</a>.</p>
+
+<h2>Itinerarios típicos desde Marbella</h2>
+<p><strong>Oeste (Milla de Oro y Estepona):</strong> salida desde Puerto Banús, rumbo oeste pasando frente a Marbella Club, Puente Romano y Nikki Beach. Fondeamos en Cala del Faro para baño y snorkel. Vuelta con vistas al atardecer sobre Gibraltar en días claros.</p>
+<p><strong>Este (Cabopino y dunas):</strong> rumbo este por la Milla de Oro, fondeo en Río Real o Cabopino. Aguas más calmadas por las mañanas y excelente para grupos con niños. Ver nuestra <a href="/blog/kids-on-a-boat-marbella/">guía de barcos con niños</a> (en inglés).</p>
+<p><strong>Atardecer (2 h):</strong> salida 75 minutos antes del ocaso. Cruzamos la Milla de Oro a velocidad lenta, fondeo breve frente a Río Verde y vuelta con el sol cayendo tras La Concha. La opción más romántica para parejas.</p>
+
+<h2>Por qué reservar con nosotros</h2>
+<ul>
+<li><strong>Flota propia:</strong> tres yates en propiedad y mantenimiento directo. No somos intermediarios — eres tú quien sube a nuestros barcos.</li>
+<li><strong>Patrones locales:</strong> nuestros capitanes conocen cada cala, viento y horario portuario de la Costa del Sol.</li>
+<li><strong>Sin coste oculto:</strong> el precio que ves incluye combustible, bebidas (cerveza, vino blanco, cava), seguro e IVA. Cero sorpresas al pagar.</li>
+<li><strong>Reserva flexible:</strong> 30% al confirmar, 70% el día del charter. Reembolso completo hasta 7 días antes. Mal tiempo: 100% reembolso siempre.</li>
+<li><strong>Respuesta inmediata:</strong> WhatsApp atendido por personas reales — respuesta media en menos de 5 minutos.</li>
+</ul>
 
 <h2>Qué incluye cada alquiler</h2>
 <ul>
@@ -140,6 +297,8 @@ def body_hub():
 
 def body_yates():
     return '''<p>El alquiler de yates en Marbella significa subir a uno de nuestros yates a motor de 12,5 metros con flybridge, conducido por un patrón profesional desde Puerto Banús. Patrón, combustible, bebidas (cerveza, vino blanco, cava), seguro e IVA incluidos. <strong>Desde €749 por 2 horas.</strong></p>
+
+''' + inline_body_html("yates") + '''
 
 <h2>Nuestros yates a motor</h2>
 <ul>
@@ -184,6 +343,20 @@ def body_yates():
 <h2>Cómo reservar</h2>
 <p>Mándanos un WhatsApp con fecha, número de invitados y preferencia de barco. Respondemos en menos de 5 minutos con cotización exacta y disponibilidad. Sin coste hasta que confirmas — depósito del 30% al reservar, resto el día de la salida.</p>
 
+<h2>Qué hace especial cada yate de nuestra flota</h2>
+<p><strong>Astondoa 40 ("Fufi"):</strong> fabricado en Cádiz (Astondoa, astillero español de tradición), interior en teca y crema. Es nuestro yate más "mediterráneo" — perfecto para parejas y grupos pequeños que buscan estilo clásico. Capacidad 9 invitados, cocina equipada y dos camarotes para charter nocturno.</p>
+<p><strong>Azimut 39:</strong> diseño italiano flybridge con líneas modernas. Es el yate ideal para grupos más numerosos (hasta 11 invitados) que quieren disfrutar tanto de la cubierta inferior como del puesto de mando superior con tumbonas al sol. Aire acondicionado, salón con vistas panorámicas y bañera amplia.</p>
+<p><strong>Mangusta 80 ("Nina"):</strong> nuestra nave insignia. 24 metros de yate deportivo italiano de Overmarine, en flota desde 2020, con moto de agua Sea-Doo gratis para los invitados durante todo el día. Camarote principal, dos camarotes adicionales y galera con encimera para chef. Mínimo 4 horas, desde €4.719.</p>
+
+<h2>Extras opcionales</h2>
+<ul>
+<li><strong>Comida a bordo:</strong> tapas (€25/persona), almuerzo completo caliente (€60/persona), platos sushi (€35/persona). Pedido con 24 h de antelación.</li>
+<li><strong>Champán/bebidas premium:</strong> añade botellas específicas si prefieres marcas concretas. Nuestra cava de uso normal incluye cava español de calidad.</li>
+<li><strong>DJ y sistema de sonido:</strong> +€350 medio día, +€600 día completo. Ideal para fiestas de cumpleaños o despedidas.</li>
+<li><strong>Tender a chiringuito:</strong> te acercamos en lancha a Nikki Beach, Ocean Club o un beach club que prefieras. La entrada al club se paga aparte.</li>
+<li><strong>Moto de agua extra:</strong> €200/h adicional si quieres una segunda moto de agua (el Mangusta 80 ya incluye una).</li>
+</ul>
+
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿Cuánto cuesta alquilar un yate en Marbella?</summary><p>El alquiler de yates en Marbella en nuestra flota arranca en €749 por 2 horas en el Astondoa 40 o Azimut 39 (12,5 m, hasta 11 invitados). Un día completo de 8 horas cuesta €2.299. Para el Mangusta 80 (24 m de lujo, con moto de agua), desde €4.719 por 4 horas.</p></details>
 <details><summary>¿Necesito licencia para alquilar?</summary><p>No. Todos nuestros yates van con patrón profesional incluido. Solo necesitas DNI o pasaporte para subir a bordo.</p></details>
@@ -192,7 +365,9 @@ def body_yates():
 '''
 
 def body_banus():
-    return '''<p>Puerto Banús es la marina más emblemática de la Costa del Sol y la base de nuestra flota. Salimos desde aquí cada día con yates a motor de 12,5 m (Astondoa 40 y Azimut 39) — desde <strong>€749 por 2 horas</strong>, patrón, bebidas, combustible y todo incluido.</p>
+    return '''<p>Puerto Banús es la marina más emblemática de la Costa del Sol y la base de nuestra flota. Salimos desde aquí cada día con yates a motor de 12,5 m (Astondoa 40 y Azimut 39) y el yate de lujo Mangusta 80 — desde <strong>€749 por 2 horas</strong>, patrón, bebidas, combustible y todo incluido.</p>
+
+''' + inline_body_html("banus") + '''
 
 <h2>Por qué salir desde Puerto Banús</h2>
 <p>Tres motivos prácticos:</p>
@@ -231,6 +406,18 @@ def body_banus():
 <p><strong>Este:</strong> Milla de Oro, baño en Río Verde, parada en Cabopino para comida.</p>
 <p><strong>Atardecer 2h:</strong> Lento por la Milla de Oro, fondeo breve frente a Nikki Beach, regreso con el sol cayendo tras La Concha.</p>
 
+<h2>Mejor época del año para salir desde Puerto Banús</h2>
+<p>Mayo, junio y septiembre son los meses ideales — aguas cálidas (21-23°C), viento moderado por las mañanas y precios estables. Julio y agosto son pico de demanda con calor máximo (sea 24°C) pero también vientos de levante por las tardes que pueden hacer la mar más movida. Reserva con 2-3 semanas de antelación para sábados de julio y agosto. Octubre sigue ofreciendo buen tiempo con menos turistas — una de las mejores apuestas para grupos.</p>
+
+<h2>¿Qué hace Puerto Banús diferente al resto de marinas?</h2>
+<p>Tres ventajas concretas:</p>
+<ul>
+<li><strong>Profundidad y tamaño:</strong> 915 amarres y la bocana más profunda del litoral — único puerto local capaz de acoger superyates como nuestro Mangusta 80 de 24 m.</li>
+<li><strong>Servicios:</strong> repostaje, agua, electricidad y restaurantes a 5 minutos de los pantalanes. Antonio's Beach Club, Picasso y Mosh para comer antes de embarcar.</li>
+<li><strong>Vida nocturna:</strong> la marina conecta directamente con la zona de bares y discotecas, perfecto si quieres alargar la noche después del charter (Bocaccio a 90 segundos del pantalán).</li>
+</ul>
+<p>Si prefieres una marina más tranquila y central, ver la <a href="/blog/puerto-banus-vs-marbella-marina/">comparación Puerto Banús vs Marbella Marina</a> (en inglés).</p>
+
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿Cuánto cuesta alquilar un barco en Puerto Banús?</summary><p>Desde €749 por 2 horas en nuestro Astondoa 40 o Azimut 39, hasta €2.299 por un día completo. Todo incluido: patrón, combustible, bebidas, IVA.</p></details>
 <details><summary>¿Dónde aparco?</summary><p>Aparcamiento subterráneo Puerto Banús (€2/hora, €18/día). Llega 30 minutos antes en verano.</p></details>
@@ -239,6 +426,8 @@ def body_banus():
 
 def body_sin_licencia():
     return '''<p>El truco más rápido: <strong>no necesitas licencia náutica</strong> para alquilar un barco en Marbella si reservas uno de nuestros yates con patrón profesional incluido. Desde <strong>€749 por 2 horas</strong>, todo cubierto: patrón, combustible, bebidas, seguro, IVA.</p>
+
+''' + inline_body_html("sin_licencia") + '''
 
 <h2>Las dos opciones reales en Marbella</h2>
 <h3>1. Reserva con patrón (lo que hacemos nosotros)</h3>
@@ -287,6 +476,37 @@ def body_sin_licencia():
 <tr><td>8 horas</td><td><strong>€2.299</strong></td></tr>
 </tbody>
 </table>
+
+<h2>Qué incluye un día con patrón frente a alquilar sin licencia</h2>
+<table>
+<thead><tr><th>Aspecto</th><th>Con patrón (nuestra flota)</th><th>Sin licencia (5 m / 15 cv)</th></tr></thead>
+<tbody>
+<tr><td>Capacidad</td><td>9–12 invitados</td><td>4–5 personas</td></tr>
+<tr><td>Distancia de la costa</td><td>Sin límite práctico</td><td>Máximo 2 millas náuticas</td></tr>
+<tr><td>Horario</td><td>Día completo o noche</td><td>Solo de día (antes del ocaso)</td></tr>
+<tr><td>Bebidas a bordo</td><td>Cava, vino blanco, cerveza, refrescos</td><td>Lo que lleves tú</td></tr>
+<tr><td>Comodidades</td><td>Aire acondicionado, baño, cocina</td><td>Bañera básica, sin baño</td></tr>
+<tr><td>Conducción</td><td>Patrón profesional</td><td>Tú conduces</td></tr>
+<tr><td>Precio 2 h</td><td>€749 total</td><td>€130–€180 total</td></tr>
+<tr><td>Precio por persona (grupo de 6)</td><td>~€125 por persona</td><td>~€25 por persona si grupo de 5</td></tr>
+</tbody>
+</table>
+<p>Para grupos pequeños y presupuesto ajustado, una embarcación sin licencia tiene sentido. Para cualquier cosa con grupo de 6+, comodidad, bebidas a bordo o llegar a sitios bonitos como Cala del Faro, nuestra opción con patrón sale a cuenta y es infinitamente más relajante.</p>
+
+<h2>Sobre los patrones de nuestra flota</h2>
+<p>Todos nuestros patrones tienen titulación oficial española (PER — Patrón de Embarcaciones de Recreo, o superior) y al menos 5 años de experiencia en la Costa del Sol. Conocen cada fondeo, cada chiringuito accesible por mar, las horas óptimas para evitar el viento de levante, y cómo maniobrar Puerto Banús un sábado de agosto. Hablan español, inglés y la mayoría también francés o italiano. Dejarán que conduzcas un rato en tramos seguros si te apetece probar el timón.</p>
+
+<h2>Reglamentación española al detalle</h2>
+<p>La normativa de embarcaciones sin titulación viene del Real Decreto 875/2014. Los límites simultáneos son:</p>
+<ul>
+<li>Eslora máxima: 5 m (motor) / 6 m (vela)</li>
+<li>Potencia máxima: 15 cv</li>
+<li>Distancia máxima de la costa: 2 millas náuticas (~3,7 km)</li>
+<li>Solo horario diurno, sin pernoctación</li>
+<li>Conductor con al menos 18 años cumplidos</li>
+<li>Misma normativa de alcohol que para conducción terrestre</li>
+</ul>
+<p>El Servicio Marítimo de la Guardia Civil hace patrullas aleatorias en julio-agosto, especialmente entre Puerto Banús y Cabopino. Si te paran y el motor supera los 15 cv en una embarcación supuestamente "sin titulación", la multa al alquilador es de €600+ y al conductor le retiran el timón en el momento. Por eso los operadores serios son estrictos con el límite.</p>
 
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿De verdad puedo alquilar un barco sin licencia en Marbella?</summary><p>Sí — con dos opciones. Reserva un yate con patrón profesional (nuestra flota, desde €749/2h) y eres pasajero, sin ningún requisito de licencia. O alquila una embarcación pequeña (hasta 5 m / 15 cv) en operadores especializados, sin titulación pero con limitaciones (2 NM de costa, sólo de día).</p></details>
@@ -339,8 +559,8 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         "{{BOAT_GRID}}": "",
         "{{BREADCRUMBS}}": breadcrumbs,
         "{{BODY_HTML}}": body_html,
-        "{{VIDEO_SECTION}}": "",
-        "{{GUESTS_SECTION}}": "",
+        "{{VIDEO_SECTION}}": videos_html_es(key),
+        "{{GUESTS_SECTION}}": guests_html_es(key),
         "{{WHATSAPP_E164_NOPLUS}}": SITE['whatsapp_e164'].lstrip("+"),
         "{{PHONE_E164}}": SITE['phone_e164'],
         "{{PHONE_DISPLAY}}": SITE['phone_display'],
