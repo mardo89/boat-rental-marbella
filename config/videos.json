@@ -115,6 +115,24 @@
       "placement": [
         "/boats/azimut-39/"
       ]
+    },
+    {
+      "slug": "mangusta-80-white-stern",
+      "drive_id": "1L3raZNnDO-aHXwicNafLCArQ0nx_MK2L",
+      "crop_bottom_pct": 0,
+      "title": "Mangusta 80 (White) — stern with Sea-Doo jet ski",
+      "description": "Stern view of our Mangusta 80 'Nina' in Puerto Banús showing the Sea-Doo jet ski mounted on the swim platform — free for guests during the charter.",
+      "tags": [
+        "Mangusta 80",
+        "white",
+        "jet ski",
+        "Sea-Doo",
+        "Puerto Banús",
+        "Marbella"
+      ],
+      "placement": [
+        "/boats/mangusta-80-white/"
+      ]
     }
   ]
 }
