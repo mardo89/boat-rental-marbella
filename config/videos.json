@@ -65,6 +65,40 @@
         "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
         "/blog/what-to-bring-on-a-boat-charter/"
       ]
+    },
+    {
+      "slug": "astondoa-anchored",
+      "drive_id": "1N93lOHubWgv8GCApbr6rwPdiwiD_EpuO",
+      "crop_bottom_pct": 14,
+      "title": "Astondoa 40 'Fufi' at anchor off Marbella",
+      "description": "Drone view of our Astondoa 40 'Fufi' anchored off the Marbella coastline alongside another fleet yacht — typical mid-day swim stop.",
+      "tags": [
+        "Astondoa 40",
+        "Fufi",
+        "anchored",
+        "Marbella",
+        "aerial"
+      ],
+      "placement": [
+        "/boats/astondoa-40/"
+      ]
+    },
+    {
+      "slug": "mangusta-fruit-platter",
+      "drive_id": "1SXmjGED7OVYmz0ye--eipklnXTQMGipp",
+      "crop_bottom_pct": 0,
+      "title": "Chef-prepared fruit platter on the Mangusta 80",
+      "description": "Fresh fruit platter — pineapple, papaya, strawberries, raspberries, grapes and blueberries — served on the Mangusta 80 main saloon.",
+      "tags": [
+        "Mangusta 80",
+        "catering",
+        "luxury yacht",
+        "fruit platter",
+        "Marbella"
+      ],
+      "placement": [
+        "/boats/mangusta-80/"
+      ]
     }
   ]
 }

@@ -586,11 +586,11 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
 
     # Translate the visible chrome bits (header nav, footer, book-card, trust strip)
     NAV_REPLACE = {
-        '>Our Fleet<':'>Nuestra flota<',
+        '>Our Boats<':'>Nuestros barcos<',
         '>Yachts<':'>Yates<',
         '>Catamarans<':'>Catamaranes<',
         '>Puerto Banús<':'>Puerto Banús<',
-        '>Guide<':'>Guía<',
+        '>Blog<':'>Blog<',
         'aria-label="Menu"':'aria-label="Menú"',
         'aria-label="Primary"':'aria-label="Principal"',
         'aria-label="Call us"':'aria-label="Llámanos"',
