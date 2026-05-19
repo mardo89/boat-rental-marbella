@@ -84,6 +84,12 @@ strong{color:var(--c-ink);font-weight:700}
 .cta-book:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.12);filter:brightness(1.06)}
 .cta-wa:hover,.cta-tel:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.12);filter:brightness(1.06)}
 .nav-burger{display:none;background:none;border:0;font-size:1.5rem;color:var(--c-ink);cursor:pointer;padding:6px 10px}
+.lang-switch{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;letter-spacing:.04em;color:var(--c-muted);margin-left:8px;flex-shrink:0}
+.lang-switch a{color:var(--c-muted);text-decoration:none;padding:4px 6px;border-radius:6px;transition:background .12s,color .12s}
+.lang-switch a:hover{background:var(--c-sea-l);color:var(--c-sea-d);text-decoration:none}
+.lang-switch strong{color:var(--c-ink);padding:4px 6px}
+.lang-switch .sep{color:var(--c-line);user-select:none}
+@media (max-width:880px){.lang-switch{display:none}}
 
 /* ─── Hero ────────────────────────────── */
 .hero{position:relative;width:100%;overflow:hidden;background:#0a1f33;color:#fff}
