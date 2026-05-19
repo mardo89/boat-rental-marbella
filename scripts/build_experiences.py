@@ -34,7 +34,7 @@ EXPERIENCES = [
     {"slug":"/experiences/bachelor-hen-parties-marbella/", "title":"Bachelor & Hen Parties", "desc":"The full Marbella weekend script — yacht morning, beach-club tender, dinner ashore.", "image":"/img/customers/h02", "widths":(400,600,900), "tag":"Groups 9-12", "from":749},
     {"slug":"/sunset-cruise-marbella/", "title":"Romantic Sunset", "desc":"Two hours from Puerto Banús, under La Concha as the lights come on the Golden Mile.", "image":"/img/boats/astondoa-40/sunset", "widths":(600,900,1200), "tag":"Couples", "from":749},
     {"slug":"/experiences/family-boat-days-marbella/", "title":"Family Boat Days", "desc":"Calm-water itineraries, snorkel stops, snacks pre-loaded for under-12s.", "image":"/img/boats/astondoa-40/hero", "widths":(600,900,1200), "tag":"Kids friendly", "from":749},
-    {"slug":"/fishing-boat-rental-marbella/", "title":"Fishing Trips", "desc":"Inshore reef fishing — light tackle, dorado in summer, amberjack year-round.", "image":"/img/boats/astondoa-40/lifestyle", "widths":(600,900,1200), "tag":"", "from":749},
+    {"slug":"/fishing-boat-rental-marbella/", "title":"Fishing Trips", "desc":"Inshore reef fishing — light tackle, dorado in summer, amberjack year-round.", "image":"/img/fishing/big-catch-marbella", "widths":(600,900,1200), "tag":"", "from":749},
     {"slug":"/experiences/photoshoot-yacht-marbella/", "title":"Photoshoot on a Yacht", "desc":"Influencer, fashion or wedding photos with the La Concha backdrop.", "image":"/img/boats/mangusta-80/sun-pad", "widths":(600,900,1200), "tag":"Content day", "from":749},
     {"slug":"/jet-ski-rental-marbella/", "title":"Jet Ski Experience", "desc":"Sea-Doo from Puerto Banús — solo or two-up, briefing included, no licence needed.", "image":"/img/jet-ski/hero", "widths":(600,900,1200), "tag":"Adrenaline", "from":200},
     {"slug":"/blog/dolphin-watching-marbella/", "title":"Dolphin Watching", "desc":"4-hour offshore charter — bottlenose, common & striped pods 2–8 NM out.", "image":"/img/dolphins/dolphins-jumping", "widths":(600,900,1200), "tag":"Wildlife", "from":749},
@@ -45,7 +45,7 @@ EXPERIENCES = [
     {"slug":"/experiences/honeymoon-yacht-marbella/", "title":"Honeymoon Charter", "desc":"Private cruise + romantic dinner at anchor + sunrise breakfast onboard.", "image":"/img/boats/astondoa-40/interior", "widths":(600,900,1200), "tag":"Newlyweds", "from":1299},
     {"slug":"/experiences/snorkeling-tour-marbella/", "title":"Snorkeling Tour", "desc":"Two anchor stops at the clearest spots between Cabopino and Cala del Faro.", "image":"/img/customers/h11", "widths":(400,600,900), "tag":"All ages", "from":749},
     {"slug":"/experiences/birthday-yacht-marbella/", "title":"Birthday on a Yacht", "desc":"Cava at noon, anchor swim, dinner ashore — birthday script for any age.", "image":"/img/customers/h14", "widths":(400,600,900), "tag":"Celebrate", "from":749},
-    {"slug":"/experiences/proposal-yacht-marbella/", "title":"Proposal on a Yacht", "desc":"Skipper-coordinated proposal at sunset off Río Verde with cava and the rings hidden.", "image":"/img/customers/h04", "widths":(400,600,900), "tag":"She/he said yes", "from":749},
+    {"slug":"/experiences/proposal-yacht-marbella/", "title":"Proposal on a Yacht", "desc":"Skipper-coordinated proposal at sunset off Río Verde with cava and the rings hidden.", "image":"/img/proposal/proposal-moment", "widths":(600,900,1200), "tag":"She/he said yes", "from":749},
     {"slug":"/experiences/anniversary-yacht-marbella/", "title":"Anniversary Cruise", "desc":"A quiet half-day for two — sunset, an anchor stop, dinner at anchor or ashore.", "image":"/img/boats/astondoa-40/sunset", "widths":(600,900,1200), "tag":"Marking it", "from":749},
 ]
 
@@ -962,7 +962,9 @@ def render_birthday():
 def render_proposal():
     body = '''<p>The most-asked question we get from couples: "Can you help me propose on the boat?" Yes. We've done it a hundred times — and the skipper-coordinated script below is the playbook that actually works (vs the panicked-bag-of-Ring-Boxes approach). 2-hour sunset cruise, anchor stop at Río Verde, cava ready, ring hidden until the moment. €749 + a few small extras.</p>
 
-<figure class="inline-img"><img src="/img/customers/h04-1200.jpg" srcset="/img/customers/h04-600.jpg 600w, /img/customers/h04-900.jpg 900w" sizes="(max-width: 880px) 100vw, 720px" alt="Proposal on a yacht in Marbella — partner at the bow at sunset" loading="lazy" width="1200" height="800"></figure>
+<figure class="inline-img"><img src="/img/proposal/proposal-yes-1200.jpg" srcset="/img/proposal/proposal-yes-600.jpg 600w, /img/proposal/proposal-yes-900.jpg 900w, /img/proposal/proposal-yes-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="The yes moment on a Marbella yacht proposal — La Concha mountain behind, sunset light" loading="lazy" width="1200" height="800"></figure>
+
+<figure class="inline-img"><img src="/img/proposal/proposal-embrace-1200.jpg" srcset="/img/proposal/proposal-embrace-600.jpg 600w, /img/proposal/proposal-embrace-900.jpg 900w, /img/proposal/proposal-embrace-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Embrace right after the yes on a Marbella yacht charter" loading="lazy" width="1200" height="800"></figure>
 
 <h2>How the skipper-coordinated proposal works</h2>
 <p>You enquire by WhatsApp, we set up a quick voice call (skipper-to-proposer, 5 min) to coordinate:</p>
@@ -1029,9 +1031,9 @@ def render_proposal():
         sub="The skipper-coordinated playbook — sunset cava at Río Verde, La Concha behind, the photo you've imagined in your head for months.",
         eyebrow="Proposal · Marbella",
         body_html_str=body,
-        hero_base="/img/customers/h04",
-        hero_widths=(400,600,900),
-        hero_alt="Proposal on a yacht in Marbella — partner at the bow at sunset",
+        hero_base="/img/proposal/proposal-moment",
+        hero_widths=(600,900,1200,1600),
+        hero_alt="Proposal on a yacht in Marbella — bending knee at sunset with La Concha mountain behind",
         audience="Couples planning a proposal",
         breadcrumb_name="Proposal on a Yacht",
     )

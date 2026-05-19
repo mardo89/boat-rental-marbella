@@ -105,6 +105,11 @@ FLEET_IMAGES = {
     "jetski-marina":     _fl("/img/jet-ski/marina", [600,900,1200],      "Jet ski rental at Puerto Banús marina, Marbella"),
     "jetski-fleet":      _fl("/img/jet-ski/fleet",  [600,900,1200],      "Sea-Doo jet ski fleet ready for rental in Marbella"),
     "dolphins-jumping":  _fl("/img/dolphins/dolphins-jumping", [600,900,1200,1600], "Dolphins jumping next to our boat off Marbella — first-party photo from a charter"),
+    "fishing-big-catch": _fl("/img/fishing/big-catch-marbella", [600,900,1200,1600], "Big blue marlin landed on our Marbella fishing charter — two anglers, sport-fishing boat"),
+    "fishing-family":    _fl("/img/fishing/family-fishing-marbella", [600,900,1200,1600], "Young angler trolling off Marbella on our sport-fishing charter"),
+    "proposal-moment":   _fl("/img/proposal/proposal-moment", [600,900,1200,1600], "Proposal on a yacht in Marbella — bending knee with La Concha mountain behind"),
+    "proposal-yes":      _fl("/img/proposal/proposal-yes", [600,900,1200,1600], "Saying yes during a Marbella yacht proposal cruise — La Concha mountain backdrop"),
+    "proposal-embrace":  _fl("/img/proposal/proposal-embrace", [600,900,1200,1600], "Embrace after the proposal on a Marbella charter yacht"),
 }
 
 # Hero override per page slug (hub = empty string)
@@ -112,7 +117,7 @@ PAGE_HERO_MAP = {
     "": "mangusta-hero",
     "yacht-charter-marbella": "azimut-hero",
     "catamaran-rental-marbella": "mangusta-sun-pad",
-    "fishing-boat-rental-marbella": "astondoa-lifestyle",
+    "fishing-boat-rental-marbella": "fishing-big-catch",
     "boat-rental-no-license-marbella": "astondoa-hero",
     "luxury-yacht-rental-marbella": "mangusta-hero",
     "sunset-cruise-marbella": "astondoa-sunset",
@@ -157,7 +162,7 @@ PAGE_INLINE_MAP = {
     "": "astondoa-sunset",
     "yacht-charter-marbella": "mangusta-aerial",
     "catamaran-rental-marbella": "astondoa-hero",
-    "fishing-boat-rental-marbella": "astondoa-hero",
+    "fishing-boat-rental-marbella": "fishing-family",
     "boat-rental-no-license-marbella": "azimut-hero",
     "luxury-yacht-rental-marbella": "mangusta-profile",
     "sunset-cruise-marbella": "mangusta-hero",
@@ -574,7 +579,7 @@ def render(page: dict, kind: str, data: dict) -> str:
             ("catamaran-rental-marbella",    "Catamaran Rental","Looking for a catamaran? Our flat-deck Mangusta 80 sun-pad delivers the same.", "mangusta-sun-pad",  749,  "2h",  "Group favourite"),
             ("luxury-yacht-rental-marbella", "Luxury Yachts",   "Mangusta 80 — biggest yacht charter in Marbella, jet ski included.",            "mangusta-hero",     4719, "4h",  "Flagship"),
             ("boat-rental-no-license-marbella","No-License Boats","Skip the licence — our skippered fleet handles everything.",                  "astondoa-hero",     749,  "2h",  "Skippered"),
-            ("fishing-boat-rental-marbella", "Fishing Charters","Inshore fishing on our 12.5 m fleet — light tackle and trolling.",              "astondoa-lifestyle",749,  "2h",  ""),
+            ("fishing-boat-rental-marbella", "Fishing Charters","Inshore fishing on our 12.5 m fleet — light tackle and trolling.",              "fishing-big-catch",749,  "2h",  ""),
             ("boat-party-marbella",          "Boat Party",      "Group charters up to 12 guests — stag, hen, birthday, corporate.",              "mangusta-aerial",   749,  "2h",  ""),
             ("jet-ski-rental-marbella",      "Jet Ski Rental",  "Sea-Doo PWC from Puerto Banús — solo or two-up. Free with Mangusta 80.",        "jetski-hero",       200,  "1h",  "Sea-Doo"),
         ]
