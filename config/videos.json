@@ -12,9 +12,7 @@
         "anchored",
         "Marbella coast"
       ],
-      "placement": [
-        "/"
-      ]
+      "placement": []
     },
     {
       "slug": "puerto-banus-bow-shot",
@@ -60,7 +58,6 @@
         "Marbella charter"
       ],
       "placement": [
-        "/",
         "/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/",
         "/blog/what-to-bring-on-a-boat-charter/"
       ]
