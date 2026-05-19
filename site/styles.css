@@ -149,12 +149,13 @@ strong{color:var(--c-ink);font-weight:700}
 
 /* ─── Trust strip ─────────────────────── */
 .trust-strip{
-  background:linear-gradient(180deg, var(--c-sand) 0%, #fdf3d2 100%);
-  border-bottom:1px solid var(--c-sand-d);
+  background:linear-gradient(180deg, #14cdc5 0%, #0fb8b1 100%);
+  border-bottom:1px solid #0a9d97;
   font-size:.92rem;
   padding:14px 0;
-  color:var(--c-ink);
+  color:#fff;
 }
+.trust-strip a{color:#fff;text-decoration:underline}
 .trust-row{display:flex;gap:32px;flex-wrap:wrap;justify-content:center;align-items:center}
 .trust-item{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font-weight:500}
 .trust-ico{font-size:1.15rem;line-height:1}
