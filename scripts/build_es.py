@@ -269,7 +269,7 @@ def body_hub():
 <li><strong>Flota propia:</strong> tres yates en propiedad y mantenimiento directo. No somos intermediarios — eres tú quien sube a nuestros barcos.</li>
 <li><strong>Patrones locales:</strong> nuestros capitanes conocen cada cala, viento y horario portuario de la Costa del Sol.</li>
 <li><strong>Sin coste oculto:</strong> el precio que ves incluye combustible, bebidas (cerveza, vino blanco, cava), seguro e IVA. Cero sorpresas al pagar.</li>
-<li><strong>Reserva flexible:</strong> 30% al confirmar, 70% el día del charter. Reembolso completo hasta 7 días antes. Mal tiempo: 100% reembolso siempre.</li>
+<li><strong>Reserva flexible:</strong> 50% al reservar, resto la mañana del charter. Reembolso completo hasta 7 días antes. Mal tiempo: 100% reembolso siempre.</li>
 <li><strong>Respuesta inmediata:</strong> WhatsApp atendido por personas reales — respuesta media en menos de 5 minutos.</li>
 </ul>
 
@@ -286,7 +286,7 @@ def body_hub():
 <p>Comida cocinada, bebidas premium, DJ y tender a chiringuito son extras que puedes añadir al reservar.</p>
 
 <h2>Reserva en 60 segundos</h2>
-<p>Escríbenos por WhatsApp con tu fecha, número de invitados y presupuesto aproximado. Te respondemos con cotización al momento, sin compromiso. Pago del 30% al reservar, 70% el día de la salida. Cancelación gratuita hasta 7 días antes. Cancelación por mal tiempo siempre con reembolso del 100%.</p>
+<p>Escríbenos por WhatsApp con tu fecha, número de invitados y presupuesto aproximado. Te respondemos con cotización al momento, sin compromiso. 50% al reservar para asegurar la fecha, el resto la mañana del charter. Cancelación gratuita hasta 7 días antes. Cancelación por mal tiempo siempre con reembolso del 100%.</p>
 
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿Cuánto cuesta alquilar un barco en Marbella?</summary><p>El alquiler de barcos en Marbella en nuestra flota arranca en €749 por 2 horas y llega hasta €2.299 por un día completo de 8 horas. Mismo precio en cualquier temporada. Cada alquiler incluye patrón con titulación, combustible, bebidas, seguro e IVA. Para grupos grandes (11 invitados en el Azimut 39), el coste por persona baja a unos €70 para 2 horas.</p></details>
@@ -341,7 +341,7 @@ def body_yates():
 </ul>
 
 <h2>Cómo reservar</h2>
-<p>Mándanos un WhatsApp con fecha, número de invitados y preferencia de barco. Respondemos en menos de 5 minutos con cotización exacta y disponibilidad. Sin coste hasta que confirmas — depósito del 30% al reservar, resto el día de la salida.</p>
+<p>Mándanos un WhatsApp con fecha, número de invitados y preferencia de barco. Respondemos en menos de 5 minutos con cotización exacta y disponibilidad. Sin coste hasta que confirmas — depósito del 50% al reservar, resto el día de la salida.</p>
 
 <h2>Qué hace especial cada yate de nuestra flota</h2>
 <p><strong>Astondoa 40 ("Fufi"):</strong> fabricado en Cádiz (Astondoa, astillero español de tradición), interior en teca y crema. Es nuestro yate más "mediterráneo" — perfecto para parejas y grupos pequeños que buscan estilo clásico. Capacidad 9 invitados, cocina equipada y dos camarotes para charter nocturno.</p>

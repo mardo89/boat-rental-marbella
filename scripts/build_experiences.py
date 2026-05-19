@@ -143,7 +143,7 @@ def render_hub():
   <li><strong>Browse experiences</strong> on this page or directly via <a href="/boats/">Our Boats</a>.</li>
   <li><strong>Tap "Book now"</strong> (top-right) — drops your name, WhatsApp and budget into our chat.</li>
   <li><strong>We reply in under 5 minutes</strong> with 2–3 specific boat options and the exact total.</li>
-  <li><strong>30% deposit secures the date</strong> — balance the morning of the charter.</li>
+  <li><strong>50% deposit secures the date</strong> — balance the morning of the charter.</li>
   <li><strong>Show up at Puerto Banús</strong> 15 min before departure with photo ID. We'll have everything else.</li>
 </ol>
 
@@ -252,7 +252,7 @@ def render_family():
 </ul>
 
 <h2>How to book a family day</h2>
-<p>Tap <strong>Book now</strong> top-right — tell us how many adults + kids, ages of the kids, your date and rough budget. We reply with 2–3 specific boats and the exact total. 30% deposit secures the date, balance the morning of the charter. Free cancellation up to 7 days out; weather cancellations 100% refunded.</p>
+<p>Tap <strong>Book now</strong> top-right — tell us how many adults + kids, ages of the kids, your date and rough budget. We reply with 2–3 specific boats and the exact total. 50% deposit secures the date, balance the morning of the charter. Free cancellation up to 7 days out; weather cancellations 100% refunded.</p>
 
 <p>For the full guide on charting with kids in Marbella (life-jacket rules, packing list, things that go wrong), see our <a href="/blog/kids-on-a-boat-marbella/">kids on a boat in Marbella</a> blog post.</p>
 
@@ -463,7 +463,7 @@ def render_bachelor_hen():
 <li>BYO vs paid bar preference</li>
 <li>DJ + beach-club tender if you want them</li>
 </ul>
-<p>We respond within 5 min on WhatsApp with 2–3 specific boats + itemised quote. 30% deposit secures, balance morning of charter. Free cancellation up to 7 days out; weather cancellations 100% refunded.</p>
+<p>We respond within 5 min on WhatsApp with 2–3 specific boats + itemised quote. 50% deposit secures the date, balance the morning of the charter. Free cancellation up to 7 days out; weather cancellations 100% refunded.</p>
 
 <h2>Frequently asked questions</h2>
 <details><summary>Can we bring our own alcohol?</summary><p>Yes on private charters — BYO is welcomed. Cava, beer, white wine are already on board free. Spirits and mixers you bring yourself. Cans and plastic only on deck — no glass.</p></details>
@@ -585,7 +585,7 @@ def render_wedding():
 <p>Typical small-wedding all-in (boat + crew + drinks-on-board + light deck dressing, on the Azimut 39 for 8 guests + couple, 4-hour charter): <strong>€1,299</strong>. Add a catered cocktail-hour reception (€55/head x 10) = €1,849. Plus your photographer, celebrant, dinner ashore, hotel. Bigger weddings on the Mangusta 80 start around €4,719 for the boat alone.</p>
 
 <h2>Booking and lead time</h2>
-<p>Wedding bookings: <strong>3–6 months ahead</strong> for July/August Saturdays. Off-season (Oct–May): often available 4 weeks ahead. 30% deposit secures the date, balance 14 days before. Weather backup plan: we always identify a Plan-B date 1 week later when you book. Weather-cancelled weddings get 100% refund or free reschedule.</p>
+<p>Wedding bookings: <strong>3–6 months ahead</strong> for July/August Saturdays. Off-season (Oct–May): often available 4 weeks ahead. 50% deposit secures the date, balance 14 days before. Weather backup plan: we always identify a Plan-B date 1 week later when you book. Weather-cancelled weddings get 100% refund or free reschedule.</p>
 
 <p>Tap <strong>Book now</strong> top-right with date, party size, ceremony / reception split, and which boat you've shortlisted. We respond within 30 min during business hours with a full quote and timeline.</p>
 
