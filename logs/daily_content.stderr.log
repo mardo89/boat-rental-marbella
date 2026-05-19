@@ -1,0 +1,135 @@
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 182, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 114, in generate
+    msg = client.messages.create(
+        model=MODEL,
+    ...<2 lines>...
+        messages=[{"role": "user", "content": build_user_prompt(item)}],
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbBViCoLqUkd8Y9AMr4BV'}
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 182, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 114, in generate
+    msg = client.messages.create(
+        model=MODEL,
+    ...<2 lines>...
+        messages=[{"role": "user", "content": build_user_prompt(item)}],
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbBViE4VbvH9hNVT25DM2'}
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 182, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 114, in generate
+    msg = client.messages.create(
+        model=MODEL,
+    ...<2 lines>...
+        messages=[{"role": "user", "content": build_user_prompt(item)}],
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbBViExZurUka38j8QNTP'}
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 182, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 114, in generate
+    msg = client.messages.create(
+        model=MODEL,
+    ...<2 lines>...
+        messages=[{"role": "user", "content": build_user_prompt(item)}],
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbBViFs99CTx4Tn4Pi2ds'}
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 182, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 114, in generate
+    msg = client.messages.create(
+        model=MODEL,
+    ...<2 lines>...
+        messages=[{"role": "user", "content": build_user_prompt(item)}],
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbBViH9HRWhNAYEm4oeWk'}

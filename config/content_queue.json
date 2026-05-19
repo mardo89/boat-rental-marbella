@@ -2,36 +2,327 @@
   "_doc": "Pre-curated queue of pages for the daily-content routine. scripts/daily_content.py pops the head N items each run. kind = 'blog' or 'spoke'. After consumption the item is moved to 'consumed' for audit.",
   "items_per_day": 5,
   "queue": [
-
-    {"kind":"blog","slug":"blog/ferretti-94-vs-canados-86-marbella","primary_keyword":"Ferretti 94 vs Canados 86 Marbella","title":"Ferretti 94 vs Canados 86 in Marbella: Picking the Bigger Superyacht","target_words":1300,"fleet_focus":["ferretti-94","canados-86"]},
-    {"kind":"blog","slug":"blog/pershing-46-vs-azimut-39","primary_keyword":"Pershing 46 vs Azimut 39 Marbella","title":"Pershing 46 vs Azimut 39: Italian Style vs Performance in Marbella","target_words":1200,"fleet_focus":["pershing-46","azimut-39"]},
-    {"kind":"blog","slug":"blog/lagoon-380-only-catamaran-marbella","primary_keyword":"Lagoon 380 catamaran charter Marbella","title":"Lagoon 380 — The Only Catamaran in Our Marbella Fleet","target_words":1100,"fleet_focus":["lagoon-380"]},
-    {"kind":"blog","slug":"blog/fairline-targa-12m-marbella","primary_keyword":"Fairline Targa 12m Marbella charter","title":"Fairline Targa 12m: British Engineering, Marbella Sun","target_words":1100,"fleet_focus":["fairline-targa-12m"]},
-    {"kind":"blog","slug":"blog/bandido-yacht-charter-marbella","primary_keyword":"Bandido yacht charter Marbella","title":"Bandido: Our 30m Charter Yacht — Specs, Itineraries, Photos","target_words":1200,"fleet_focus":["bandido"]},
-
-    {"kind":"blog","slug":"blog/wedding-yacht-charter-marbella","primary_keyword":"wedding yacht charter Marbella","title":"Wedding Yacht Charter Marbella: Boats, Logistics, Photo Plan","target_words":1300},
-    {"kind":"blog","slug":"blog/bachelor-party-yacht-marbella","primary_keyword":"bachelor party yacht Marbella","title":"Bachelor Party Yacht Charter in Marbella: Boats, Routes & Add-ons","target_words":1200},
-    {"kind":"blog","slug":"blog/birthday-yacht-charter-marbella","primary_keyword":"birthday yacht charter Marbella","title":"Birthday on a Yacht in Marbella: Best Boats for the Day","target_words":1100},
-    {"kind":"blog","slug":"blog/corporate-yacht-charter-marbella","primary_keyword":"corporate yacht charter Marbella","title":"Corporate Yacht Charter Marbella: Team Days & Client Hosting","target_words":1200},
-    {"kind":"blog","slug":"blog/anniversary-yacht-charter-marbella","primary_keyword":"anniversary yacht charter Marbella","title":"Anniversary Charter in Marbella: Sunset Routes & Privacy","target_words":1100},
-    {"kind":"blog","slug":"blog/proposal-on-a-yacht-marbella","primary_keyword":"yacht proposal Marbella","title":"How to Propose on a Yacht in Marbella: Captain's Playbook","target_words":1100},
-
-    {"kind":"blog","slug":"blog/best-beaches-by-boat-marbella","primary_keyword":"best beaches by boat Marbella","title":"Best Beaches Reachable by Boat from Marbella","target_words":1300},
-    {"kind":"blog","slug":"blog/marbella-restaurants-by-boat","primary_keyword":"Marbella restaurants by boat","title":"Marbella Restaurants You Can Arrive at by Boat","target_words":1200},
-    {"kind":"blog","slug":"blog/best-snorkel-spots-marbella","primary_keyword":"best snorkel spots Marbella","title":"Best Snorkel Spots on a Marbella Charter (Captain's Picks)","target_words":1100},
-    {"kind":"blog","slug":"blog/best-anchorages-marbella","primary_keyword":"best anchorages Marbella","title":"Best Anchorages Between Estepona and Cabopino","target_words":1100},
-    {"kind":"blog","slug":"blog/sunset-spots-from-sea-marbella","primary_keyword":"sunset spots from sea Marbella","title":"Best Sunset Spots on the Marbella Coast — Seen from the Water","target_words":1000},
-
-    {"kind":"blog","slug":"blog/cabopino-charter-departures","primary_keyword":"Cabopino charter departure Marbella","title":"Charter Departures from Cabopino vs Puerto Banús","target_words":1100},
-    {"kind":"blog","slug":"blog/sotogrande-to-marbella-by-boat","primary_keyword":"Sotogrande to Marbella by boat","title":"Sotogrande to Marbella by Boat: Itinerary, Time, Cost","target_words":1100},
-    {"kind":"blog","slug":"blog/estepona-day-from-marbella","primary_keyword":"Estepona day trip from Marbella by boat","title":"Estepona Day Trip by Boat: Departures from Marbella","target_words":1100},
-    {"kind":"blog","slug":"blog/full-day-itinerary-marbella","primary_keyword":"full day yacht itinerary Marbella","title":"The Perfect 8-Hour Yacht Day in Marbella (Step-by-Step)","target_words":1200},
-
-    {"kind":"spoke","slug":"yacht-charter-puerto-banus","primary_keyword":"yacht charter Puerto Banús","title":"Yacht Charter Puerto Banús 2026: 17-Boat Fleet From €749","target_words":1400},
-    {"kind":"spoke","slug":"motor-yacht-rental-marbella","primary_keyword":"motor yacht rental Marbella","title":"Motor Yacht Rental Marbella 2026: From €749 on Our 17-Boat Fleet","target_words":1400},
-    {"kind":"spoke","slug":"superyacht-charter-marbella","primary_keyword":"superyacht charter Marbella","title":"Superyacht Charter Marbella: Mangusta 80, Ferretti 94 and Canados 86","target_words":1500},
-    {"kind":"spoke","slug":"speedboat-rental-marbella","primary_keyword":"speedboat rental Marbella","title":"Speedboat Rental Marbella: High-Performance Charters from Puerto Banús","target_words":1100},
-    {"kind":"spoke","slug":"family-yacht-charter-marbella","primary_keyword":"family yacht charter Marbella","title":"Family Yacht Charter Marbella: Boats, Kids, Snorkel, Snacks","target_words":1300}
+    {
+      "kind": "experience",
+      "slug": "experiences/champagne-sunset-marbella",
+      "primary_keyword": "champagne sunset cruise Marbella",
+      "title": "Champagne Sunset Cruise Marbella: VIP 2-Hour Charter",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/booze-cruise-marbella",
+      "primary_keyword": "booze cruise Marbella",
+      "title": "Booze Cruise Marbella: Private Yacht, BYO Welcomed",
+      "target_words": 1000
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/romantic-dinner-yacht-marbella",
+      "primary_keyword": "romantic dinner on a yacht Marbella",
+      "title": "Romantic Dinner on a Yacht in Marbella: Catered at Anchor",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/sailing-experience-marbella",
+      "primary_keyword": "sailing experience Marbella",
+      "title": "Sailing Experience Marbella: Half-Day on the Lagoon 380",
+      "target_words": 1100,
+      "fleet_focus": [
+        "lagoon-380"
+      ]
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/water-sports-marbella",
+      "primary_keyword": "water sports yacht Marbella",
+      "title": "Water Sports Yacht Day Marbella: Wakeboard, Banana, Donut, SUP",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/seabob-experience-marbella",
+      "primary_keyword": "Seabob experience Marbella",
+      "title": "Seabob Experience Marbella: Underwater Scooter Rental",
+      "target_words": 1000
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/overnight-yacht-marbella",
+      "primary_keyword": "overnight yacht Marbella",
+      "title": "Overnight on a Yacht in Marbella: Stay Aboard at Puerto Banús",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/multi-day-yacht-marbella",
+      "primary_keyword": "multi day yacht charter Marbella",
+      "title": "Multi-Day Yacht Charter Marbella: 3-Day Costa del Sol Itinerary",
+      "target_words": 1300
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/tarifa-day-trip-marbella",
+      "primary_keyword": "Tarifa day trip from Marbella by boat",
+      "title": "Tarifa Day Trip by Boat from Marbella",
+      "target_words": 1200
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/calas-marbella-tour",
+      "primary_keyword": "calas Marbella coves boat tour",
+      "title": "Calas of Marbella: Cove-Hopping Yacht Tour",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/marbella-by-night-cruise",
+      "primary_keyword": "Marbella by night yacht cruise",
+      "title": "Marbella by Night: Evening Yacht Cruise from Puerto Banús",
+      "target_words": 1000
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/nye-yacht-marbella",
+      "primary_keyword": "New Year's Eve yacht Marbella",
+      "title": "New Year's Eve on a Yacht in Marbella",
+      "target_words": 1000
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/africa-from-marbella-by-boat",
+      "primary_keyword": "see Africa from Marbella by boat",
+      "title": "See Africa from Marbella by Boat: The Day-Trip Reality",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/sotogrande-charter-from-marbella",
+      "primary_keyword": "Sotogrande yacht charter from Marbella",
+      "title": "Sotogrande Yacht Charter from Marbella: Half-Day Itinerary",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/estepona-by-boat-from-marbella",
+      "primary_keyword": "Estepona by boat from Marbella",
+      "title": "Estepona by Boat from Marbella: Day Itinerary",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/pirate-boat-marbella-kids",
+      "primary_keyword": "pirate boat Marbella kids",
+      "title": "Pirate Boat Experience Marbella: Themed Day for Kids",
+      "target_words": 1000
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/dj-boat-marbella",
+      "primary_keyword": "DJ boat party Marbella",
+      "title": "DJ Boat Party Marbella: Sound System, Speakers, Sunset",
+      "target_words": 1000
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/influencer-content-day-marbella",
+      "primary_keyword": "influencer content day Marbella yacht",
+      "title": "Influencer Content Day Marbella: Yacht-Based Shoot Package",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ferretti-94-vs-canados-86-marbella",
+      "primary_keyword": "Ferretti 94 vs Canados 86 Marbella",
+      "title": "Ferretti 94 vs Canados 86 in Marbella: Picking the Bigger Superyacht",
+      "target_words": 1300,
+      "fleet_focus": [
+        "ferretti-94",
+        "canados-86"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/pershing-46-vs-azimut-39",
+      "primary_keyword": "Pershing 46 vs Azimut 39 Marbella",
+      "title": "Pershing 46 vs Azimut 39: Italian Style vs Performance in Marbella",
+      "target_words": 1200,
+      "fleet_focus": [
+        "pershing-46",
+        "azimut-39"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/lagoon-380-only-catamaran-marbella",
+      "primary_keyword": "Lagoon 380 catamaran charter Marbella",
+      "title": "Lagoon 380 — The Only Catamaran in Our Marbella Fleet",
+      "target_words": 1100,
+      "fleet_focus": [
+        "lagoon-380"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fairline-targa-12m-marbella",
+      "primary_keyword": "Fairline Targa 12m Marbella charter",
+      "title": "Fairline Targa 12m: British Engineering, Marbella Sun",
+      "target_words": 1100,
+      "fleet_focus": [
+        "fairline-targa-12m"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bandido-yacht-charter-marbella",
+      "primary_keyword": "Bandido yacht charter Marbella",
+      "title": "Bandido: Our 30m Charter Yacht — Specs, Itineraries, Photos",
+      "target_words": 1200,
+      "fleet_focus": [
+        "bandido"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/wedding-yacht-charter-marbella",
+      "primary_keyword": "wedding yacht charter Marbella",
+      "title": "Wedding Yacht Charter Marbella: Boats, Logistics, Photo Plan",
+      "target_words": 1300
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/bachelor-party-yacht-marbella",
+      "primary_keyword": "bachelor party yacht Marbella",
+      "title": "Bachelor Party Yacht Charter in Marbella: Boats, Routes & Add-ons",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/birthday-yacht-charter-marbella",
+      "primary_keyword": "birthday yacht charter Marbella",
+      "title": "Birthday on a Yacht in Marbella: Best Boats for the Day",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/corporate-yacht-charter-marbella",
+      "primary_keyword": "corporate yacht charter Marbella",
+      "title": "Corporate Yacht Charter Marbella: Team Days & Client Hosting",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/anniversary-yacht-charter-marbella",
+      "primary_keyword": "anniversary yacht charter Marbella",
+      "title": "Anniversary Charter in Marbella: Sunset Routes & Privacy",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/proposal-on-a-yacht-marbella",
+      "primary_keyword": "yacht proposal Marbella",
+      "title": "How to Propose on a Yacht in Marbella: Captain's Playbook",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/best-beaches-by-boat-marbella",
+      "primary_keyword": "best beaches by boat Marbella",
+      "title": "Best Beaches Reachable by Boat from Marbella",
+      "target_words": 1300
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-restaurants-by-boat",
+      "primary_keyword": "Marbella restaurants by boat",
+      "title": "Marbella Restaurants You Can Arrive at by Boat",
+      "target_words": 1200
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/best-snorkel-spots-marbella",
+      "primary_keyword": "best snorkel spots Marbella",
+      "title": "Best Snorkel Spots on a Marbella Charter (Captain's Picks)",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/best-anchorages-marbella",
+      "primary_keyword": "best anchorages Marbella",
+      "title": "Best Anchorages Between Estepona and Cabopino",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sunset-spots-from-sea-marbella",
+      "primary_keyword": "sunset spots from sea Marbella",
+      "title": "Best Sunset Spots on the Marbella Coast — Seen from the Water",
+      "target_words": 1000
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/cabopino-charter-departures",
+      "primary_keyword": "Cabopino charter departure Marbella",
+      "title": "Charter Departures from Cabopino vs Puerto Banús",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sotogrande-to-marbella-by-boat",
+      "primary_keyword": "Sotogrande to Marbella by boat",
+      "title": "Sotogrande to Marbella by Boat: Itinerary, Time, Cost",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/estepona-day-from-marbella",
+      "primary_keyword": "Estepona day trip from Marbella by boat",
+      "title": "Estepona Day Trip by Boat: Departures from Marbella",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/full-day-itinerary-marbella",
+      "primary_keyword": "full day yacht itinerary Marbella",
+      "title": "The Perfect 8-Hour Yacht Day in Marbella (Step-by-Step)",
+      "target_words": 1200
+    },
+    {
+      "kind": "spoke",
+      "slug": "yacht-charter-puerto-banus",
+      "primary_keyword": "yacht charter Puerto Banús",
+      "title": "Yacht Charter Puerto Banús 2026: 17-Boat Fleet From €749",
+      "target_words": 1400
+    },
+    {
+      "kind": "spoke",
+      "slug": "motor-yacht-rental-marbella",
+      "primary_keyword": "motor yacht rental Marbella",
+      "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 17-Boat Fleet",
+      "target_words": 1400
+    },
+    {
+      "kind": "spoke",
+      "slug": "superyacht-charter-marbella",
+      "primary_keyword": "superyacht charter Marbella",
+      "title": "Superyacht Charter Marbella: Mangusta 80, Ferretti 94 and Canados 86",
+      "target_words": 1500
+    },
+    {
+      "kind": "spoke",
+      "slug": "speedboat-rental-marbella",
+      "primary_keyword": "speedboat rental Marbella",
+      "title": "Speedboat Rental Marbella: High-Performance Charters from Puerto Banús",
+      "target_words": 1100
+    },
+    {
+      "kind": "spoke",
+      "slug": "family-yacht-charter-marbella",
+      "primary_keyword": "family yacht charter Marbella",
+      "title": "Family Yacht Charter Marbella: Boats, Kids, Snorkel, Snacks",
+      "target_words": 1300
+    }
   ],
   "consumed": []
 }

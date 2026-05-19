@@ -24,7 +24,12 @@ for b in boats_cfg["boats"]:
     lines.append(url(f"boats/{b['slug']}", prio, "weekly"))
 lines.append(url("blog", "0.8", "weekly"))  # blog index
 lines.append(url("experiences", "0.9", "weekly"))  # experiences hub
-for exp_slug in ["experiences/family-boat-days-marbella","experiences/photoshoot-yacht-marbella","experiences/bachelor-hen-parties-marbella"]:
+for exp_slug in [
+    "experiences/family-boat-days-marbella","experiences/photoshoot-yacht-marbella","experiences/bachelor-hen-parties-marbella",
+    "experiences/wedding-yacht-marbella","experiences/corporate-yacht-marbella","experiences/honeymoon-yacht-marbella",
+    "experiences/snorkeling-tour-marbella","experiences/birthday-yacht-marbella","experiences/proposal-yacht-marbella",
+    "experiences/anniversary-yacht-marbella",
+]:
     lines.append(url(exp_slug, "0.85", "weekly"))
 for b in CONFIG["blog"]:
     lines.append(url(b["slug"], "0.7", "monthly"))

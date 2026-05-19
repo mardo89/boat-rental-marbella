@@ -1,16 +1,3 @@
-[2026-05-19 09:43:40] === Daily content run: 5 item(s) ===
-[2026-05-19 09:43:40] [1/5] blog · blog/ferretti-94-vs-canados-86-marbella
-[2026-05-19 09:43:40]   (dry-run, skipping generation)
-[2026-05-19 09:43:40] [2/5] blog · blog/pershing-46-vs-azimut-39
-[2026-05-19 09:43:40]   (dry-run, skipping generation)
-[2026-05-19 09:43:40] [3/5] blog · blog/lagoon-380-only-catamaran-marbella
-[2026-05-19 09:43:40]   (dry-run, skipping generation)
-[2026-05-19 09:43:40] [4/5] blog · blog/fairline-targa-12m-marbella
-[2026-05-19 09:43:40]   (dry-run, skipping generation)
-[2026-05-19 09:43:40] [5/5] blog · blog/bandido-yacht-charter-marbella
-[2026-05-19 09:43:40]   (dry-run, skipping generation)
-[2026-05-19 09:43:40] === Done: 0 succeeded, 0 failed ===
-
 [2026-05-19 10:00:01] === Daily content run: 5 item(s) ===
 [2026-05-19 10:00:01] [1/5] blog · blog/ferretti-94-vs-canados-86-marbella
 [2026-05-19 10:00:01]   ✗ FAILED: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha
