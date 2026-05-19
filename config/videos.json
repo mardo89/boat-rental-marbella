@@ -113,6 +113,7 @@
         "drone"
       ],
       "placement": [
+        "/boats/",
         "/boats/azimut-39/"
       ]
     },

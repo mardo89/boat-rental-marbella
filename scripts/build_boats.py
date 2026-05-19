@@ -535,7 +535,7 @@ def write_page(slug, title, meta, h1, sub, eyebrow, hero_img, hero_srcset, hero_
     # hero <picture>/<img> with a <video> element using the same video as the
     # body section's video — and strip the duplicate from the body.
     boat_videos = videos_for_url(url)
-    if boat_videos and slug.startswith("boats/"):
+    if boat_videos and (slug.startswith("boats/") or slug == "boats"):
         v = boat_videos[0]
         hero_video = (
             f'<video class="hero-video" autoplay muted loop playsinline '
