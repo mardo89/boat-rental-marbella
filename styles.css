@@ -80,6 +80,8 @@ strong{color:var(--c-ink);font-weight:700}
 }
 .cta-wa{background:var(--c-wa);color:#fff}
 .cta-tel{background:var(--c-sea);color:#fff;padding:9px 13px}
+.cta-book{background:var(--c-sea);color:#fff;padding:9px 16px;border:0;font-family:inherit;font-size:.92rem;font-weight:600;border-radius:999px;cursor:pointer;transition:transform .12s,box-shadow .12s,filter .12s}
+.cta-book:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.12);filter:brightness(1.06)}
 .cta-wa:hover,.cta-tel:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.12);filter:brightness(1.06)}
 .nav-burger{display:none;background:none;border:0;font-size:1.5rem;color:var(--c-ink);cursor:pointer;padding:6px 10px}
 
@@ -338,6 +340,7 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
 }
 .mobile-cta-wa{background:var(--c-wa);color:#fff;flex:1}
 .mobile-cta-tel{background:var(--c-sea);color:#fff;min-width:56px}
+.mobile-cta-book{background:var(--c-sea);color:#fff;flex:1;border:0;font-family:inherit;font-size:1rem;font-weight:700;cursor:pointer}
 .mobile-cta a:hover{text-decoration:none}
 
 /* ─── Responsive ──────────────────────── */
@@ -369,6 +372,26 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
   h2{font-size:1.4rem}
   .hero-meta{font-size:.92rem}
   .btn-hero-primary,.btn-hero-ghost{padding:12px 18px;font-size:.95rem}
+}
+
+/* ─── Booking modal ──────────────────── */
+.modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal[hidden]{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(10,31,51,.62);backdrop-filter:blur(4px);cursor:pointer}
+.modal-card{position:relative;background:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);max-width:460px;width:100%;padding:28px 26px 22px;max-height:90vh;overflow-y:auto}
+.modal-card h2{margin:0 0 6px;padding:0;border:0;font-size:1.45rem}
+.modal-sub{color:var(--c-muted);font-size:.95rem;margin:0 0 18px}
+.modal-close{position:absolute;top:10px;right:12px;background:transparent;border:0;width:34px;height:34px;font-size:1.6rem;line-height:1;color:var(--c-muted);cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .12s,color .12s}
+.modal-close:hover{background:var(--c-line-soft);color:var(--c-ink)}
+.modal-card form label{display:block;margin:0 0 12px;font-size:.88rem;font-weight:600;color:var(--c-ink)}
+.modal-card form input,.modal-card form textarea{display:block;width:100%;margin-top:6px;padding:10px 12px;border:1.5px solid var(--c-line);border-radius:10px;font-family:inherit;font-size:.98rem;color:var(--c-ink);background:var(--c-bg);transition:border-color .12s}
+.modal-card form input:focus,.modal-card form textarea:focus{outline:0;border-color:var(--c-sea)}
+.modal-card form textarea{resize:vertical;min-height:60px}
+.modal-card .btn-primary{width:100%;margin-top:6px}
+.modal-micro{color:var(--c-muted);font-size:.8rem;text-align:center;margin:10px 0 0}
+@media (max-width:520px){
+  .modal{padding:0;align-items:flex-end}
+  .modal-card{border-radius:18px 18px 0 0;max-height:88vh;width:100%;padding:22px 20px 28px}
 }
 
 /* ─── Print ──────────────────────────── */
