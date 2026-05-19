@@ -14,6 +14,7 @@ python3 scripts/build_blog_index.py
 python3 scripts/build_experiences.py
 python3 scripts/build_es.py
 python3 scripts/build_sitemap.py
+python3 scripts/inject_hero_video.py
 
 echo "→ commit main"
 git add -A
