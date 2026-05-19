@@ -637,6 +637,20 @@ def render_es(slug, key, title, meta, h1, sub, eyebrow, body, en_alt):
         '© 2026 Boat Rental Marbella. Independent affiliate guide — links to operators may pay commission. <a href="/">Home</a>':
             '© 2026 Boat Rental Marbella. <a href="/es/">Inicio</a>',
         '💬 Book on WhatsApp':'💬 Reservar por WhatsApp',
+        '📅 Book now':'📅 Reservar ahora',
+        '>📅 Book<':'>📅 Reservar<',
+        'Open booking form':'Abrir formulario de reserva',
+        'Book your charter':'Reserva tu charter',
+        "Send your details — we'll reply on WhatsApp within 5 minutes with available boats &amp; final price.":
+            'Envíanos tus datos — respondemos en WhatsApp en menos de 5 minutos con barcos disponibles y precio final.',
+        '>Your name':'>Tu nombre',
+        '>Your WhatsApp number':'>Tu número de WhatsApp',
+        '>Budget per charter (€)':'>Presupuesto por charter (€)',
+        '>Anything else? (date, group size, boat preference)':'>¿Algo más? (fecha, invitados, barco preferido)',
+        '6 guests, 8 August, around 4 hours…':'6 invitados, 8 de agosto, unas 4 horas…',
+        '💬 Send to WhatsApp':'💬 Enviar por WhatsApp',
+        'Opens WhatsApp with your details pre-filled. We reply with boat options + cotización.':
+            'Abre WhatsApp con tus datos rellenados. Te respondemos con opciones y cotización.',
         '/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/':'/blog/how-much-does-it-cost-to-rent-a-boat-in-marbella/',
     }
     for en_s, es_s in NAV_REPLACE.items():
