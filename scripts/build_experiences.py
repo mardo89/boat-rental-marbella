@@ -30,8 +30,8 @@ def jsonld_org():
 
 # Experience catalogue — each card on the hub. Order = display order on hub.
 EXPERIENCES = [
-    {"slug":"/boat-party-marbella/", "title":"Onboard Parties", "desc":"Stag, hen, birthday & group charters with BYO welcomed, DJ add-on, ice tubs.", "image":"/img/boats/mangusta-80/aerial-wake", "widths":(400,600,900), "tag":"Most popular", "from":749},
-    {"slug":"/experiences/bachelor-hen-parties-marbella/", "title":"Bachelor & Hen Parties", "desc":"The full Marbella weekend script — yacht morning, beach-club tender, dinner ashore.", "image":"/img/customers/h02", "widths":(400,600,900), "tag":"Groups 9-12", "from":749},
+    {"slug":"/boat-party-marbella/", "title":"Onboard Parties", "desc":"Stag, hen, birthday & group charters with BYO welcomed, DJ add-on, ice tubs.", "image":"/img/hen-party/hen-party-group-puerto-banus", "widths":(600,900,1200), "tag":"Most popular", "from":749},
+    {"slug":"/experiences/bachelor-hen-parties-marbella/", "title":"Bachelor & Hen Parties", "desc":"The full Marbella weekend script — yacht morning, beach-club tender, dinner ashore.", "image":"/img/hen-party/hen-party-dolphin-watching", "widths":(600,900,1200), "tag":"Groups 9-12", "from":749},
     {"slug":"/sunset-cruise-marbella/", "title":"Romantic Sunset", "desc":"Two hours from Puerto Banús, under La Concha as the lights come on the Golden Mile.", "image":"/img/boats/astondoa-40/sunset", "widths":(600,900,1200), "tag":"Couples", "from":749},
     {"slug":"/experiences/family-boat-days-marbella/", "title":"Family Boat Days", "desc":"Calm-water itineraries, snorkel stops, snacks pre-loaded for under-12s.", "image":"/img/boats/astondoa-40/hero", "widths":(600,900,1200), "tag":"Kids friendly", "from":749},
     {"slug":"/fishing-boat-rental-marbella/", "title":"Fishing Trips", "desc":"Inshore reef fishing — light tackle, dorado in summer, amberjack year-round.", "image":"/img/fishing/big-catch-marbella", "widths":(600,900,1200), "tag":"", "from":749},
@@ -407,7 +407,11 @@ def render_photoshoot():
 def render_bachelor_hen():
     body = f'''<p>Marbella has a specific Sunday script for bachelor and hen weekends — and the yacht charter is the anchor activity. This page is the practical playbook: which boat fits which group size, the standard 4-hour itinerary that builds the whole day, BYO rules, DJ add-ons, and how to coordinate the beach-club tender so you arrive when the day is already going.</p>
 
-<figure class="inline-img"><img src="/img/customers/h02-1200.jpg" srcset="/img/customers/h02-600.jpg 600w, /img/customers/h02-900.jpg 900w" sizes="(max-width: 880px) 100vw, 720px" alt="Hen party on a Marbella yacht charter" loading="lazy" width="1200" height="800"></figure>
+<figure class="inline-img"><img src="/img/hen-party/hen-party-dolphin-watching-1200.jpg" srcset="/img/hen-party/hen-party-dolphin-watching-600.jpg 600w, /img/hen-party/hen-party-dolphin-watching-900.jpg 900w, /img/hen-party/hen-party-dolphin-watching-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Hen party in pink on the bow watching dolphins — Marbella charter yacht" loading="lazy" width="1200" height="800"></figure>
+
+<figure class="inline-img"><img src="/img/hen-party/hen-party-balloon-letters-1200.jpg" srcset="/img/hen-party/hen-party-balloon-letters-600.jpg 600w, /img/hen-party/hen-party-balloon-letters-900.jpg 900w, /img/hen-party/hen-party-balloon-letters-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="HEN balloon letters on the yacht stern at Puerto Banús" loading="lazy" width="1200" height="800"></figure>
+
+<figure class="inline-img"><img src="/img/hen-party/hen-party-pink-balloons-bow-1200.jpg" srcset="/img/hen-party/hen-party-pink-balloons-bow-600.jpg 600w, /img/hen-party/hen-party-pink-balloons-bow-900.jpg 900w, /img/hen-party/hen-party-pink-balloons-bow-1200.jpg 1200w" sizes="(max-width: 880px) 100vw, 720px" alt="Pink balloon arch on the yacht bow at Puerto Banús for a Marbella hen party" loading="lazy" width="1200" height="800"></figure>
 
 <h2>Best boat for the group size</h2>
 <table>
@@ -505,9 +509,9 @@ def render_bachelor_hen():
         body_html_str=body,
         jsonld=jsonld,
         breadcrumbs='<nav class="breadcrumbs"><a href="/">Home</a> › <a href="/experiences/">Experiences</a> › <span>Bachelor & Hen Parties</span></nav>',
-        hero_base="/img/customers/h02",
-        hero_widths=(400,600,900),
-        hero_alt="Bachelor and hen party yacht charter in Marbella",
+        hero_base="/img/hen-party/hen-party-group-puerto-banus",
+        hero_widths=(600,900,1200,1600),
+        hero_alt="Hen party group at Puerto Banús on our charter yacht — Marbella bachelorette weekend",
     )
     print("  ✓ /experiences/bachelor-hen-parties-marbella/")
 

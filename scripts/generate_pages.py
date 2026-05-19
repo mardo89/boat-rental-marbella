@@ -110,6 +110,11 @@ FLEET_IMAGES = {
     "proposal-moment":   _fl("/img/proposal/proposal-moment", [600,900,1200,1600], "Proposal on a yacht in Marbella — bending knee with La Concha mountain behind"),
     "proposal-yes":      _fl("/img/proposal/proposal-yes", [600,900,1200,1600], "Saying yes during a Marbella yacht proposal cruise — La Concha mountain backdrop"),
     "proposal-embrace":  _fl("/img/proposal/proposal-embrace", [600,900,1200,1600], "Embrace after the proposal on a Marbella charter yacht"),
+    "hen-group-pb":      _fl("/img/hen-party/hen-party-group-puerto-banus", [600,900,1200,1600], "Hen party group at Puerto Banús on our charter yacht — Marbella bachelorette weekend"),
+    "hen-dolphins":      _fl("/img/hen-party/hen-party-dolphin-watching", [600,900,1200,1600], "Hen party watching dolphins from the bow on a Marbella charter yacht"),
+    "hen-pink-balloons": _fl("/img/hen-party/hen-party-pink-balloons-bow", [600,900,1200,1600], "Pink balloon arch on the yacht bow at Puerto Banús — hen party decor"),
+    "hen-balloon-letters":_fl("/img/hen-party/hen-party-balloon-letters", [600,900,1200,1600], "HEN balloon letters on a Marbella charter yacht stern"),
+    "hen-soft-pink":     _fl("/img/hen-party/hen-party-soft-pink-arch", [600,900,1200,1600], "Soft pink balloon arch on the yacht bow at Puerto Banús — hen party charter"),
 }
 
 # Hero override per page slug (hub = empty string)
@@ -121,7 +126,7 @@ PAGE_HERO_MAP = {
     "boat-rental-no-license-marbella": "astondoa-hero",
     "luxury-yacht-rental-marbella": "mangusta-hero",
     "sunset-cruise-marbella": "astondoa-sunset",
-    "boat-party-marbella": "mangusta-aerial",
+    "boat-party-marbella": "hen-group-pb",
     "boat-rental-puerto-banus": "astondoa-lifestyle",
     "jet-ski-rental-marbella": "jetski-hero",
     "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": "mangusta-aerial",
@@ -166,7 +171,7 @@ PAGE_INLINE_MAP = {
     "boat-rental-no-license-marbella": "azimut-hero",
     "luxury-yacht-rental-marbella": "mangusta-profile",
     "sunset-cruise-marbella": "mangusta-hero",
-    "boat-party-marbella": "mangusta-sun-pad",
+    "boat-party-marbella": "hen-dolphins",
     "boat-rental-puerto-banus": "astondoa-sunset",
     "jet-ski-rental-marbella": "jetski-cruise",
     "blog/how-much-does-it-cost-to-rent-a-boat-in-marbella": "astondoa-sunset",
