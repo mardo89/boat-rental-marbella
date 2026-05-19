@@ -105,6 +105,13 @@
       "title": "Jet Ski Rental Marbella 2026: Sea-Doo Rides from €200/h",
       "intent": "transactional",
       "target_words": 1200
+    },
+    {
+      "slug": "experiences/champagne-sunset-marbella",
+      "primary_keyword": "champagne sunset cruise Marbella",
+      "title": "Champagne Sunset Cruise Marbella: VIP 2-Hour Charter",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [

@@ -4,13 +4,6 @@
   "queue": [
     {
       "kind": "experience",
-      "slug": "experiences/champagne-sunset-marbella",
-      "primary_keyword": "champagne sunset cruise Marbella",
-      "title": "Champagne Sunset Cruise Marbella: VIP 2-Hour Charter",
-      "target_words": 1100
-    },
-    {
-      "kind": "experience",
       "slug": "experiences/booze-cruise-marbella",
       "primary_keyword": "booze cruise Marbella",
       "title": "Booze Cruise Marbella: Private Yacht, BYO Welcomed",
@@ -534,5 +527,14 @@
       "target_words": 1100
     }
   ],
-  "consumed": []
+  "consumed": [
+    {
+      "kind": "experience",
+      "slug": "experiences/champagne-sunset-marbella",
+      "primary_keyword": "champagne sunset cruise Marbella",
+      "title": "Champagne Sunset Cruise Marbella: VIP 2-Hour Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-05-19"
+    }
+  ]
 }

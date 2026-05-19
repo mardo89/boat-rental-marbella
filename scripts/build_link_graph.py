@@ -12,12 +12,9 @@ Run:
     python3 scripts/build_link_graph.py [--dry-run]
 """
 from __future__ import annotations
-import argparse, json, os, pathlib, re, sys, html
+import argparse, json, os, pathlib, re, subprocess, sys, html
 
-try:
-    from anthropic import Anthropic
-except ImportError:
-    sys.exit("pip install anthropic")
+BACKEND = os.environ.get("CLAUDE_BACKEND", "cli")
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content"
@@ -36,8 +33,24 @@ def load_env():
                     return
 
 load_env()
-client = Anthropic()
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
+
+def _call(prompt: str, timeout_s: int = 900) -> str:
+    if BACKEND == "cli":
+        proc = subprocess.run(
+            ["claude", "-p", prompt, "--output-format", "text"],
+            capture_output=True, text=True, timeout=timeout_s,
+        )
+        if proc.returncode != 0:
+            raise RuntimeError(f"claude CLI exit {proc.returncode}: {proc.stderr[-300:]}")
+        return proc.stdout.strip()
+    from anthropic import Anthropic
+    client = Anthropic()
+    msg = client.messages.create(
+        model=MODEL, max_tokens=8000,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return msg.content[0].text.strip()
 
 def load_pages():
     pages = []
@@ -83,12 +96,11 @@ Pages:
 
 def build_graph(pages):
     pages_blob = json.dumps([{k:v for k,v in p.items() if k!="key_facts"} | {"key_facts": p["key_facts"][:5]} for p in pages], ensure_ascii=False, indent=2)
-    msg = client.messages.create(
-        model=MODEL, max_tokens=8000,
-        messages=[{"role":"user","content": GRAPH_PROMPT + pages_blob}],
-    )
-    raw = msg.content[0].text.strip()
+    raw = _call(GRAPH_PROMPT + pages_blob + "\n\nReturn JSON only, no prose, no markdown fences.")
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
+    start = raw.find("{"); end = raw.rfind("}")
+    if start >= 0 and end > start:
+        raw = raw[start:end + 1]
     return json.loads(raw)["graph"]
 
 # ---------- HTML injection ----------

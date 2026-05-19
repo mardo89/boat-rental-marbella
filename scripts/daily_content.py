@@ -49,14 +49,31 @@ def load_env():
 
 load_env()
 
-try:
-    from anthropic import Anthropic  # noqa: E402
-except ImportError:
-    log("FATAL: anthropic SDK not installed (pip install anthropic)")
-    sys.exit(1)
-
-client = Anthropic()
+# Generation backend: "cli" = Claude Code CLI (uses your subscription, no API credit)
+#                     "api" = Anthropic API (needs ANTHROPIC_API_KEY credit)
+BACKEND = os.environ.get("CLAUDE_BACKEND", "cli")
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
+
+def _call_cli(system: str, user: str, timeout_s: int = 600) -> str:
+    """Invoke `claude -p` (headless mode). Uses local subscription, not API credit."""
+    full = system + "\n\n---\n\nUSER REQUEST:\n\n" + user
+    proc = subprocess.run(
+        ["claude", "-p", full, "--output-format", "text"],
+        capture_output=True, text=True, timeout=timeout_s,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"claude CLI exit {proc.returncode}: {proc.stderr[-300:]}")
+    return proc.stdout.strip()
+
+def _call_api(system: str, user: str) -> str:
+    from anthropic import Anthropic
+    client = Anthropic()
+    msg = client.messages.create(
+        model=MODEL, max_tokens=8000,
+        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+        messages=[{"role": "user", "content": user}],
+    )
+    return msg.content[0].text.strip()
 
 # ---------- system prompt — short, fleet-aware ----------
 def system_prompt():
@@ -111,14 +128,15 @@ TARGET WORD COUNT: {item.get('target_words', 1200)}
 Return only the JSON object specified in the system message."""
 
 def generate(item: dict) -> dict:
-    msg = client.messages.create(
-        model=MODEL,
-        max_tokens=8000,
-        system=[{"type": "text", "text": system_prompt(), "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": build_user_prompt(item)}],
-    )
-    raw = msg.content[0].text.strip()
+    system = system_prompt()
+    user = build_user_prompt(item) + "\n\nReturn the JSON object only — no prose before or after, no markdown fences."
+    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
+    # CLI may emit a status line / extra text — extract the JSON object span
+    start = raw.find("{")
+    end   = raw.rfind("}")
+    if start >= 0 and end > start:
+        raw = raw[start:end + 1]
     try:
         return json.loads(raw)
     except json.JSONDecodeError:

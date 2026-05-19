@@ -24,3 +24,9 @@
 [2026-05-19 10:00:02]   ✗ FAILED: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha
 [2026-05-19 10:00:02] === Done: 0 succeeded, 5 failed ===
 
+[2026-05-19 11:33:05] === Daily content run: 1 item(s) ===
+[2026-05-19 11:33:05] [1/1] experience · experiences/champagne-sunset-marbella
+[2026-05-19 11:34:35]   ✓ saved content/experiences_champagne-sunset-marbella.json
+[2026-05-19 11:34:35]   ✓ added to keyword_map.spokes
+[2026-05-19 11:34:35] queue: 72 remaining, 1 consumed total
+[2026-05-19 11:34:35] running deploy.sh …
