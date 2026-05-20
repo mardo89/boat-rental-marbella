@@ -91,7 +91,13 @@ def main():
     posts = load_blog_posts()
     cards = "\n".join(render_post_card(p) for p in posts)
 
-    body = f'''<p class="byline">{len(posts)} guides · Updated {date.today().strftime("%-d %B %Y")} · Reviewed by local Marbella skippers</p>
+    body = f'''<div class="post-author" style="margin-bottom:20px">
+  <img class="post-author-avatar" src="/img/team/andra-kiirkivi-200.jpg" srcset="/img/team/andra-kiirkivi-200.jpg 200w, /img/team/andra-kiirkivi-400.jpg 400w" sizes="56px" width="56" height="56" alt="Andra Kiirkivi — Founder &amp; CEO, Boat Rental Marbella" loading="lazy">
+  <div class="post-author-meta">
+    <span class="post-author-name">Edited by <strong>Andra Kiirkivi</strong></span>
+    <span class="post-author-role">Founder &amp; CEO · {len(posts)} guides · Updated {date.today().strftime("%-d %B %Y")} · Reviewed by local Marbella skippers</span>
+  </div>
+</div>
 
 <p>Everything we'd tell a friend who'd just booked a flight to Málaga and asked "should we charter a boat?" — broken into focused guides you can read in 5 minutes each. Prices in 2026 €, rules for Spanish waters, weather windows, and the small things that make the difference between a great day and a forgettable one.</p>
 

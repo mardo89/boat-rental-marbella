@@ -482,8 +482,15 @@ def render(page: dict, kind: str, data: dict) -> str:
     # H1 is rendered in hero overlay (no duplicate); only byline + body here
     byline = ""
     if kind == "blog":
-        byline = (f'<p class="byline">By <strong>{html.escape(SITE.get("editorial_team", SITE["name"]))}</strong>'
-                  f' · Updated 16 May 2026 · Reviewed by local Marbella skippers</p>\n')
+        byline = (
+            '<div class="post-author">\n'
+            '  <img class="post-author-avatar" src="/img/team/andra-kiirkivi-200.jpg" srcset="/img/team/andra-kiirkivi-200.jpg 200w, /img/team/andra-kiirkivi-400.jpg 400w" sizes="56px" width="56" height="56" alt="Andra Kiirkivi — Founder &amp; CEO, Boat Rental Marbella" loading="lazy">\n'
+            '  <div class="post-author-meta">\n'
+            '    <span class="post-author-name">By <strong>Andra Kiirkivi</strong></span>\n'
+            '    <span class="post-author-role">Founder &amp; CEO · Boat Rental Marbella · Updated 20 May 2026 · Reviewed by local Marbella skippers</span>\n'
+            '  </div>\n'
+            '</div>\n'
+        )
     body = byline + body
     url = f"{SITE['base_url']}/{page['slug']}/".replace("//", "/").replace(":/", "://")
     if not page['slug']:
