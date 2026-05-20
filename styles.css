@@ -429,3 +429,11 @@ details p{margin:.6em 0 0;color:var(--c-ink-soft)}
 .founder-avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--c-sea);flex-shrink:0;display:block}
 .founder-id strong{font-size:1.1rem}
 .founder-id .role{margin-bottom:0}
+
+/* Blog post author byline */
+.post-author{display:flex;align-items:center;gap:14px;padding:14px 0;margin:0 0 28px;border-bottom:1px solid var(--c-line)}
+.post-author-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--c-sea);flex-shrink:0}
+.post-author-meta{display:flex;flex-direction:column;gap:2px;font-size:.95rem}
+.post-author-name{color:var(--c-ink)}
+.post-author-name strong{font-weight:700}
+.post-author-role{color:var(--c-muted);font-size:.85rem;line-height:1.4}
