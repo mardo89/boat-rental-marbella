@@ -574,8 +574,27 @@
           1600
         ]
       ],
-      "hero_local_alt": "Dubhe — Small day boat for short charters and quick coastal escapes",
-      "gallery_local": [],
+      "hero_local_alt": "Dubhe — cheapest licence-free boat in Puerto Banús, head-on bow shot",
+      "gallery_local": [
+        {
+          "src": "/img/boats/dubhe/puerto-banus-1200.jpg",
+          "srcset": [
+            [
+              "/img/boats/dubhe/puerto-banus-600.jpg",
+              600
+            ],
+            [
+              "/img/boats/dubhe/puerto-banus-900.jpg",
+              900
+            ],
+            [
+              "/img/boats/dubhe/puerto-banus-1200.jpg",
+              1200
+            ]
+          ],
+          "alt": "Dubhe side profile docked at Puerto Banús marina with bimini top up"
+        }
+      ],
       "model_year": null,
       "price_2h": 230,
       "price_3h": 280,
