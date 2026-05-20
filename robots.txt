@@ -41,4 +41,6 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
+Sitemap: https://boatrentalinmarbella.com/sitemap-index.xml
 Sitemap: https://boatrentalinmarbella.com/sitemap.xml
+Sitemap: https://boatrentalinmarbella.com/sitemap-video.xml
