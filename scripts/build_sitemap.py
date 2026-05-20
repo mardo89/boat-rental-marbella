@@ -41,3 +41,12 @@ for es_slug, prio in [("es", "0.95"), ("es/alquiler-de-yates-marbella", "0.9"),
 lines.append('</urlset>')
 (ROOT / "site" / "sitemap.xml").write_text("\n".join(lines) + "\n")
 print(f"sitemap.xml written ({1 + len(CONFIG['spokes']) + len(CONFIG['blog'])} URLs)")
+
+# Sitemap index — points search engines at both the URL sitemap and the video sitemap.
+index = ['<?xml version="1.0" encoding="UTF-8"?>',
+         '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+         f'  <sitemap><loc>{SITE["base_url"]}/sitemap.xml</loc><lastmod>{TODAY}</lastmod></sitemap>',
+         f'  <sitemap><loc>{SITE["base_url"]}/sitemap-video.xml</loc><lastmod>{TODAY}</lastmod></sitemap>',
+         '</sitemapindex>']
+(ROOT / "site" / "sitemap-index.xml").write_text("\n".join(index) + "\n")
+print("sitemap-index.xml written (URL + video)")
