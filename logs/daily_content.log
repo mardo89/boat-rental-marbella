@@ -482,3 +482,55 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-26 10:18:56]   ✓ added to keyword_map.spokes
 [2026-05-26 10:18:56] queue: 32 remaining, 41 consumed total
 [2026-05-26 10:18:56] running deploy.sh …
+[2026-05-26 10:18:58] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-26 15:44:45] === Daily content run (kind-balanced): 5 blog + 2 landing = 7 item(s) ===
+[2026-05-26 15:44:45] [1/7] blog · blog/starlite-marbella-yacht-charter
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] [2/7] blog · blog/marbella-luxury-weekend-yacht
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] [3/7] blog · blog/puerto-banus-boat-show-guide
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] [4/7] blog · blog/spanish-f1-grand-prix-marbella-yacht
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] [5/7] blog · blog/marbella-pride-yacht-party
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] [6/7] spoke · speedboat-rental-marbella
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] [7/7] spoke · family-yacht-charter-marbella
+[2026-05-26 15:44:45]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-26 15:44:45] === Done: 0 succeeded, 7 failed ===
+
+[2026-05-26 18:30:07] === Daily content run (kind-balanced): 5 blog + 2 landing = 7 item(s) ===
+[2026-05-26 18:30:07] [1/7] blog · blog/starlite-marbella-yacht-charter
+[2026-05-26 18:30:31]   ✓ saved content/blog_starlite-marbella-yacht-charter.json
+[2026-05-26 18:30:31]   ✓ added to keyword_map.blog
+[2026-05-26 18:30:31] [2/7] blog · blog/marbella-luxury-weekend-yacht
+[2026-05-26 18:31:00]   ✓ saved content/blog_marbella-luxury-weekend-yacht.json
+[2026-05-26 18:31:00]   ✓ added to keyword_map.blog
+[2026-05-26 18:31:00] [3/7] blog · blog/puerto-banus-boat-show-guide
+[2026-05-26 18:31:29]   ✓ saved content/blog_puerto-banus-boat-show-guide.json
+[2026-05-26 18:31:29]   ✓ added to keyword_map.blog
+[2026-05-26 18:31:29] [4/7] blog · blog/spanish-f1-grand-prix-marbella-yacht
+[2026-05-26 18:31:54]   ✓ saved content/blog_spanish-f1-grand-prix-marbella-yacht.json
+[2026-05-26 18:31:54]   ✓ added to keyword_map.blog
+[2026-05-26 18:31:54] [5/7] blog · blog/marbella-pride-yacht-party
+[2026-05-26 18:32:14]   ✓ saved content/blog_marbella-pride-yacht-party.json
+[2026-05-26 18:32:14]   ✓ added to keyword_map.blog
+[2026-05-26 18:32:14] [6/7] spoke · speedboat-rental-marbella
+[2026-05-26 18:32:35]   ✓ saved content/speedboat-rental-marbella.json
+[2026-05-26 18:32:35]   ✓ added to keyword_map.spokes
+[2026-05-26 18:32:35] [7/7] spoke · family-yacht-charter-marbella
+[2026-05-26 18:33:04]   ✓ saved content/family-yacht-charter-marbella.json
+[2026-05-26 18:33:04]   ✓ added to keyword_map.spokes
+[2026-05-26 18:33:04] queue: 25 remaining, 48 consumed total
+[2026-05-26 18:33:04] queue under threshold (25 < 30) — auto-refilling…
+[2026-05-26 18:33:06] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-26 18:33:06] running deploy.sh …

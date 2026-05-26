@@ -252,6 +252,20 @@
       "title": "Superyacht Charter Marbella: Mangusta 80, Ferretti 94 and Canados 86",
       "intent": "transactional",
       "target_words": 1500
+    },
+    {
+      "slug": "speedboat-rental-marbella",
+      "primary_keyword": "speedboat rental Marbella",
+      "title": "Speedboat Rental Marbella: High-Performance Charters from Puerto Banús",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "family-yacht-charter-marbella",
+      "primary_keyword": "family yacht charter Marbella",
+      "title": "Family Yacht Charter Marbella: Boats, Kids, Snorkel, Snacks",
+      "intent": "transactional",
+      "target_words": 1300
     }
   ],
   "blog": [
@@ -485,6 +499,41 @@
       "title": "The Perfect 8-Hour Yacht Day in Marbella (Step-by-Step)",
       "intent": "informational",
       "target_words": 1200
+    },
+    {
+      "slug": "blog/starlite-marbella-yacht-charter",
+      "primary_keyword": "yacht charter Starlite Marbella",
+      "title": "Yacht Charter for Starlite Marbella 2026: Day-of Itinerary + Nagüeles Pickup",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-luxury-weekend-yacht",
+      "primary_keyword": "Marbella Luxury Weekend yacht",
+      "title": "Marbella Luxury Weekend: Charter a Yacht for Puerto Banús' Showcase Days",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/puerto-banus-boat-show-guide",
+      "primary_keyword": "Puerto Banús boat show",
+      "title": "Puerto Banús International Boat Show: Visit Days, Charters On-Site, Demo Sails",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/spanish-f1-grand-prix-marbella-yacht",
+      "primary_keyword": "F1 Spanish Grand Prix Marbella yacht",
+      "title": "F1 Spanish GP Weekend in Marbella: Yacht Charters for the Drive-Down Crowd",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-pride-yacht-party",
+      "primary_keyword": "Marbella Pride yacht party",
+      "title": "Marbella Pride Yacht Party: BYO Cava, DJ Add-on, Rainbow Bunting From €749",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }
