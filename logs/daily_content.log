@@ -371,3 +371,114 @@
 [2026-05-25 14:06:42]   ✓ added to keyword_map.spokes
 [2026-05-25 14:06:42] queue: 42 remaining, 31 consumed total
 [2026-05-25 14:06:42] running deploy.sh …
+[2026-05-25 14:06:43] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-25 15:30:45] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-25 15:30:45] [1/10] blog · blog/sunset-spots-from-sea-marbella
+[2026-05-25 15:30:47]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:47] [2/10] blog · blog/cabopino-charter-departures
+[2026-05-25 15:30:49]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:49] [3/10] blog · blog/sotogrande-to-marbella-by-boat
+[2026-05-25 15:30:51]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:51] [4/10] blog · blog/estepona-day-from-marbella
+[2026-05-25 15:30:52]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:52] [5/10] blog · blog/full-day-itinerary-marbella
+[2026-05-25 15:30:54]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:54] [6/10] experience · experiences/dj-boat-marbella
+[2026-05-25 15:30:56]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:56] [7/10] experience · experiences/influencer-content-day-marbella
+[2026-05-25 15:30:58]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:30:58] [8/10] spoke · yacht-charter-puerto-banus
+[2026-05-25 15:31:00]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:31:00] [9/10] spoke · motor-yacht-rental-marbella
+[2026-05-25 15:31:02]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:31:02] [10/10] spoke · superyacht-charter-marbella
+[2026-05-25 15:31:04]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 15:31:04] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-25 18:39:13] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-25 18:39:13] [1/10] blog · blog/sunset-spots-from-sea-marbella
+[2026-05-25 18:39:16]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:16] [2/10] blog · blog/cabopino-charter-departures
+[2026-05-25 18:39:18]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:18] [3/10] blog · blog/sotogrande-to-marbella-by-boat
+[2026-05-25 18:39:20]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:20] [4/10] blog · blog/estepona-day-from-marbella
+[2026-05-25 18:39:22]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:22] [5/10] blog · blog/full-day-itinerary-marbella
+[2026-05-25 18:39:24]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:24] [6/10] experience · experiences/dj-boat-marbella
+[2026-05-25 18:39:26]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:26] [7/10] experience · experiences/influencer-content-day-marbella
+[2026-05-25 18:39:28]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:28] [8/10] spoke · yacht-charter-puerto-banus
+[2026-05-25 18:39:29]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:29] [9/10] spoke · motor-yacht-rental-marbella
+[2026-05-25 18:39:31]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:31] [10/10] spoke · superyacht-charter-marbella
+[2026-05-25 18:39:33]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-25 18:39:33] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-26 10:02:18] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-26 10:02:18] [1/10] blog · blog/sunset-spots-from-sea-marbella
+[2026-05-26 10:02:28]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:28] [2/10] blog · blog/cabopino-charter-departures
+[2026-05-26 10:02:30]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:30] [3/10] blog · blog/sotogrande-to-marbella-by-boat
+[2026-05-26 10:02:31]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:31] [4/10] blog · blog/estepona-day-from-marbella
+[2026-05-26 10:02:32]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:32] [5/10] blog · blog/full-day-itinerary-marbella
+[2026-05-26 10:02:34]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:34] [6/10] experience · experiences/dj-boat-marbella
+[2026-05-26 10:02:35]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:35] [7/10] experience · experiences/influencer-content-day-marbella
+[2026-05-26 10:02:37]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:37] [8/10] spoke · yacht-charter-puerto-banus
+[2026-05-26 10:02:38]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:38] [9/10] spoke · motor-yacht-rental-marbella
+[2026-05-26 10:02:40]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:40] [10/10] spoke · superyacht-charter-marbella
+[2026-05-26 10:02:41]   ✗ FAILED: RuntimeError: claude CLI exit 1: 
+[2026-05-26 10:02:41] === Done: 0 succeeded, 10 failed ===
+
+[2026-05-26 10:13:32] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-26 10:13:32] [1/10] blog · blog/sunset-spots-from-sea-marbella
+[2026-05-26 10:14:01]   ✓ saved content/blog_sunset-spots-from-sea-marbella.json
+[2026-05-26 10:14:01]   ✓ added to keyword_map.blog
+[2026-05-26 10:14:01] [2/10] blog · blog/cabopino-charter-departures
+[2026-05-26 10:14:25]   ✓ saved content/blog_cabopino-charter-departures.json
+[2026-05-26 10:14:25]   ✓ added to keyword_map.blog
+[2026-05-26 10:14:25] [3/10] blog · blog/sotogrande-to-marbella-by-boat
+[2026-05-26 10:15:01]   ✓ saved content/blog_sotogrande-to-marbella-by-boat.json
+[2026-05-26 10:15:01]   ✓ added to keyword_map.blog
+[2026-05-26 10:15:01] [4/10] blog · blog/estepona-day-from-marbella
+[2026-05-26 10:15:32]   ✓ saved content/blog_estepona-day-from-marbella.json
+[2026-05-26 10:15:32]   ✓ added to keyword_map.blog
+[2026-05-26 10:15:32] [5/10] blog · blog/full-day-itinerary-marbella
+[2026-05-26 10:16:03]   ✓ saved content/blog_full-day-itinerary-marbella.json
+[2026-05-26 10:16:03]   ✓ added to keyword_map.blog
+[2026-05-26 10:16:03] [6/10] experience · experiences/dj-boat-marbella
+[2026-05-26 10:16:46]   ✓ saved content/experiences_dj-boat-marbella.json
+[2026-05-26 10:16:46]   ✓ added to keyword_map.spokes
+[2026-05-26 10:16:46] [7/10] experience · experiences/influencer-content-day-marbella
+[2026-05-26 10:17:19]   ✓ saved content/experiences_influencer-content-day-marbella.json
+[2026-05-26 10:17:19]   ✓ added to keyword_map.spokes
+[2026-05-26 10:17:19] [8/10] spoke · yacht-charter-puerto-banus
+[2026-05-26 10:17:54]   ✓ saved content/yacht-charter-puerto-banus.json
+[2026-05-26 10:17:54]   ✓ added to keyword_map.spokes
+[2026-05-26 10:17:54] [9/10] spoke · motor-yacht-rental-marbella
+[2026-05-26 10:18:25]   ✓ saved content/motor-yacht-rental-marbella.json
+[2026-05-26 10:18:25]   ✓ added to keyword_map.spokes
+[2026-05-26 10:18:25] [10/10] spoke · superyacht-charter-marbella
+[2026-05-26 10:18:56]   ✓ saved content/superyacht-charter-marbella.json
+[2026-05-26 10:18:56]   ✓ added to keyword_map.spokes
+[2026-05-26 10:18:56] queue: 32 remaining, 41 consumed total
+[2026-05-26 10:18:56] running deploy.sh …

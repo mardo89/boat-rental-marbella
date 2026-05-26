@@ -217,6 +217,41 @@
       "title": "Pirate Boat Experience Marbella: Themed Day for Kids",
       "intent": "transactional",
       "target_words": 1000
+    },
+    {
+      "slug": "experiences/dj-boat-marbella",
+      "primary_keyword": "DJ boat party Marbella",
+      "title": "DJ Boat Party Marbella: Sound System, Speakers, Sunset",
+      "intent": "transactional",
+      "target_words": 1000
+    },
+    {
+      "slug": "experiences/influencer-content-day-marbella",
+      "primary_keyword": "influencer content day Marbella yacht",
+      "title": "Influencer Content Day Marbella: Yacht-Based Shoot Package",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "yacht-charter-puerto-banus",
+      "primary_keyword": "yacht charter Puerto Banús",
+      "title": "Yacht Charter Puerto Banús 2026: 17-Boat Fleet From €749",
+      "intent": "transactional",
+      "target_words": 1400
+    },
+    {
+      "slug": "motor-yacht-rental-marbella",
+      "primary_keyword": "motor yacht rental Marbella",
+      "title": "Motor Yacht Rental Marbella 2026: From €749 on Our 17-Boat Fleet",
+      "intent": "transactional",
+      "target_words": 1400
+    },
+    {
+      "slug": "superyacht-charter-marbella",
+      "primary_keyword": "superyacht charter Marbella",
+      "title": "Superyacht Charter Marbella: Mangusta 80, Ferretti 94 and Canados 86",
+      "intent": "transactional",
+      "target_words": 1500
     }
   ],
   "blog": [
@@ -415,6 +450,41 @@
       "title": "Best Anchorages Between Estepona and Cabopino",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/sunset-spots-from-sea-marbella",
+      "primary_keyword": "sunset spots from sea Marbella",
+      "title": "Best Sunset Spots on the Marbella Coast — Seen from the Water",
+      "intent": "informational",
+      "target_words": 1000
+    },
+    {
+      "slug": "blog/cabopino-charter-departures",
+      "primary_keyword": "Cabopino charter departure Marbella",
+      "title": "Charter Departures from Cabopino vs Puerto Banús",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/sotogrande-to-marbella-by-boat",
+      "primary_keyword": "Sotogrande to Marbella by boat",
+      "title": "Sotogrande to Marbella by Boat: Itinerary, Time, Cost",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/estepona-day-from-marbella",
+      "primary_keyword": "Estepona day trip from Marbella by boat",
+      "title": "Estepona Day Trip by Boat: Departures from Marbella",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/full-day-itinerary-marbella",
+      "primary_keyword": "full day yacht itinerary Marbella",
+      "title": "The Perfect 8-Hour Yacht Day in Marbella (Step-by-Step)",
+      "intent": "informational",
+      "target_words": 1200
     }
   ]
 }

@@ -65,6 +65,29 @@ def _call_cli(system: str, user: str, timeout_s: int = 600) -> str:
         raise RuntimeError(f"claude CLI exit {proc.returncode}: {proc.stderr[-300:]}")
     return proc.stdout.strip()
 
+def _call_deepseek(system: str, user: str) -> str:
+    """Call DeepSeek API (fast, cheap, primary backend)."""
+    import requests as _req
+    key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
+    if not key:
+        raise RuntimeError("DEEPSEEK_API_KEY not set")
+    resp = _req.post(
+        "https://api.deepseek.com/chat/completions",
+        json={
+            "model": "deepseek-chat",
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            "max_tokens": 8000,
+            "temperature": 0.7,
+        },
+        headers={"Authorization": f"Bearer {key}"},
+        timeout=120,
+    )
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"].strip()
+
 def _call_api(system: str, user: str) -> str:
     from anthropic import Anthropic
     client = Anthropic()
@@ -130,7 +153,12 @@ Return only the JSON object specified in the system message."""
 def generate(item: dict) -> dict:
     system = system_prompt()
     user = build_user_prompt(item) + "\n\nReturn the JSON object only — no prose before or after, no markdown fences."
-    raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
+    # Try DeepSeek first, fall back to CLI/API
+    try:
+        raw = _call_deepseek(system, user)
+    except Exception as ds_err:
+        log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+        raw = _call_cli(system, user) if BACKEND == "cli" else _call_api(system, user)
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
     # CLI may emit a status line / extra text — extract the JSON object span
     start = raw.find("{")
