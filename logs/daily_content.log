@@ -534,3 +534,47 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-26 18:33:04] queue under threshold (25 < 30) — auto-refilling…
 [2026-05-26 18:33:06] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-26 18:33:06] running deploy.sh …
+[2026-05-26 18:33:08] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-27 11:08:04] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-27 11:08:04] [1/5] blog · blog/san-pedro-feria-2026
+[2026-05-27 11:08:04]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-27 11:08:04] [2/5] blog · blog/marbella-feria-san-bernabe
+[2026-05-27 11:08:04]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-27 11:08:04] [3/5] blog · blog/marbella-international-film-festival-yacht
+[2026-05-27 11:08:04]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-27 11:08:04] [4/5] blog · blog/marbella-fashion-week-yacht
+[2026-05-27 11:08:04]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-27 11:08:04] [5/5] blog · blog/ironman-marbella-yacht-recovery
+[2026-05-27 11:08:04]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-27 11:08:04] queue under threshold (25 < 30) — auto-refilling…
+[2026-05-27 11:08:10] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-27 11:08:10] === Done: 0 succeeded, 5 failed ===
+
+[2026-05-27 15:40:33] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-27 15:40:33] [1/5] blog · blog/san-pedro-feria-2026
+[2026-05-27 15:41:06]   ✓ saved content/blog_san-pedro-feria-2026.json
+[2026-05-27 15:41:07]   ✓ added to keyword_map.blog
+[2026-05-27 15:41:07] [2/5] blog · blog/marbella-feria-san-bernabe
+[2026-05-27 15:41:40]   ✓ saved content/blog_marbella-feria-san-bernabe.json
+[2026-05-27 15:41:40]   ✓ added to keyword_map.blog
+[2026-05-27 15:41:40] [3/5] blog · blog/marbella-international-film-festival-yacht
+[2026-05-27 15:42:12]   ✓ saved content/blog_marbella-international-film-festival-yacht.json
+[2026-05-27 15:42:12]   ✓ added to keyword_map.blog
+[2026-05-27 15:42:12] [4/5] blog · blog/marbella-fashion-week-yacht
+[2026-05-27 15:42:43]   ✓ saved content/blog_marbella-fashion-week-yacht.json
+[2026-05-27 15:42:43]   ✓ added to keyword_map.blog
+[2026-05-27 15:42:43] [5/5] blog · blog/ironman-marbella-yacht-recovery
+[2026-05-27 15:43:19]   ✓ saved content/blog_ironman-marbella-yacht-recovery.json
+[2026-05-27 15:43:19]   ✓ added to keyword_map.blog
+[2026-05-27 15:43:19] queue: 20 remaining, 53 consumed total
+[2026-05-27 15:43:19] queue under threshold (20 < 30) — auto-refilling…
+[2026-05-27 15:43:22] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-27 15:43:22] running deploy.sh …

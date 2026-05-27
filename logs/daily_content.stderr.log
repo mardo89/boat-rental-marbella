@@ -853,3 +853,83 @@ Traceback (most recent call last):
   File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 65, in _call_cli
     raise RuntimeError(f"claude CLI exit {proc.returncode}: {proc.stderr[-300:]}")
 RuntimeError: claude CLI exit 1: 
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 158, in generate
+    raw = _call_deepseek(system, user)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 73, in _call_deepseek
+    raise RuntimeError("DEEPSEEK_API_KEY not set")
+RuntimeError: DEEPSEEK_API_KEY not set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 301, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 160, in generate
+    log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+    ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'warning'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 158, in generate
+    raw = _call_deepseek(system, user)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 73, in _call_deepseek
+    raise RuntimeError("DEEPSEEK_API_KEY not set")
+RuntimeError: DEEPSEEK_API_KEY not set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 301, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 160, in generate
+    log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+    ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'warning'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 158, in generate
+    raw = _call_deepseek(system, user)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 73, in _call_deepseek
+    raise RuntimeError("DEEPSEEK_API_KEY not set")
+RuntimeError: DEEPSEEK_API_KEY not set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 301, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 160, in generate
+    log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+    ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'warning'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 158, in generate
+    raw = _call_deepseek(system, user)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 73, in _call_deepseek
+    raise RuntimeError("DEEPSEEK_API_KEY not set")
+RuntimeError: DEEPSEEK_API_KEY not set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 301, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 160, in generate
+    log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+    ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'warning'
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 158, in generate
+    raw = _call_deepseek(system, user)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 73, in _call_deepseek
+    raise RuntimeError("DEEPSEEK_API_KEY not set")
+RuntimeError: DEEPSEEK_API_KEY not set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 301, in main
+    data = generate(item)
+  File "/Users/mardosoo/aiangels-blog/.claude/worktrees/heuristic-goldberg-51d681/seo_sites/boat_rental_marbella/scripts/daily_content.py", line 160, in generate
+    log.warning(f"DeepSeek failed ({ds_err}), falling back to {BACKEND}")
+    ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'warning'

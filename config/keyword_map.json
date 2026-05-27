@@ -534,6 +534,41 @@
       "title": "Marbella Pride Yacht Party: BYO Cava, DJ Add-on, Rainbow Bunting From €749",
       "intent": "informational",
       "target_words": 1100
+    },
+    {
+      "slug": "blog/san-pedro-feria-2026",
+      "primary_keyword": "San Pedro feria boat",
+      "title": "San Pedro Feria 2026: Dates, the Yacht Day Before, the Recovery Cruise After",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-feria-san-bernabe",
+      "primary_keyword": "Marbella feria San Bernabé yacht",
+      "title": "Marbella Feria San Bernabé: How to Combine the Casetas With a Daytime Cruise",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-international-film-festival-yacht",
+      "primary_keyword": "Marbella Film Festival yacht",
+      "title": "Marbella International Film Festival: Premiere-Day Yacht Charter Playbook",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marbella-fashion-week-yacht",
+      "primary_keyword": "Marbella fashion week yacht",
+      "title": "Marbella Fashion Week: Yacht Charters for Press Day, Shows & After-Parties",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/ironman-marbella-yacht-recovery",
+      "primary_keyword": "Ironman 70.3 Marbella yacht",
+      "title": "Ironman 70.3 Marbella: Pre-Race Calm Cruise & Post-Race Recovery Charter",
+      "intent": "informational",
+      "target_words": 1100
     }
   ]
 }

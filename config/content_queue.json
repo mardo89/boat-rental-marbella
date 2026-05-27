@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/san-pedro-feria-2026",
-      "primary_keyword": "San Pedro feria boat",
-      "title": "San Pedro Feria 2026: Dates, the Yacht Day Before, the Recovery Cruise After",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-feria-san-bernabe",
-      "primary_keyword": "Marbella feria San Bernabé yacht",
-      "title": "Marbella Feria San Bernabé: How to Combine the Casetas With a Daytime Cruise",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-international-film-festival-yacht",
-      "primary_keyword": "Marbella Film Festival yacht",
-      "title": "Marbella International Film Festival: Premiere-Day Yacht Charter Playbook",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-fashion-week-yacht",
-      "primary_keyword": "Marbella fashion week yacht",
-      "title": "Marbella Fashion Week: Yacht Charters for Press Day, Shows & After-Parties",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/ironman-marbella-yacht-recovery",
-      "primary_keyword": "Ironman 70.3 Marbella yacht",
-      "title": "Ironman 70.3 Marbella: Pre-Race Calm Cruise & Post-Race Recovery Charter",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/nye-yacht-charter-marbella",
       "primary_keyword": "New Year's Eve yacht Marbella",
       "title": "New Year's Eve on a Yacht in Marbella: Fireworks View From Puerto Banús",
@@ -582,6 +547,46 @@
       "title": "Family Yacht Charter Marbella: Boats, Kids, Snorkel, Snacks",
       "target_words": 1300,
       "consumed_at": "2026-05-26"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/san-pedro-feria-2026",
+      "primary_keyword": "San Pedro feria boat",
+      "title": "San Pedro Feria 2026: Dates, the Yacht Day Before, the Recovery Cruise After",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-feria-san-bernabe",
+      "primary_keyword": "Marbella feria San Bernabé yacht",
+      "title": "Marbella Feria San Bernabé: How to Combine the Casetas With a Daytime Cruise",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-international-film-festival-yacht",
+      "primary_keyword": "Marbella Film Festival yacht",
+      "title": "Marbella International Film Festival: Premiere-Day Yacht Charter Playbook",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-fashion-week-yacht",
+      "primary_keyword": "Marbella fashion week yacht",
+      "title": "Marbella Fashion Week: Yacht Charters for Press Day, Shows & After-Parties",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/ironman-marbella-yacht-recovery",
+      "primary_keyword": "Ironman 70.3 Marbella yacht",
+      "title": "Ironman 70.3 Marbella: Pre-Race Calm Cruise & Post-Race Recovery Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
     }
   ],
   "refill_threshold": 30,
