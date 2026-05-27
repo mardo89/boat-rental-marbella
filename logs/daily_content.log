@@ -578,3 +578,32 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-27 15:43:19] queue under threshold (20 < 30) — auto-refilling…
 [2026-05-27 15:43:22] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-27 15:43:22] running deploy.sh …
+[2026-05-27 15:44:11] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-27 18:30:16] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-27 18:30:16] [1/5] blog · blog/nye-yacht-charter-marbella
+[2026-05-27 18:30:47]   ✓ saved content/blog_nye-yacht-charter-marbella.json
+[2026-05-27 18:30:47]   ✓ added to keyword_map.blog
+[2026-05-27 18:30:47] [2/5] blog · blog/semana-santa-yacht-marbella
+[2026-05-27 18:31:21]   ✓ saved content/blog_semana-santa-yacht-marbella.json
+[2026-05-27 18:31:21]   ✓ added to keyword_map.blog
+[2026-05-27 18:31:21] [3/5] blog · blog/reyes-magos-yacht-charter
+[2026-05-27 18:32:03]   ✓ saved content/blog_reyes-magos-yacht-charter.json
+[2026-05-27 18:32:03]   ✓ added to keyword_map.blog
+[2026-05-27 18:32:03] [4/5] blog · blog/san-juan-night-boat-marbella
+[2026-05-27 18:32:33]   ✓ saved content/blog_san-juan-night-boat-marbella.json
+[2026-05-27 18:32:33]   ✓ added to keyword_map.blog
+[2026-05-27 18:32:33] [5/5] blog · blog/marbella-polo-cup-yacht
+[2026-05-27 18:33:03]   ✓ saved content/blog_marbella-polo-cup-yacht.json
+[2026-05-27 18:33:03]   ✓ added to keyword_map.blog
+[2026-05-27 18:33:03] queue: 15 remaining, 58 consumed total
+[2026-05-27 18:33:03] queue under threshold (15 < 30) — auto-refilling…
+[2026-05-27 18:33:06] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-27 18:33:06] running deploy.sh …

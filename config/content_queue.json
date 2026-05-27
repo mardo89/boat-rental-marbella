@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/nye-yacht-charter-marbella",
-      "primary_keyword": "New Year's Eve yacht Marbella",
-      "title": "New Year's Eve on a Yacht in Marbella: Fireworks View From Puerto Banús",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/semana-santa-yacht-marbella",
-      "primary_keyword": "Semana Santa yacht Marbella",
-      "title": "Semana Santa in Marbella by Boat: Quiet-Side Cruises Between Processions",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/reyes-magos-yacht-charter",
-      "primary_keyword": "Reyes Magos yacht Marbella",
-      "title": "Reyes Magos Weekend in Marbella: Family Yacht Charter for the Kids' Holiday",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/san-juan-night-boat-marbella",
-      "primary_keyword": "San Juan night boat Marbella",
-      "title": "Noche de San Juan in Marbella: Watch the Beach Bonfires From a Yacht",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-polo-cup-yacht",
-      "primary_keyword": "Marbella polo yacht",
-      "title": "Marbella Polo Cup: Sotogrande Polo + Same-Day Yacht Charter Itinerary",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/white-party-marbella-yacht",
       "primary_keyword": "white party Marbella yacht",
       "title": "White Party Marbella: Pre-Party Yacht Charter With Dress-Code Tips",
@@ -585,6 +550,46 @@
       "slug": "blog/ironman-marbella-yacht-recovery",
       "primary_keyword": "Ironman 70.3 Marbella yacht",
       "title": "Ironman 70.3 Marbella: Pre-Race Calm Cruise & Post-Race Recovery Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/nye-yacht-charter-marbella",
+      "primary_keyword": "New Year's Eve yacht Marbella",
+      "title": "New Year's Eve on a Yacht in Marbella: Fireworks View From Puerto Banús",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/semana-santa-yacht-marbella",
+      "primary_keyword": "Semana Santa yacht Marbella",
+      "title": "Semana Santa in Marbella by Boat: Quiet-Side Cruises Between Processions",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/reyes-magos-yacht-charter",
+      "primary_keyword": "Reyes Magos yacht Marbella",
+      "title": "Reyes Magos Weekend in Marbella: Family Yacht Charter for the Kids' Holiday",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/san-juan-night-boat-marbella",
+      "primary_keyword": "San Juan night boat Marbella",
+      "title": "Noche de San Juan in Marbella: Watch the Beach Bonfires From a Yacht",
+      "target_words": 1100,
+      "consumed_at": "2026-05-27"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-polo-cup-yacht",
+      "primary_keyword": "Marbella polo yacht",
+      "title": "Marbella Polo Cup: Sotogrande Polo + Same-Day Yacht Charter Itinerary",
       "target_words": 1100,
       "consumed_at": "2026-05-27"
     }
