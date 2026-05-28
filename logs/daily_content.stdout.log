@@ -187,3 +187,12 @@
 [2026-05-28 10:02:59] queue under threshold (10 < 30) — auto-refilling…
 [2026-05-28 10:03:00] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-28 10:03:00] running deploy.sh …
+[2026-05-28 10:03:02] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+

@@ -266,6 +266,41 @@
       "title": "Family Yacht Charter Marbella: Boats, Kids, Snorkel, Snacks",
       "intent": "transactional",
       "target_words": 1300
+    },
+    {
+      "slug": "experiences/sunrise-yoga-yacht-marbella",
+      "primary_keyword": "sunrise yoga yacht marbella",
+      "title": "Sunrise Yoga Yacht Charter Marbella: Wellness on the Water",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/paddleboard-yacht-tour-marbella",
+      "primary_keyword": "paddleboard yacht tour marbella",
+      "title": "Paddleboard & Yacht Tour Marbella: SUP from Your Charter",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/wine-tasting-yacht-marbella",
+      "primary_keyword": "wine tasting yacht marbella",
+      "title": "Wine Tasting Yacht Charter Marbella: Andalusian Vintages",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/baby-shower-yacht-marbella",
+      "primary_keyword": "baby shower yacht marbella",
+      "title": "Baby Shower Yacht Charter Marbella: Calm Day on the Bay",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "experiences/divorce-party-yacht-marbella",
+      "primary_keyword": "divorce party yacht marbella",
+      "title": "Divorce Party Yacht Marbella: Celebrate the New Chapter",
+      "intent": "transactional",
+      "target_words": 1100
     }
   ],
   "blog": [
@@ -637,6 +672,41 @@
       "slug": "blog/la-sala-puerto-banus-yacht",
       "primary_keyword": "La Sala Puerto Banús yacht",
       "title": "La Sala Puerto Banús + Sunset Charter: The Marbella Date-Night Combo",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/solomun-marbella-yacht",
+      "primary_keyword": "Solomun Marbella yacht",
+      "title": "Solomun in Marbella: Pre-Set Yacht Charter With BYO Speaker Set-Up",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/marc-anthony-marbella-concert-yacht",
+      "primary_keyword": "Marc Anthony Starlite yacht",
+      "title": "Marc Anthony at Starlite Marbella: Yacht Day Before the Concert",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/white-night-puerto-banus-yacht",
+      "primary_keyword": "White Night Puerto Banús yacht",
+      "title": "White Night Puerto Banús (Noche en Blanco): Best Yacht Spot to Watch",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/guy-laurent-pourcel-marbella-yacht",
+      "primary_keyword": "Marbella restaurant week yacht",
+      "title": "Marbella Restaurant Week by Yacht: Lunch at Anchor + Dinner Ashore",
+      "intent": "informational",
+      "target_words": 1100
+    },
+    {
+      "slug": "blog/constitution-day-marbella-yacht",
+      "primary_keyword": "Constitution Day Marbella yacht",
+      "title": "Constitution Day Weekend in Marbella: 6th of December Yacht Itinerary",
       "intent": "informational",
       "target_words": 1100
     }

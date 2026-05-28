@@ -636,3 +636,60 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-28 10:02:59] queue under threshold (10 < 30) — auto-refilling…
 [2026-05-28 10:03:00] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-28 10:03:00] running deploy.sh …
+[2026-05-28 10:03:02] deploy.sh exited 1: 9/boat-rental-marbella.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mardo89/boat-rental-marbella.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[2026-05-28 10:48:06] === Daily content run: 5 item(s) ===
+[2026-05-28 10:48:06] [1/5] blog · blog/solomun-marbella-yacht
+[2026-05-28 10:48:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-28 10:48:06] [2/5] blog · blog/marc-anthony-marbella-concert-yacht
+[2026-05-28 10:48:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-28 10:48:06] [3/5] blog · blog/white-night-puerto-banus-yacht
+[2026-05-28 10:48:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-28 10:48:06] [4/5] blog · blog/guy-laurent-pourcel-marbella-yacht
+[2026-05-28 10:48:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-28 10:48:06] [5/5] blog · blog/constitution-day-marbella-yacht
+[2026-05-28 10:48:06]   ✗ FAILED: AttributeError: 'function' object has no attribute 'warning'
+[2026-05-28 10:48:06] queue under threshold (10 < 30) — auto-refilling…
+[2026-05-28 10:48:46] refill: +30 topics (queue now 40)
+[2026-05-28 10:48:46] === Done: 0 succeeded, 5 failed ===
+
+[2026-05-28 15:30:06] === Daily content run (kind-balanced): 5 blog + 5 landing = 10 item(s) ===
+[2026-05-28 15:30:06] [1/10] blog · blog/solomun-marbella-yacht
+[2026-05-28 15:30:44]   ✓ saved content/blog_solomun-marbella-yacht.json
+[2026-05-28 15:30:44]   ✓ added to keyword_map.blog
+[2026-05-28 15:30:44] [2/10] blog · blog/marc-anthony-marbella-concert-yacht
+[2026-05-28 15:31:19]   ✓ saved content/blog_marc-anthony-marbella-concert-yacht.json
+[2026-05-28 15:31:19]   ✓ added to keyword_map.blog
+[2026-05-28 15:31:19] [3/10] blog · blog/white-night-puerto-banus-yacht
+[2026-05-28 15:31:51]   ✓ saved content/blog_white-night-puerto-banus-yacht.json
+[2026-05-28 15:31:51]   ✓ added to keyword_map.blog
+[2026-05-28 15:31:51] [4/10] blog · blog/guy-laurent-pourcel-marbella-yacht
+[2026-05-28 15:32:28]   ✓ saved content/blog_guy-laurent-pourcel-marbella-yacht.json
+[2026-05-28 15:32:28]   ✓ added to keyword_map.blog
+[2026-05-28 15:32:28] [5/10] blog · blog/constitution-day-marbella-yacht
+[2026-05-28 15:32:57]   ✓ saved content/blog_constitution-day-marbella-yacht.json
+[2026-05-28 15:32:57]   ✓ added to keyword_map.blog
+[2026-05-28 15:32:57] [6/10] experience · experiences/sunrise-yoga-yacht-marbella
+[2026-05-28 15:33:28]   ✓ saved content/experiences_sunrise-yoga-yacht-marbella.json
+[2026-05-28 15:33:28]   ✓ added to keyword_map.spokes
+[2026-05-28 15:33:28] [7/10] experience · experiences/paddleboard-yacht-tour-marbella
+[2026-05-28 15:33:53]   ✓ saved content/experiences_paddleboard-yacht-tour-marbella.json
+[2026-05-28 15:33:53]   ✓ added to keyword_map.spokes
+[2026-05-28 15:33:53] [8/10] experience · experiences/wine-tasting-yacht-marbella
+[2026-05-28 15:34:23]   ✓ saved content/experiences_wine-tasting-yacht-marbella.json
+[2026-05-28 15:34:23]   ✓ added to keyword_map.spokes
+[2026-05-28 15:34:23] [9/10] experience · experiences/baby-shower-yacht-marbella
+[2026-05-28 15:34:52]   ✓ saved content/experiences_baby-shower-yacht-marbella.json
+[2026-05-28 15:34:52]   ✓ added to keyword_map.spokes
+[2026-05-28 15:34:52] [10/10] experience · experiences/divorce-party-yacht-marbella
+[2026-05-28 15:35:22]   ✓ saved content/experiences_divorce-party-yacht-marbella.json
+[2026-05-28 15:35:22]   ✓ added to keyword_map.spokes
+[2026-05-28 15:35:22] queue: 30 remaining, 73 consumed total
+[2026-05-28 15:35:22] running deploy.sh …

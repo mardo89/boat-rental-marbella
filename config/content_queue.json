@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/solomun-marbella-yacht",
-      "primary_keyword": "Solomun Marbella yacht",
-      "title": "Solomun in Marbella: Pre-Set Yacht Charter With BYO Speaker Set-Up",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marc-anthony-marbella-concert-yacht",
-      "primary_keyword": "Marc Anthony Starlite yacht",
-      "title": "Marc Anthony at Starlite Marbella: Yacht Day Before the Concert",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/white-night-puerto-banus-yacht",
-      "primary_keyword": "White Night Puerto Banús yacht",
-      "title": "White Night Puerto Banús (Noche en Blanco): Best Yacht Spot to Watch",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/guy-laurent-pourcel-marbella-yacht",
-      "primary_keyword": "Marbella restaurant week yacht",
-      "title": "Marbella Restaurant Week by Yacht: Lunch at Anchor + Dinner Ashore",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/constitution-day-marbella-yacht",
-      "primary_keyword": "Constitution Day Marbella yacht",
-      "title": "Constitution Day Weekend in Marbella: 6th of December Yacht Itinerary",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/andalusia-day-yacht",
       "primary_keyword": "Andalusia Day yacht Marbella",
       "title": "Día de Andalucía 28 Feb: Quiet Early-Season Yacht Charter in Marbella",
@@ -70,6 +35,181 @@
       "slug": "blog/vendimia-marbella-yacht",
       "primary_keyword": "Marbella vendimia harvest yacht",
       "title": "Marbella Wine Harvest Weekend: Vendimia Vibes + Cava-on-Cruise",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-half-day-vs-full-day-charter",
+      "primary_keyword": "half day vs full day yacht charter marbella",
+      "title": "Half Day vs Full Day Yacht Charter Marbella: Which Wins?",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/tipping-yacht-crew-marbella",
+      "primary_keyword": "tipping yacht crew marbella",
+      "title": "Tipping Yacht Crew in Marbella: How Much & When (2026)",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/levante-vs-poniente-wind-marbella-charter",
+      "primary_keyword": "levante poniente wind marbella boat",
+      "title": "Levante vs Poniente: How Marbella Winds Affect Your Charter",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-cancellation-policy",
+      "primary_keyword": "yacht charter cancellation policy marbella",
+      "title": "Marbella Yacht Charter Cancellation Policy Explained",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/seasickness-kids-marbella-boat",
+      "primary_keyword": "seasickness kids boat marbella",
+      "title": "Seasickness in Kids on a Marbella Boat: Prevent & Treat",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-vs-cabopino-departure",
+      "primary_keyword": "puerto banus vs cabopino departure",
+      "title": "Puerto Banús vs Cabopino: Best Departure Port in Marbella",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sunseeker-predator-vs-pershing-46",
+      "primary_keyword": "sunseeker predator vs pershing 46",
+      "title": "Sunseeker Predator vs Pershing 46: Marbella Charter Pick",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/princess-v58-vs-azimut-58-marbella",
+      "primary_keyword": "princess v58 vs azimut 58 marbella",
+      "title": "Princess V58 vs Azimut 58: Which Yacht Wins in Marbella?",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/galeon-500-fly-vs-fairline-targa-12m",
+      "primary_keyword": "galeon 500 fly vs fairline targa 12m",
+      "title": "Galeon 500 Fly vs Fairline Targa 12M: Marbella Compared",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/catamaran-vs-motor-yacht-marbella-families",
+      "primary_keyword": "catamaran vs motor yacht marbella families",
+      "title": "Catamaran vs Motor Yacht in Marbella: Best for Families?",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-week-2026",
+      "primary_keyword": "marbella yacht week 2026",
+      "title": "Marbella Yacht Week 2026: Charter Guide & Best Boats",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/global-gift-gala-marbella-yacht",
+      "primary_keyword": "global gift gala marbella yacht",
+      "title": "Global Gift Gala Marbella: Yacht Arrival & After-Party Tips",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-luxury-shopping-week-yacht",
+      "primary_keyword": "marbella luxury shopping week yacht",
+      "title": "Marbella Luxury Shopping Week: Charter a Yacht for VIPs",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/halloween-yacht-party-puerto-banus",
+      "primary_keyword": "halloween yacht party puerto banus",
+      "title": "Halloween Yacht Party Puerto Banús: Costumes & Best Boats",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/three-kings-parade-marbella-by-boat",
+      "primary_keyword": "three kings parade marbella boat view",
+      "title": "Watch Three Kings Parade Marbella from a Boat: 2026 Guide",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-jazz-festival-yacht-charter",
+      "primary_keyword": "marbella jazz festival yacht",
+      "title": "Marbella Jazz Festival 2026: Yacht Charter Experience",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/copa-del-rey-sailing-marbella",
+      "primary_keyword": "copa del rey sailing marbella charter",
+      "title": "Copa del Rey Sailing Week: Watch from a Marbella Charter",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-easter-week-yacht-availability",
+      "primary_keyword": "marbella easter week yacht availability",
+      "title": "Marbella Easter Week Yacht Availability & Booking Window",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/fishing-license-rules-marbella",
+      "primary_keyword": "fishing license rules marbella charter",
+      "title": "Fishing License Rules in Marbella: What Charters Must Know",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-tuna-fishing-season-charter",
+      "primary_keyword": "marbella tuna fishing season charter",
+      "title": "Marbella Tuna Fishing Season: Best Boats & Months to Book",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/dietary-restrictions-yacht-catering-marbella",
+      "primary_keyword": "dietary restrictions yacht catering marbella",
+      "title": "Yacht Catering in Marbella: Vegan, Halal & Allergy Menus",
+      "target_words": 1100
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-with-pets",
+      "primary_keyword": "yacht charter with pets marbella",
+      "title": "Yacht Charter With Pets in Marbella: Dog-Friendly Boats",
+      "target_words": 1100
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/golf-and-yacht-package-marbella",
+      "primary_keyword": "golf and yacht package marbella",
+      "title": "Golf & Yacht Package Marbella: Round + Charter Combos",
+      "target_words": 1100
+    },
+    {
+      "kind": "spoke",
+      "slug": "hen-party-yacht-marbella",
+      "primary_keyword": "hen party yacht marbella",
+      "title": "Hen Party Yacht Marbella: Boats, Packages & 2026 Prices",
+      "target_words": 1100
+    },
+    {
+      "kind": "spoke",
+      "slug": "corporate-boat-hire-marbella",
+      "primary_keyword": "corporate boat hire marbella",
+      "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
       "target_words": 1100
     }
   ],
@@ -595,6 +735,86 @@
       "slug": "blog/la-sala-puerto-banus-yacht",
       "primary_keyword": "La Sala Puerto Banús yacht",
       "title": "La Sala Puerto Banús + Sunset Charter: The Marbella Date-Night Combo",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/solomun-marbella-yacht",
+      "primary_keyword": "Solomun Marbella yacht",
+      "title": "Solomun in Marbella: Pre-Set Yacht Charter With BYO Speaker Set-Up",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marc-anthony-marbella-concert-yacht",
+      "primary_keyword": "Marc Anthony Starlite yacht",
+      "title": "Marc Anthony at Starlite Marbella: Yacht Day Before the Concert",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/white-night-puerto-banus-yacht",
+      "primary_keyword": "White Night Puerto Banús yacht",
+      "title": "White Night Puerto Banús (Noche en Blanco): Best Yacht Spot to Watch",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/guy-laurent-pourcel-marbella-yacht",
+      "primary_keyword": "Marbella restaurant week yacht",
+      "title": "Marbella Restaurant Week by Yacht: Lunch at Anchor + Dinner Ashore",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/constitution-day-marbella-yacht",
+      "primary_keyword": "Constitution Day Marbella yacht",
+      "title": "Constitution Day Weekend in Marbella: 6th of December Yacht Itinerary",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/sunrise-yoga-yacht-marbella",
+      "primary_keyword": "sunrise yoga yacht marbella",
+      "title": "Sunrise Yoga Yacht Charter Marbella: Wellness on the Water",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/paddleboard-yacht-tour-marbella",
+      "primary_keyword": "paddleboard yacht tour marbella",
+      "title": "Paddleboard & Yacht Tour Marbella: SUP from Your Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/wine-tasting-yacht-marbella",
+      "primary_keyword": "wine tasting yacht marbella",
+      "title": "Wine Tasting Yacht Charter Marbella: Andalusian Vintages",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/baby-shower-yacht-marbella",
+      "primary_keyword": "baby shower yacht marbella",
+      "title": "Baby Shower Yacht Charter Marbella: Calm Day on the Bay",
+      "target_words": 1100,
+      "consumed_at": "2026-05-28"
+    },
+    {
+      "kind": "experience",
+      "slug": "experiences/divorce-party-yacht-marbella",
+      "primary_keyword": "divorce party yacht marbella",
+      "title": "Divorce Party Yacht Marbella: Celebrate the New Chapter",
       "target_words": 1100,
       "consumed_at": "2026-05-28"
     }
