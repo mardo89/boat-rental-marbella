@@ -1,0 +1,317 @@
+/* ============================================================
+   styles-dark.css — Dark Luxury Override
+   boatrentalinmarbella.com
+   Deep navy #07101e · Gold #c9a84e · Always loaded after styles.css
+   ============================================================ */
+
+/* ─── Design tokens ────────────────────────── */
+:root {
+  --c-bg:        #07101e;
+  --c-ink:       #f4f4f2;
+  --c-ink-soft:  rgba(244,244,242,.78);
+  --c-muted:     rgba(244,244,242,.5);
+  --c-line:      rgba(201,168,78,.18);
+  --c-line-soft: rgba(255,255,255,.05);
+  --c-sea:       #c9a84e;
+  --c-sea-d:     #a88530;
+  --c-sea-l:     rgba(201,168,78,.12);
+  --c-sun:       #c9a84e;
+  --c-sun-d:     #a88530;
+  --c-sand:      rgba(201,168,78,.08);
+  --c-sand-d:    rgba(201,168,78,.14);
+  --shadow-sm:   0 2px 8px rgba(0,0,0,.32);
+  --shadow:      0 8px 28px rgba(0,0,0,.45);
+  --shadow-lg:   0 18px 50px rgba(0,0,0,.58);
+}
+
+/* ─── Base ─────────────────────────────────── */
+html { background: #07101e; }
+body { background: var(--c-bg); color: var(--c-ink); }
+a { color: #c9a84e; }
+a:hover { color: #e8d099; }
+strong { color: var(--c-ink); }
+.content > p:first-of-type { color: rgba(244,244,242,.78); }
+
+/* ─── Headings ─────────────────────────────── */
+h1, h2, h3, h4 { color: var(--c-ink); }
+h2 { border-left-color: #c9a84e; }
+
+/* ─── Eyebrow labels ───────────────────────── */
+.eyebrow {
+  color: #c9a84e !important;
+  background: rgba(201,168,78,.1) !important;
+  border-color: rgba(201,168,78,.38) !important;
+}
+
+/* ─── Header ───────────────────────────────── */
+.site-header {
+  background: rgba(7,16,30,.92) !important;
+  backdrop-filter: saturate(160%) blur(16px) !important;
+  -webkit-backdrop-filter: saturate(160%) blur(16px) !important;
+  border-bottom-color: rgba(201,168,78,.15) !important;
+}
+.nav a { color: rgba(244,244,242,.65) !important; }
+.nav a:hover { color: #c9a84e !important; }
+.nav a::after { background: #c9a84e !important; }
+.nav-burger { color: rgba(244,244,242,.75) !important; }
+.nav.open {
+  background: rgba(7,16,30,.98) !important;
+  border-bottom-color: rgba(201,168,78,.2) !important;
+}
+.cta-tel  { background: #c9a84e !important; color: #07101e !important; }
+.cta-book { background: #c9a84e !important; color: #07101e !important; }
+.lang-switch { color: rgba(244,244,242,.45) !important; }
+.lang-switch .sep { color: rgba(201,168,78,.3) !important; }
+.lang-switch a { color: rgba(244,244,242,.45) !important; }
+.lang-switch a:hover { background: rgba(201,168,78,.1) !important; color: #c9a84e !important; }
+.lang-switch strong { color: #f4f4f2 !important; }
+
+/* ─── Hero ─────────────────────────────────── */
+.hero { background: #07101e !important; }
+.hero-shade {
+  background:
+    linear-gradient(180deg, rgba(7,16,30,.12) 0%, rgba(7,16,30,.38) 50%, rgba(7,16,30,.85) 100%),
+    linear-gradient(110deg, rgba(7,16,30,.6) 0%, rgba(7,16,30,.2) 55%, rgba(7,16,30,0) 80%) !important;
+}
+.hero-title { color: #fff !important; }
+.hero-sub   { color: rgba(255,255,255,.82) !important; }
+.hero-meta  { color: rgba(255,255,255,.9) !important; }
+.hero-price strong { color: #c9a84e !important; }
+.hero-dot   { opacity: .4 !important; }
+.btn-hero-primary {
+  background: #25d366 !important;
+  box-shadow: 0 8px 28px rgba(37,211,102,.32) !important;
+}
+.btn-hero-ghost {
+  background: rgba(255,255,255,.08) !important;
+  border-color: rgba(255,255,255,.3) !important;
+  color: #fff !important;
+}
+.btn-hero-ghost:hover {
+  background: rgba(255,255,255,.15) !important;
+  border-color: rgba(255,255,255,.55) !important;
+}
+
+/* ─── Trust strip ──────────────────────────── */
+.trust-strip {
+  background: linear-gradient(90deg, #0c1927 0%, #0e2040 50%, #0c1927 100%) !important;
+  border-top: 1px solid rgba(201,168,78,.18) !important;
+  border-bottom-color: rgba(201,168,78,.18) !important;
+  color: rgba(244,244,242,.8) !important;
+}
+.trust-strip a { color: #c9a84e !important; }
+
+/* ─── Boat grid section ─────────────────────── */
+.boat-grid-section {
+  background: linear-gradient(180deg, #07101e 0%, #0a1525 100%) !important;
+}
+.boat-grid-section .section-head h2 {
+  color: #f4f4f2 !important;
+  border: none !important;
+  padding-left: 0 !important;
+}
+.boat-grid-section .section-head p { color: rgba(244,244,242,.55) !important; }
+
+/* ─── Boat cards ────────────────────────────── */
+.boat-card {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.18) !important;
+}
+.boat-card:hover {
+  border-color: rgba(201,168,78,.45) !important;
+  box-shadow: 0 24px 56px rgba(0,0,0,.55) !important;
+}
+.boat-card-title { color: #f4f4f2 !important; }
+.boat-card-desc  { color: rgba(244,244,242,.55) !important; }
+.boat-card-meta  { border-top-color: rgba(255,255,255,.08) !important; }
+.boat-card-price { color: rgba(244,244,242,.85) !important; }
+.boat-card-price strong { color: #c9a84e !important; }
+.boat-card-price small  { color: rgba(244,244,242,.4) !important; }
+.boat-card-cta   { color: #c9a84e !important; }
+.boat-card-tag   { background: #c9a84e !important; color: #07101e !important; }
+
+/* ─── Page / content layout ─────────────────── */
+.breadcrumbs { color: rgba(244,244,242,.45) !important; }
+.breadcrumbs a { color: rgba(244,244,242,.45) !important; }
+.byline { border-left-color: #c9a84e !important; color: rgba(244,244,242,.6) !important; }
+.byline strong { color: #f4f4f2 !important; }
+
+/* ─── Tables ────────────────────────────────── */
+table  { border-color: rgba(201,168,78,.18) !important; }
+th     { background: rgba(201,168,78,.1) !important; color: #c9a84e !important; }
+td     { border-bottom-color: rgba(255,255,255,.07) !important; color: rgba(244,244,242,.85); }
+tbody tr:hover { background: rgba(255,255,255,.04) !important; }
+
+/* ─── Blockquote & callout ───────────────────── */
+blockquote {
+  background: rgba(201,168,78,.07) !important;
+  border-left-color: #c9a84e !important;
+  color: rgba(244,244,242,.75) !important;
+}
+.callout {
+  background: rgba(201,168,78,.08) !important;
+  border-color: rgba(201,168,78,.22) !important;
+  color: rgba(244,244,242,.75) !important;
+}
+.callout strong { color: #c9a84e !important; }
+
+/* ─── FAQ accordion ─────────────────────────── */
+details {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.18) !important;
+}
+details[open] {
+  border-color: rgba(201,168,78,.38) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,.35) !important;
+}
+details summary { color: #f4f4f2 !important; }
+details summary::after { color: #c9a84e !important; }
+details p { color: rgba(244,244,242,.65) !important; }
+
+/* ─── Book card (sidebar) ────────────────────── */
+.book-card {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.18) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,.4) !important;
+}
+.book-card-price {
+  background: linear-gradient(135deg, rgba(201,168,78,.1) 0%, rgba(201,168,78,.06) 100%) !important;
+}
+.book-card-price strong { color: #f4f4f2 !important; }
+.book-card-sub   { color: rgba(244,244,242,.5) !important; }
+.book-card-pitch { color: rgba(244,244,242,.65) !important; }
+.book-card-micro { color: rgba(244,244,242,.45) !important; }
+.book-card-incl  { border-top-color: rgba(255,255,255,.08) !important; }
+.book-card-incl strong { color: rgba(244,244,242,.55) !important; }
+.book-card-incl ul { color: rgba(244,244,242,.65) !important; }
+.book-card-incl li::before { color: #25d366 !important; }
+
+/* ─── Buttons ────────────────────────────────── */
+.btn-primary {
+  background: #25d366 !important;
+  box-shadow: 0 4px 16px rgba(37,211,102,.28) !important;
+}
+.btn-primary:hover {
+  box-shadow: 0 6px 24px rgba(37,211,102,.42) !important;
+}
+.btn-secondary {
+  background: #c9a84e !important;
+  color: #07101e !important;
+}
+.btn-secondary:hover {
+  background: #a88530 !important;
+  color: #07101e !important;
+}
+.btn-ghost {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.3) !important;
+  color: #f4f4f2 !important;
+}
+.btn-ghost:hover {
+  border-color: #c9a84e !important;
+  color: #c9a84e !important;
+  background: #0c1828 !important;
+}
+
+/* ─── Guest photo grid ───────────────────────── */
+.guests-section { }
+.guests-grid figure { background: #0a1420; }
+
+/* ─── Video section ──────────────────────────── */
+.video-card { background: #0a1420 !important; }
+
+/* ─── Inline images ──────────────────────────── */
+.inline-img { background: #0c1828 !important; }
+
+/* ─── Founder card ───────────────────────────── */
+.founder-card {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.18) !important;
+}
+.founder-meta .role { color: rgba(244,244,242,.5) !important; }
+.ig-link { color: #c9a84e !important; }
+.ig-link:hover { color: #e8d099 !important; }
+
+/* ─── Experiences hub cards ──────────────────── */
+.exp-grid { }
+.exp-card {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.15) !important;
+}
+.exp-card:hover { border-color: rgba(201,168,78,.4) !important; }
+.exp-card h3 { color: #f4f4f2 !important; }
+.exp-card p  { color: rgba(244,244,242,.6) !important; }
+
+/* ─── Blog / article list cards ─────────────── */
+.blog-card, .post-card {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.15) !important;
+}
+.blog-card:hover, .post-card:hover {
+  border-color: rgba(201,168,78,.4) !important;
+}
+.blog-card h3, .post-card h3 { color: #f4f4f2 !important; }
+.blog-card p,  .post-card p  { color: rgba(244,244,242,.55) !important; }
+
+/* ─── Pricing section / summary cards ───────── */
+.price-card, .summary-card {
+  background: #0c1828 !important;
+  border-color: rgba(201,168,78,.18) !important;
+}
+
+/* ─── Section headings (standalone) ─────────── */
+.section-head h2,
+.section-title {
+  color: #f4f4f2 !important;
+}
+.section-head p { color: rgba(244,244,242,.55) !important; }
+
+/* ─── Mobile CTA bar ─────────────────────────── */
+.mobile-cta {
+  background: rgba(7,16,30,.96) !important;
+  border-top-color: rgba(201,168,78,.2) !important;
+  box-shadow: 0 -4px 24px rgba(0,0,0,.35) !important;
+}
+.mobile-cta-tel {
+  background: #c9a84e !important;
+  color: #07101e !important;
+}
+
+/* ─── Footer ─────────────────────────────────── */
+.site-footer {
+  background: linear-gradient(180deg, #070f1c 0%, #050d18 100%) !important;
+  color: rgba(244,244,242,.5) !important;
+  border-top: 1px solid rgba(201,168,78,.12) !important;
+}
+.site-footer h4,
+.footer-heading { color: #c9a84e !important; }
+.site-footer a {
+  color: rgba(244,244,242,.5) !important;
+  text-decoration: none !important;
+}
+.site-footer a:hover { color: #c9a84e !important; text-decoration: underline !important; }
+.footer-grid p  { color: rgba(244,244,242,.5) !important; }
+.footer-grid li { color: rgba(244,244,242,.5) !important; }
+.footer-legal {
+  border-top-color: rgba(255,255,255,.07) !important;
+  color: rgba(244,244,242,.4) !important;
+}
+.footer-legal a { color: rgba(244,244,242,.4) !important; }
+.footer-legal a:hover { color: #c9a84e !important; }
+
+/* ─── Back-to-top / misc utilities ────────────── */
+.scroll-top {
+  background: rgba(201,168,78,.15) !important;
+  color: #c9a84e !important;
+  border-color: rgba(201,168,78,.3) !important;
+}
+.scroll-top:hover { background: #c9a84e !important; color: #07101e !important; }
+
+/* ─── Responsive: mobile nav open ─────────────── */
+@media (max-width: 880px) {
+  .nav.open {
+    background: rgba(7,16,30,.98) !important;
+    border-bottom: 1px solid rgba(201,168,78,.2) !important;
+  }
+  .nav.open a { color: rgba(244,244,242,.8) !important; }
+}
