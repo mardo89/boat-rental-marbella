@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-yacht-week-2026",
-      "primary_keyword": "marbella yacht week 2026",
-      "title": "Marbella Yacht Week 2026: Charter Guide & Best Boats",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/global-gift-gala-marbella-yacht",
-      "primary_keyword": "global gift gala marbella yacht",
-      "title": "Global Gift Gala Marbella: Yacht Arrival & After-Party Tips",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-luxury-shopping-week-yacht",
-      "primary_keyword": "marbella luxury shopping week yacht",
-      "title": "Marbella Luxury Shopping Week: Charter a Yacht for VIPs",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/halloween-yacht-party-puerto-banus",
-      "primary_keyword": "halloween yacht party puerto banus",
-      "title": "Halloween Yacht Party Puerto Banús: Costumes & Best Boats",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/three-kings-parade-marbella-by-boat",
-      "primary_keyword": "three kings parade marbella boat view",
-      "title": "Watch Three Kings Parade Marbella from a Boat: 2026 Guide",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-jazz-festival-yacht-charter",
       "primary_keyword": "marbella jazz festival yacht",
       "title": "Marbella Jazz Festival 2026: Yacht Charter Experience",
@@ -833,6 +798,46 @@
       "slug": "blog/catamaran-vs-motor-yacht-marbella-families",
       "primary_keyword": "catamaran vs motor yacht marbella families",
       "title": "Catamaran vs Motor Yacht in Marbella: Best for Families?",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-week-2026",
+      "primary_keyword": "marbella yacht week 2026",
+      "title": "Marbella Yacht Week 2026: Charter Guide & Best Boats",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/global-gift-gala-marbella-yacht",
+      "primary_keyword": "global gift gala marbella yacht",
+      "title": "Global Gift Gala Marbella: Yacht Arrival & After-Party Tips",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-luxury-shopping-week-yacht",
+      "primary_keyword": "marbella luxury shopping week yacht",
+      "title": "Marbella Luxury Shopping Week: Charter a Yacht for VIPs",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/halloween-yacht-party-puerto-banus",
+      "primary_keyword": "halloween yacht party puerto banus",
+      "title": "Halloween Yacht Party Puerto Banús: Costumes & Best Boats",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/three-kings-parade-marbella-by-boat",
+      "primary_keyword": "three kings parade marbella boat view",
+      "title": "Watch Three Kings Parade Marbella from a Boat: 2026 Guide",
       "target_words": 1100,
       "consumed_at": "2026-05-30"
     }

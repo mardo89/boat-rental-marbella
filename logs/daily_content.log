@@ -817,3 +817,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-30 15:04:58] queue under threshold (12 < 30) — auto-refilling…
 [2026-05-30 15:05:01] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-30 15:05:01] running deploy.sh …
+[2026-05-30 15:05:17] deploy.sh OK
+[2026-05-30 15:05:17] === Done: 5 succeeded, 0 failed ===
+
+[2026-05-30 15:30:17] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-30 15:30:17] [1/5] blog · blog/marbella-yacht-week-2026
+[2026-05-30 15:30:37]   ✓ saved content/blog_marbella-yacht-week-2026.json
+[2026-05-30 15:30:37]   ✓ added to keyword_map.blog
+[2026-05-30 15:30:37] [2/5] blog · blog/global-gift-gala-marbella-yacht
+[2026-05-30 15:31:01]   ✓ saved content/blog_global-gift-gala-marbella-yacht.json
+[2026-05-30 15:31:01]   ✓ added to keyword_map.blog
+[2026-05-30 15:31:01] [3/5] blog · blog/marbella-luxury-shopping-week-yacht
+[2026-05-30 15:31:20]   ✓ saved content/blog_marbella-luxury-shopping-week-yacht.json
+[2026-05-30 15:31:20]   ✓ added to keyword_map.blog
+[2026-05-30 15:31:20] [4/5] blog · blog/halloween-yacht-party-puerto-banus
+[2026-05-30 15:31:43]   ✓ saved content/blog_halloween-yacht-party-puerto-banus.json
+[2026-05-30 15:31:43]   ✓ added to keyword_map.blog
+[2026-05-30 15:31:43] [5/5] blog · blog/three-kings-parade-marbella-by-boat
+[2026-05-30 15:32:03]   ✓ saved content/blog_three-kings-parade-marbella-by-boat.json
+[2026-05-30 15:32:03]   ✓ added to keyword_map.blog
+[2026-05-30 15:32:03] queue: 7 remaining, 96 consumed total
+[2026-05-30 15:32:03] queue under threshold (7 < 30) — auto-refilling…
+[2026-05-30 15:32:06] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-30 15:32:06] running deploy.sh …
