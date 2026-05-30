@@ -794,3 +794,26 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-30 10:01:41] queue under threshold (17 < 30) — auto-refilling…
 [2026-05-30 10:01:43] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-30 10:01:43] running deploy.sh …
+[2026-05-30 10:01:59] deploy.sh OK
+[2026-05-30 10:01:59] === Done: 5 succeeded, 0 failed ===
+
+[2026-05-30 15:03:14] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-30 15:03:14] [1/5] blog · blog/puerto-banus-vs-cabopino-departure
+[2026-05-30 15:03:36]   ✓ saved content/blog_puerto-banus-vs-cabopino-departure.json
+[2026-05-30 15:03:36]   ✓ added to keyword_map.blog
+[2026-05-30 15:03:36] [2/5] blog · blog/sunseeker-predator-vs-pershing-46
+[2026-05-30 15:03:55]   ✓ saved content/blog_sunseeker-predator-vs-pershing-46.json
+[2026-05-30 15:03:55]   ✓ added to keyword_map.blog
+[2026-05-30 15:03:55] [3/5] blog · blog/princess-v58-vs-azimut-58-marbella
+[2026-05-30 15:04:14]   ✓ saved content/blog_princess-v58-vs-azimut-58-marbella.json
+[2026-05-30 15:04:14]   ✓ added to keyword_map.blog
+[2026-05-30 15:04:14] [4/5] blog · blog/galeon-500-fly-vs-fairline-targa-12m
+[2026-05-30 15:04:34]   ✓ saved content/blog_galeon-500-fly-vs-fairline-targa-12m.json
+[2026-05-30 15:04:34]   ✓ added to keyword_map.blog
+[2026-05-30 15:04:34] [5/5] blog · blog/catamaran-vs-motor-yacht-marbella-families
+[2026-05-30 15:04:58]   ✓ saved content/blog_catamaran-vs-motor-yacht-marbella-families.json
+[2026-05-30 15:04:58]   ✓ added to keyword_map.blog
+[2026-05-30 15:04:58] queue: 12 remaining, 91 consumed total
+[2026-05-30 15:04:58] queue under threshold (12 < 30) — auto-refilling…
+[2026-05-30 15:05:01] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-30 15:05:01] running deploy.sh …

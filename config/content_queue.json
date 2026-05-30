@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/puerto-banus-vs-cabopino-departure",
-      "primary_keyword": "puerto banus vs cabopino departure",
-      "title": "Puerto Banús vs Cabopino: Best Departure Port in Marbella",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/sunseeker-predator-vs-pershing-46",
-      "primary_keyword": "sunseeker predator vs pershing 46",
-      "title": "Sunseeker Predator vs Pershing 46: Marbella Charter Pick",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/princess-v58-vs-azimut-58-marbella",
-      "primary_keyword": "princess v58 vs azimut 58 marbella",
-      "title": "Princess V58 vs Azimut 58: Which Yacht Wins in Marbella?",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/galeon-500-fly-vs-fairline-targa-12m",
-      "primary_keyword": "galeon 500 fly vs fairline targa 12m",
-      "title": "Galeon 500 Fly vs Fairline Targa 12M: Marbella Compared",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/catamaran-vs-motor-yacht-marbella-families",
-      "primary_keyword": "catamaran vs motor yacht marbella families",
-      "title": "Catamaran vs Motor Yacht in Marbella: Best for Families?",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/marbella-yacht-week-2026",
       "primary_keyword": "marbella yacht week 2026",
       "title": "Marbella Yacht Week 2026: Charter Guide & Best Boats",
@@ -828,6 +793,46 @@
       "slug": "blog/seasickness-kids-marbella-boat",
       "primary_keyword": "seasickness kids boat marbella",
       "title": "Seasickness in Kids on a Marbella Boat: Prevent & Treat",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/puerto-banus-vs-cabopino-departure",
+      "primary_keyword": "puerto banus vs cabopino departure",
+      "title": "Puerto Banús vs Cabopino: Best Departure Port in Marbella",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/sunseeker-predator-vs-pershing-46",
+      "primary_keyword": "sunseeker predator vs pershing 46",
+      "title": "Sunseeker Predator vs Pershing 46: Marbella Charter Pick",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/princess-v58-vs-azimut-58-marbella",
+      "primary_keyword": "princess v58 vs azimut 58 marbella",
+      "title": "Princess V58 vs Azimut 58: Which Yacht Wins in Marbella?",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/galeon-500-fly-vs-fairline-targa-12m",
+      "primary_keyword": "galeon 500 fly vs fairline targa 12m",
+      "title": "Galeon 500 Fly vs Fairline Targa 12M: Marbella Compared",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/catamaran-vs-motor-yacht-marbella-families",
+      "primary_keyword": "catamaran vs motor yacht marbella families",
+      "title": "Catamaran vs Motor Yacht in Marbella: Best for Families?",
       "target_words": 1100,
       "consumed_at": "2026-05-30"
     }

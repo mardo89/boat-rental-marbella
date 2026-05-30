@@ -254,3 +254,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [2026-05-30 10:01:41] queue under threshold (17 < 30) — auto-refilling…
 [2026-05-30 10:01:43] refill failed: RuntimeError: claude CLI exit 1: 
 [2026-05-30 10:01:43] running deploy.sh …
+[2026-05-30 10:01:59] deploy.sh OK
+[2026-05-30 10:01:59] === Done: 5 succeeded, 0 failed ===
+
