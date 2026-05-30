@@ -234,3 +234,23 @@ hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
+[2026-05-30 10:00:00] === Daily content run (kind-balanced): 5 blog + 0 landing = 5 item(s) ===
+[2026-05-30 10:00:00] [1/5] blog · blog/marbella-half-day-vs-full-day-charter
+[2026-05-30 10:00:23]   ✓ saved content/blog_marbella-half-day-vs-full-day-charter.json
+[2026-05-30 10:00:23]   ✓ added to keyword_map.blog
+[2026-05-30 10:00:23] [2/5] blog · blog/tipping-yacht-crew-marbella
+[2026-05-30 10:00:42]   ✓ saved content/blog_tipping-yacht-crew-marbella.json
+[2026-05-30 10:00:42]   ✓ added to keyword_map.blog
+[2026-05-30 10:00:42] [3/5] blog · blog/levante-vs-poniente-wind-marbella-charter
+[2026-05-30 10:00:59]   ✓ saved content/blog_levante-vs-poniente-wind-marbella-charter.json
+[2026-05-30 10:00:59]   ✓ added to keyword_map.blog
+[2026-05-30 10:00:59] [4/5] blog · blog/marbella-yacht-charter-cancellation-policy
+[2026-05-30 10:01:16]   ✓ saved content/blog_marbella-yacht-charter-cancellation-policy.json
+[2026-05-30 10:01:16]   ✓ added to keyword_map.blog
+[2026-05-30 10:01:16] [5/5] blog · blog/seasickness-kids-marbella-boat
+[2026-05-30 10:01:41]   ✓ saved content/blog_seasickness-kids-marbella-boat.json
+[2026-05-30 10:01:41]   ✓ added to keyword_map.blog
+[2026-05-30 10:01:41] queue: 17 remaining, 86 consumed total
+[2026-05-30 10:01:41] queue under threshold (17 < 30) — auto-refilling…
+[2026-05-30 10:01:43] refill failed: RuntimeError: claude CLI exit 1: 
+[2026-05-30 10:01:43] running deploy.sh …

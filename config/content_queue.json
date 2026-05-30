@@ -4,41 +4,6 @@
   "queue": [
     {
       "kind": "blog",
-      "slug": "blog/marbella-half-day-vs-full-day-charter",
-      "primary_keyword": "half day vs full day yacht charter marbella",
-      "title": "Half Day vs Full Day Yacht Charter Marbella: Which Wins?",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/tipping-yacht-crew-marbella",
-      "primary_keyword": "tipping yacht crew marbella",
-      "title": "Tipping Yacht Crew in Marbella: How Much & When (2026)",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/levante-vs-poniente-wind-marbella-charter",
-      "primary_keyword": "levante poniente wind marbella boat",
-      "title": "Levante vs Poniente: How Marbella Winds Affect Your Charter",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/marbella-yacht-charter-cancellation-policy",
-      "primary_keyword": "yacht charter cancellation policy marbella",
-      "title": "Marbella Yacht Charter Cancellation Policy Explained",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
-      "slug": "blog/seasickness-kids-marbella-boat",
-      "primary_keyword": "seasickness kids boat marbella",
-      "title": "Seasickness in Kids on a Marbella Boat: Prevent & Treat",
-      "target_words": 1100
-    },
-    {
-      "kind": "blog",
       "slug": "blog/puerto-banus-vs-cabopino-departure",
       "primary_keyword": "puerto banus vs cabopino departure",
       "title": "Puerto Banús vs Cabopino: Best Departure Port in Marbella",
@@ -825,6 +790,46 @@
       "title": "Corporate Boat Hire Marbella: Team Days & Client Events",
       "target_words": 1100,
       "consumed_at": "2026-05-29"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-half-day-vs-full-day-charter",
+      "primary_keyword": "half day vs full day yacht charter marbella",
+      "title": "Half Day vs Full Day Yacht Charter Marbella: Which Wins?",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/tipping-yacht-crew-marbella",
+      "primary_keyword": "tipping yacht crew marbella",
+      "title": "Tipping Yacht Crew in Marbella: How Much & When (2026)",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/levante-vs-poniente-wind-marbella-charter",
+      "primary_keyword": "levante poniente wind marbella boat",
+      "title": "Levante vs Poniente: How Marbella Winds Affect Your Charter",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/marbella-yacht-charter-cancellation-policy",
+      "primary_keyword": "yacht charter cancellation policy marbella",
+      "title": "Marbella Yacht Charter Cancellation Policy Explained",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
+    },
+    {
+      "kind": "blog",
+      "slug": "blog/seasickness-kids-marbella-boat",
+      "primary_keyword": "seasickness kids boat marbella",
+      "title": "Seasickness in Kids on a Marbella Boat: Prevent & Treat",
+      "target_words": 1100,
+      "consumed_at": "2026-05-30"
     }
   ],
   "refill_threshold": 30,
