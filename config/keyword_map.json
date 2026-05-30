@@ -388,6 +388,34 @@
       "title": "Charter Out Your Catamaran in Marbella: Owner Listing Guide",
       "intent": "owner_supply",
       "target_words": 1100
+    },
+    {
+      "slug": "boat-rental-estepona",
+      "primary_keyword": "boat rental Estepona",
+      "title": "Boat Rental Estepona 2026: Yachts & Charters from Estepona Marina",
+      "intent": "transactional",
+      "target_words": 1200
+    },
+    {
+      "slug": "boat-rental-malaga",
+      "primary_keyword": "boat rental Malaga",
+      "title": "Boat Rental Málaga 2026: Yacht Charter from Málaga Port",
+      "intent": "transactional",
+      "target_words": 1300
+    },
+    {
+      "slug": "boat-rental-sotogrande",
+      "primary_keyword": "boat rental Sotogrande",
+      "title": "Boat Rental Sotogrande 2026: Charter from Puerto de Sotogrande",
+      "intent": "transactional",
+      "target_words": 1100
+    },
+    {
+      "slug": "mediterranean-bareboat-charter-marbella",
+      "primary_keyword": "mediterranean bareboat charter",
+      "title": "Mediterranean Bareboat Charter from Marbella: Self-Skippered Yachts",
+      "intent": "transactional",
+      "target_words": 1200
     }
   ],
   "blog": [

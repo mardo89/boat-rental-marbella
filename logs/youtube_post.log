@@ -1,0 +1,56 @@
+[2026-05-30 18:15:06] Starting YouTube uploader
+[2026-05-30 18:15:06] Starting YouTube uploader
+/Users/master/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/master/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/master/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/master/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:242: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.10, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+[2026-05-30 18:15:06] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-05-30 18:15:06] Scanning Drive for videos (folder 1qEQPlq6084s7eaq2wqTtoTjN5t2yvFlS) …
+[2026-05-30 18:15:18] Found 116 video files in Drive
+[2026-05-30 18:15:18] Found 116 video files in Drive
+[2026-05-30 18:15:18] 116 videos not yet uploaded to YouTube
+[2026-05-30 18:15:18] 116 videos not yet uploaded to YouTube
+[2026-05-30 18:15:18] Next: 'BoatRentalMarbella_Reel.mp4' (1 MB) from folder 'HEN PARTY'
+[2026-05-30 18:15:18] Next: 'BoatRentalMarbella_Reel.mp4' (1 MB) from folder 'HEN PARTY'
+[2026-05-30 18:15:18]   Downloading from Drive …
+[2026-05-30 18:15:18]   Downloading from Drive …
+  downloading … 100%
+[2026-05-30 18:15:19]   Uploading as Short: 'Hen Party Boat Charter | Puerto Banús #Shorts'
+[2026-05-30 18:15:19]   Uploading as Short: 'Hen Party Boat Charter | Puerto Banús #Shorts'
+[2026-05-30 18:15:42]   File attached: yt_upload_1ddNJJc7EKUaXIvQYqmXZkKuNxdpi9sLa.mp4
+[2026-05-30 18:15:42]   File attached: yt_upload_1ddNJJc7EKUaXIvQYqmXZkKuNxdpi9sLa.mp4
+[2026-05-30 18:16:05]   Uploaded: https://youtube.com/shorts/O1j1XeMqQrM
+[2026-05-30 18:16:05]   Uploaded: https://youtube.com/shorts/O1j1XeMqQrM
+[2026-05-30 18:16:10] Next: 'b7f27678-e7b5-474f-ac53-7202d4098e8d.mp4' (3 MB) from folder 'DOLPHINES'
+[2026-05-30 18:16:10] Next: 'b7f27678-e7b5-474f-ac53-7202d4098e8d.mp4' (3 MB) from folder 'DOLPHINES'
+[2026-05-30 18:16:10]   Downloading from Drive …
+[2026-05-30 18:16:10]   Downloading from Drive …
+  downloading … 100%
+[2026-05-30 18:16:12]   Uploading as Short: 'Dolphin Watching Cruise | Puerto Banús #Shorts'
+[2026-05-30 18:16:12]   Uploading as Short: 'Dolphin Watching Cruise | Puerto Banús #Shorts'
+[2026-05-30 18:16:30]   File attached: yt_upload_1u5rOAg65NLMw3BcQlznacoRAwT2znWCd.mp4
+[2026-05-30 18:16:30]   File attached: yt_upload_1u5rOAg65NLMw3BcQlznacoRAwT2znWCd.mp4
+[2026-05-30 18:17:04]   Uploaded: https://youtube.com/shorts/rUTYFRXaZu8
+[2026-05-30 18:17:04]   Uploaded: https://youtube.com/shorts/rUTYFRXaZu8
+[2026-05-30 18:17:09] Next: '19f1735725684ec98e565a5977c1e258.mov' (7 MB) from folder 'WAYNE LINEKER'
+[2026-05-30 18:17:09] Next: '19f1735725684ec98e565a5977c1e258.mov' (7 MB) from folder 'WAYNE LINEKER'
+[2026-05-30 18:17:09]   Downloading from Drive …
+[2026-05-30 18:17:09]   Downloading from Drive …
+  downloading … 100%
+[2026-05-30 18:17:10]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-05-30 18:17:10]   Uploading as Short: 'Celebrity Boat Charter Marbella | Puerto Banús #Shorts'
+[2026-05-30 18:17:31]   File attached: yt_upload_1Gt-896iOKQkwcvmwfJlntea7lOpk0EgK.mov
+[2026-05-30 18:17:31]   File attached: yt_upload_1Gt-896iOKQkwcvmwfJlntea7lOpk0EgK.mov
+[2026-05-30 18:17:57]   Uploaded: https://youtube.com/shorts/L4LE1w4m5jM
+[2026-05-30 18:17:57]   Uploaded: https://youtube.com/shorts/L4LE1w4m5jM
+[2026-05-30 18:18:02] Next: 'IMG_4628.MOV' (24 MB) from folder 'M 80 WHITE'
+[2026-05-30 18:18:02] Next: 'IMG_4628.MOV' (24 MB) from folder 'M 80 WHITE'
+[2026-05-30 18:18:02]   Downloading from Drive …
+[2026-05-30 18:18:02]   Downloading from Drive …
+  downloading … 32%  downloading … 65%  downloading … 98%  downloading … 100%
+[2026-05-30 18:18:10]   Uploading as video: 'Mangusta 80 Superyacht Marbella | Puerto Banús'
+[2026-05-30 18:18:10]   Uploading as video: 'Mangusta 80 Superyacht Marbella | Puerto Banús'

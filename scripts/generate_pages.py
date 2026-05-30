@@ -150,6 +150,10 @@ PAGE_HERO_MAP = {
     "owners/list-your-jet-ski-marbella": "jetski-fleet",
     "owners/list-your-sailboat-marbella": "astondoa-sunset",
     "owners/list-your-catamaran-marbella": "mangusta-sun-pad",
+    "boat-rental-estepona": "astondoa-sunset",
+    "boat-rental-malaga": "azimut-hero",
+    "boat-rental-sotogrande": "astondoa-hero",
+    "mediterranean-bareboat-charter-marbella": "astondoa-hero",
 }
 
 # Per-page book-card override (price / duration label / pitch text)
