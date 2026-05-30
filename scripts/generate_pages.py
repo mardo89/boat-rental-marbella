@@ -142,10 +142,6 @@ PAGE_HERO_MAP = {
     "blog/astondoa-40-vs-smaller-yachts-marbella": "astondoa-interior",
     "blog/azimut-39-vs-smaller-yachts-marbella": "azimut-aerial",
     "blog/mangusta-80-vs-smaller-yachts-marbella": "mangusta-saloon",
-    "boat-rental-estepona": "astondoa-sunset",
-    "boat-rental-malaga": "azimut-hero",
-    "boat-rental-sotogrande": "astondoa-hero",
-    "mediterranean-bareboat-charter-marbella": "astondoa-hero",
 }
 
 # Per-page book-card override (price / duration label / pitch text)
